@@ -19,3 +19,25 @@ function explode(x) {
     return newArr;
 }
 ```
+```javascript
+//Sort the odd
+JavaScript:
+function sortArray(array) {
+  let oddEl = [];
+    let newArr = array.slice();
+    for (let i = 0; i < newArr.length; i++) {
+        if (newArr[i] % 2 !== 0) {
+            oddEl.push(newArr[i]);
+        }
+    }
+    oddEl.sort(function (a, b) { return a - b });
+    for (let i = 0, j = 0; i < newArr.length; i++) {
+
+        if (newArr[i] % 2 != 0) {
+            newArr[i] = oddEl[j];
+            j++;
+        }
+    }
+    return newArr;
+}
+```
