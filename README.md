@@ -41,3 +41,25 @@ function sortArray(array) {
     return newArr;
 }
 ```
+```javascript
+//RGB To Hex Conversion
+function rgb(r, g, b){
+    let arrDec = [ r, g, b];
+    let hexNum = '';
+    for ( let i = 0; i < arrDec.length; i++ ) {
+        if ( arrDec[i] >= 0 && arrDec[i] <= 255){
+            let hex = arrDec[i].toString(16);
+            hexNum += hex.length == 1 ? "0" + hex : hex;
+        } else if ( arrDec[i] < 0 ) {
+            arrDec[i] = 0;
+            let hex = arrDec[i].toString(16);
+            hexNum += hex.length == 1 ? "0" + hex : hex;
+        } else {
+            arrDec[i] = 255;
+            let hex = arrDec[i].toString(16);
+            hexNum += hex.length == 1 ? "0" + hex : hex;
+        }
+    }
+    return hexNum.toUpperCase();
+}
+```
