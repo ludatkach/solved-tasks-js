@@ -63,3 +63,26 @@ function rgb(r, g, b){
     return hexNum.toUpperCase();
 }
 ```
+```javascript
+function toWeirdCase(string){
+  let newStr = string.split(' ');
+    let weirdStr = '';
+    for (let i = 0; i < newStr.length; i++) {
+        let newWord = '';
+        for (let j = 0; j < newStr[i].length; j++) {
+            if (j % 2 === 0) {
+                newWord += newStr[i][j].toUpperCase();
+            } else {
+                newWord += newStr[i][j].toLowerCase();
+            }
+        }
+        if (weirdStr.length) {
+            weirdStr += ' ' + newWord;
+        } else {
+            weirdStr += newWord;
+        }   
+    }
+
+    return weirdStr;
+}
+```
