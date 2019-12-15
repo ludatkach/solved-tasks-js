@@ -86,3 +86,17 @@ function toWeirdCase(string){
     return weirdStr;
 }
 ```
+```javascript
+//Bit Counting
+var countBits = function(n) {
+    let count = 0;
+    let binNum = (n >>> 0).toString(2);
+    for ( let i = 0; i < binNum.length; i++ ) {
+        
+        if ( binNum[i] === "1" ) {
+            count++;
+        }
+    }
+    return count;
+};
+```
