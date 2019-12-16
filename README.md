@@ -98,5 +98,17 @@ var countBits = function(n) {
         }
     }
     return count;
-};
+}
+```
+```javascript
+//Array.diff
+function array_diff(a, b) {
+    let newArr = [];
+    for ( let i = 0; i < b.length; i++ ) {
+        for(let indx = a.indexOf(b[i]); indx >= 0;  indx = a.indexOf(b[i])) {
+            a.splice(indx, 1);
+        }
+    }
+    return a;
+}
 ```
