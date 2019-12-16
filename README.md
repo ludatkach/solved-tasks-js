@@ -112,3 +112,20 @@ function array_diff(a, b) {
     return a;
 }
 ```
+```javascript
+//Find the next perfect square!
+function findNextSquare(sq) {
+    let n = Math.sqrt(sq);
+    if ( n % 1 === 0 ) {
+        let x = sq + 1;
+        while ( x > sq ) {
+            if ( Math.sqrt(x) % 1 === 0) {
+                return x;
+            }
+        x++;
+        }
+    } else {
+        return -1;
+    }
+}
+```
