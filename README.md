@@ -129,3 +129,45 @@ function findNextSquare(sq) {
     }
 }
 ```
+```javascript
+//Sum of two lowest positive integers
+function sumTwoSmallestNumbers(numbers) {  
+  let sum = 0;
+    numbers.sort((a,b) => a - b);
+    sum = numbers[0] + numbers[1];
+    return sum;
+}
+
+//Odd or Even?
+function oddOrEven(array) {
+     let sum = 0;
+    if ( !array) {
+        return "even";
+    }
+    for (  let i = 0; i < array.length; i++ ) {
+        sum += Math.abs(array[i]);
+    }
+    if ( sum % 2 === 0 ) {
+        return "even";
+    } else {
+        return "odd";
+    }
+}
+
+//Sum of Odd Cubed Numbers
+function cubeOdd(arr) {
+     let sum = 0;
+     let result = 0;
+     for ( let i = 0; i < arr.length; i++ ){
+        if (typeof(arr[i]) === 'number' ) {
+            if ( arr[i] % 2 != 0 ) {
+                result = Math.pow(arr[i], 3);
+                sum += result;
+            }
+        } else {
+            return undefined;
+        }
+     }
+     return sum;
+}
+```
