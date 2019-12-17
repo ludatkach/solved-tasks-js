@@ -171,3 +171,29 @@ function cubeOdd(arr) {
      return sum;
 }
 ```
+```javascript
+//Squares sequence
+function squares(x, n) {
+    let arr = [];
+    if ( n <= 0 ) {
+        return [];
+    }
+    arr.push(x);
+    for (let i = 0; i < n-1; i++ ){
+        arr.push( Math.pow(x, 2));
+        x = Math.pow(x, 2);
+    }
+    return arr;
+}
+
+//Square Every Digit
+function squareDigits(num){
+    let str = '';
+    let newNum = '';
+    str += num;
+    for (let i = 0; i < str.length; i++ ){
+        newNum +=Math.pow(str[i], 2);
+    }
+    return +newNum;
+}
+```
