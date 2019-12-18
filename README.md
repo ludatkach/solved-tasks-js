@@ -197,3 +197,29 @@ function squareDigits(num){
     return +newNum;
 }
 ```
+```javascript
+//Filter the number
+var FilterString = function(value) {
+  let num='';
+    for ( let i = 0; i < value.length; i++ ) {
+        if ( isNaN(value[i]) === false)  {
+            num +=value[i];
+        }
+
+    }
+    return +num;
+}
+
+//Sum of the first nth term of Series
+function SeriesSum(n)
+{
+  if ( n === 0 || n === 1 ) {
+        return n.toFixed(2);
+    }
+    let sum = 0;
+    for ( let i = 0; i < n; i++ ) {
+        sum += 1/(1+i*3);
+    }
+    return sum.toFixed(2);
+}
+```
