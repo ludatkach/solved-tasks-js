@@ -233,3 +233,18 @@ function switcher(x) {
     return string;
  }
 ```
+```javascript
+//Numbers to Letters
+function switcher(x){
+    let arr = " ?!abcdefghijklmnopqrstuvwxyz-".split('').reverse();
+    let newArr = x.map( Number);
+    let string = '';
+    newArr.forEach(el => {string += arr[el]});
+    return string;
+}
+//Regex validate PIN code
+function validatePIN (pin) {
+    return pin.match(/^\d{4}$|^\d{6}$/) ? true : false;
+}
+
+```
