@@ -246,5 +246,43 @@ function switcher(x){
 function validatePIN (pin) {
     return pin.match(/^\d{4}$|^\d{6}$/) ? true : false;
 }
+```
+```javascript
+//Powers of 3
+function largestPower(n){
+    let k = 0;
+    for (; Math.pow(3,k) < n; k++);
+    return --k;
+}
 
+//Power of two
+function isPowerOfTwo(n){
+  if (Number.isInteger(Math.log2(n))) {
+    return true;
+  } else if (n === 1) {
+    return true;
+  } else if (n % 2 === 1) {
+    return false;
+  } else {
+    return false;
+  }
+}
+
+//Factorial
+function factorial(n){
+  return n === 1 || n === 0 ? 1 :  n * factorial(n-1);
+}
+
+//Difference Of Squares
+function differenceOfSquares(n){
+  let sumNum = 0;
+    let sqrs = 0;
+    //let difference = 0;
+    for ( let i = 1; i <= n; i++ ) {
+        sumNum += i;
+        sqrs += Math.pow(i,2);
+    }
+   let sqrSum = Math.pow(sumNum,2);
+   return sqrSum - sqrs;
+}
 ```
