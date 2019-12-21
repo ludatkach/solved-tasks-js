@@ -286,3 +286,22 @@ function differenceOfSquares(n){
    return sqrSum - sqrs;
 }
 ```
+```javascript
+//Tail Swap
+function tailSwap(arr) {
+    let newArr = [];
+    let el1= '';
+    let el2 ='';
+     let indx1 = arr[0].indexOf(':');
+     let indx2 = arr[1].indexOf(':');
+     let pos1 = indx1+1;
+     let pos2 = indx2+1;
+     let tail1 = arr[0].slice(pos1);     
+     let tail2 = arr[1].slice(pos2);
+     el1 += arr[0].slice(0,pos1) + tail2;
+     el2 += arr[1].slice(0,pos2) + tail1;
+    newArr.push(el1);
+    newArr.push(el2);
+    return newArr;
+}
+```
