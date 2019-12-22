@@ -305,3 +305,29 @@ function tailSwap(arr) {
     return newArr;
 }
 ```
+```javascript
+//Every possible sum of two digits
+function digits(num){
+    numStr = num + '';
+    let arr = numStr.split('');
+    let sum = [];
+    for ( let i =0; i < arr.length; i++ ) {
+        for ( let j = i+1; j < arr.length; j++ ) {
+            let val = +arr[i] + +arr[j];
+            sum.push(val);
+        }
+    }
+    return sum;
+}
+
+//Can Santa save Christmas?
+function determineTime(durations){
+    let seconds = 0;
+    let arr = [];
+    for (let i = 0; i < durations.length; i++ ){        
+        arr = durations[i].split(':');
+       seconds += arr[0] * 60 * 60 + arr[1] * 60 + arr[2]*1;
+    }
+    return (seconds <= 86400 ) ? true : false;
+}
+```
