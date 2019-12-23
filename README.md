@@ -331,3 +331,30 @@ function determineTime(durations){
     return (seconds <= 86400 ) ? true : false;
 }
 ```
+```javascript
+//Check three and two
+function checkThreeAndTwo(array) {
+    let counters = {
+        'a': 0,
+        'b': 0,
+        'c': 0,
+    };
+    array.forEach(val => counters[val]++);
+    let arrVal = Object.values(counters);
+    return arrVal.indexOf(2) >= 0 && arrVal.indexOf(3) >= 0;
+}
+
+//Make a function that does arithmetic!
+function arithmetic(a, b, operator){
+  switch ( operator) {
+        case "add":  return a + b; 
+                breake;
+        case "subtract": return a - b;
+                breake;
+        case "multiply": return a * b;
+                breake;
+        case "divide": return a / b;
+                breake;
+    }
+}
+```
