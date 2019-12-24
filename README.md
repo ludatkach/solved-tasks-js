@@ -358,3 +358,32 @@ function arithmetic(a, b, operator){
     }
 }
 ```
+```javascript
+//What is my name score? #1
+function nameScore(name){
+    for(key in alpha) {
+        key.split('').forEach(letter => alpha[letter] = alpha[key]);
+    }
+    let sum = 0;
+    name.toUpperCase().split('').forEach(letter => letter in alpha ? sum += alpha[letter]:0);
+    return {[name]: sum};
+}
+
+//Coding Meetup #5 - Higher-Order Functions Series - Prepare the count of languages
+function countLanguages(list) {
+    let counts = {};
+    list.map(el=>el.language in counts ? counts[el.language]++ : counts[el.language] = 1);
+    return counts;
+}
+
+//Numbers to Objects
+function numObj(s){
+    let arrObj =[];
+    for ( let i = 0; i < s.length; i++ ) {
+        let num = String(s[i]);
+        let x = String.fromCharCode(num);
+        arrObj.push({[num]:x});
+    }
+    return arrObj;
+}
+```
