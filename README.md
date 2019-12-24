@@ -387,3 +387,17 @@ function numObj(s){
     return arrObj;
 }
 ```
+```javascript
+//The Office I - Outed
+function outed(meet, boss){
+    let score = 0;
+    for (let key in meet){
+        if ( key === boss ) {
+            meet[key] = meet[key] * 2;
+        }
+        score +=meet[key];
+    }
+    let totalScore = score / Object.keys(meet).length;
+    return  totalScore <= 5 ? 'Get Out Now!' : 'Nice Work Champ!';
+}
+```
