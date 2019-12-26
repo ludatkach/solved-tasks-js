@@ -401,3 +401,25 @@ function outed(meet, boss){
     return  totalScore <= 5 ? 'Get Out Now!' : 'Nice Work Champ!';
 }
 ```
+```javascript
+//How many days are we represented in a foreign country? 
+function daysRepresented(trips){
+    let count = 0;
+    let tr = trips.sort((a,b)=>a[0]-b[0]);
+    // merge overlaping days
+    for (let i = 1; i < tr.length; ) {
+        if(tr[i][0] <= tr[i-1][1]) {
+            tr[i-1][1] = tr[i][1];
+            tr.splice(i,1);
+            continue;
+        } 
+        i++;
+    }
+    // count days
+    for (let i = 0; i < tr.length; i++) {
+        let num = tr[i][1] - tr[i][0] + 1;
+        count += num;
+    }
+    return count;
+}
+```
