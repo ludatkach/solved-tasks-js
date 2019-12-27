@@ -423,3 +423,26 @@ function daysRepresented(trips){
     return count;
 }
 ```
+```javascript
+//Permute a Palindrome
+function permuteAPalindrome (input) { 
+    let arr = input.split('');
+    let obj = {};
+    arr.forEach( val => val in obj ? obj[val]++ : obj[val] = 1 );
+    let numberOdds = Object.values(obj).filter(val => val % 2).length;
+    if ( arr.length % 2 === 0 && numberOdds === 0  || arr.length % 2 != 0 && numberOdds === 1 ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+//Most valuable character
+function solve(st) {
+    let arr = st.split('');
+    let unique = [...new Set(arr)];
+    let newArr = unique.map(val => { return { letter: val, difference: arr.lastIndexOf(val) - arr.indexOf(val)}; });
+    let result = newArr.sort((a,b) =>  b.difference - a.difference === 0 ? a.letter.charCodeAt() - b.letter.charCodeAt(): b.difference - a.difference );
+    return result[0].letter;
+}
+```
