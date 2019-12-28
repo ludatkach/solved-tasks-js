@@ -446,3 +446,32 @@ function solve(st) {
     return result[0].letter;
 }
 ```
+```javascript
+//The Office II - Boredom Score
+function boredom(staff){
+    let count = 0; 
+    let depScore = {
+        accounts: 1,
+        finance: 2,
+        canteen: 10,
+        regulation: 3,
+        trading: 6,
+        change: 6,
+        IS: 8,
+        retail: 5,
+        cleaning: 4,
+        "pissing about": 25,
+    };
+
+    let valuesDepartments = Object.values(staff);
+    valuesDepartments.forEach(val =>  count += depScore[val]);
+
+    if ( count < 100 && count > 80) {   
+      return 'i can handle this';
+    } else if ( count <= 80 ) {   
+      return 'kill me now';
+    } else if ( count >= 100 ) {
+      return 'party time!!';
+    }
+}
+```
