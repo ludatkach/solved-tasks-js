@@ -475,3 +475,25 @@ function boredom(staff){
     }
 }
 ```
+```javascript
+//Are the numbers in order?
+function inAscOrder(arr) {
+    let  sum = arr.reduce((acc, val)=>acc+val);
+    if( typeof sum !== 'number') {
+        return false;
+    }
+    for ( let i = 1; i < arr.length; i++ ) {
+        if ( arr[i] < arr[i-1]) {
+            return false;
+        }
+    }
+    return true;
+}
+
+//Sort and Star
+function twoSort(s) {
+    s.sort();
+    let word = s[0].split('').join('***');
+    return word;
+}
+```
