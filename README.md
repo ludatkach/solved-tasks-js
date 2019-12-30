@@ -497,3 +497,15 @@ function twoSort(s) {
     return word;
 }
 ```
+```javascript
+//Find the missing element between two arrays
+function findMissing(arr1, arr2) {
+    arr2.forEach(val => {
+        let elIndx = arr1.indexOf(val);
+        if ( elIndx >= 0 ) {
+            arr1[elIndx] = undefined;
+        }
+    });
+    return +arr1.filter(val => val != undefined );
+}
+```
