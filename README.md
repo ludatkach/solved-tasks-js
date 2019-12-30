@@ -509,3 +509,15 @@ function findMissing(arr1, arr2) {
     return +arr1.filter(val => val != undefined );
 }
 ```
+```javascript
+//Remove duplicate words
+function removeDuplicateWords (s) {
+    let arr = s.split(' ');
+    let str = new Set(arr);
+    return Array.from(str).join(' ');
+}
+//Get the mean of an array
+function getAverage(marks){
+  return Math.floor((marks.reduce((acc,curr) => acc + curr, 0))/marks.length);
+}
+```
