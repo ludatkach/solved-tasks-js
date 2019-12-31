@@ -521,3 +521,27 @@ function getAverage(marks){
   return Math.floor((marks.reduce((acc,curr) => acc + curr, 0))/marks.length);
 }
 ```
+```javascript
+//Check the exam
+function checkExam(array1, array2) {
+     let score = 0;
+    for ( let i = 0; i < array1.length; i++ ) {
+        if ( array1[i] === array2[i]) {
+            score +=4;
+        } else if ( array2[i]  === '') {
+            continue;
+        } else {
+            score -= 1;
+        }
+    }
+    return score > 0 ? score : 0;
+}
+
+//Merge two sorted arrays into one
+JavaScript:
+function mergeArrays(arr1, arr2) {
+    let newArr =  arr1.concat(arr2); 
+    let str = new Set(newArr);
+    return [...str].sort((a, b) => a - b);
+}
+```
