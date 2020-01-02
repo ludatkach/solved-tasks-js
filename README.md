@@ -561,3 +561,26 @@ function checkExam(array1, array2) {
     return score > 0 ? score : 0;
 }
 ```
+```javascript
+//Clocky Mc Clock-Face
+var whatTimeIsIt = function(angle) {
+    let hour;
+    let minutes;
+    if ( angle === 0  || angle === 360) {
+        return "12:00";
+    } else {
+        hour = Math.floor(angle / 30) +'';
+        if ( hour === '0' ) {
+          hour = '12';
+        }
+        if ( hour.length === 1 ) {
+            hour = '0' + hour;
+        }
+        minutes = (Math.floor((angle % 30) * 2)).toFixed();
+        if ( minutes.length === 1) {
+            minutes = '0' + minutes;
+        }
+        return hour + ":" + minutes;
+    }
+}
+```
