@@ -584,3 +584,19 @@ var whatTimeIsIt = function(angle) {
     }
 }
 ```
+```javascript
+//Number of People in the Bus
+var number = function(busStops){
+    let re = busStops.reduce((acc, cur) => {
+        acc[0] += cur[0];
+        acc[1] += cur[1];
+        return acc;
+    });
+    return re[0]-re[1];
+}
+
+//Find Nearest square number
+function nearestSq(n){
+   return  Math.pow(Math.round(Math.sqrt(n)), 2);
+}
+```
