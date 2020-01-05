@@ -614,3 +614,18 @@ function twoSum(numbers, target) {
     return [];
 }
 ```
+```javascript
+//Sum of Digits / Digital Root
+//(1)
+function digital_root(n) {
+  return (n - 1) % 9 + 1;
+}
+//(2)
+function digital_root(n) {
+    do {
+        let arr = (String(n)).split('').map(val => +val);
+        n = arr.reduce((acc, curr) => acc + curr);
+    } while (String(n).length > 1);
+    return n;
+}
+```
