@@ -629,3 +629,20 @@ function digital_root(n) {
     return n;
 }
 ```
+```javascript
+//Understanding closures - the basics
+function buildFun(n){
+    var res = [];
+    for (let i = 0; i < n; i++) {
+        res.push(function () {
+            return i;
+        });
+    }
+    return res;
+}
+
+//Disemvowel Trolls
+function disemvowel(str) {
+  return str.replace(/[aeuio]/ig,'');
+}
+```
