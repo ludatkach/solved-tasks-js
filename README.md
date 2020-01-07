@@ -646,3 +646,13 @@ function disemvowel(str) {
   return str.replace(/[aeuio]/ig,'');
 }
 ```
+```javascript
+//Vasya and Book
+function bookIsDay(pages,days){
+    for ( var i = 0; pages > 0; i++ ){
+        let iIdx = i % days.length;
+        pages -= days[iIdx];
+    }
+    return i == 7 ? 7 : i % days.length;
+}
+```
