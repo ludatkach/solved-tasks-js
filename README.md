@@ -656,3 +656,32 @@ function bookIsDay(pages,days){
     return i == 7 ? 7 : i % days.length;
 }
 ```
+```javascript
+//Character Frequency
+function charFreq(message) {
+    let arr = message.split("");
+    let obj = {};
+    arr.forEach( val => val in obj ? obj[val]++ : obj[val] = 1);
+    return obj;
+}
+
+
+//Squash the bugs (1)
+  function findLongest(str) {
+    var spl = str.split(" ");
+    var longest = 0;
+    for (let i = 0; i < spl.length; i++){
+      if (spl[i].length > longest) {
+        longest = spl[i].length;
+      }
+    }
+      return longest;
+  }
+
+//Squash the bugs (2)
+function findLongest(str) {
+    var arr2 = str.split(" ").map(x => x.length);
+    let max = Math.max(...arr2);
+    return max;
+}
+```
