@@ -685,3 +685,15 @@ function findLongest(str) {
     return max;
 }
 ```
+```javascript
+//Smallest value of an array
+function min(arr, toReturn) {
+    let minVal = Math.min.apply(Math, arr);
+    if ( toReturn === 'value') {
+        return minVal;
+    }
+    if ( toReturn === 'index' ) {
+        return arr.indexOf(minVal);
+    }
+}
+```
