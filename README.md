@@ -697,3 +697,11 @@ function min(arr, toReturn) {
     }
 }
 ```
+```javascript
+//Find The Parity Outlier
+function findOutlier(integers){
+    let arr1 = integers.filter(val => val % 2);
+    let arr2 = integers.filter(val => val % 2 === 0 );
+    return arr1.length === 1 ? arr1[0] : arr2[0];
+}
+```
