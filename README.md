@@ -705,3 +705,22 @@ function findOutlier(integers){
     return arr1.length === 1 ? arr1[0] : arr2[0];
 }
 ```
+```javascript
+//Return the first M multiples of N
+function multiples(m, n){
+    let arr = [];
+    for ( let i = 1; i <= m; i++ ) {
+        arr.push( i * n );
+    }
+    return arr;
+}
+
+//Return String of First Characters
+function makeString(s){
+    let newArr = s.split(" ");
+    let newWord = [];
+    for ( let i = 0; i < newArr.length; i++ ) {
+        newWord.push(newArr[i][0]);
+    }
+    return newWord.join('');
+}```
