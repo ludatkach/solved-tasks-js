@@ -723,4 +723,25 @@ function makeString(s){
         newWord.push(newArr[i][0]);
     }
     return newWord.join('');
-}```
+}
+```
+```javascript
+Give me a Diamond
+JavaScript:
+function diamond(n){
+    if ( n % 2 === 0 || n < 0 ) {
+        return null;
+    }
+    let side = Math.floor(n / 2);
+    let a1 = [];
+    for (let i = 0; i < side; i++) {
+        let s1 = ' '.repeat(side - i) + '*'.repeat(i);
+        let s2 = '*'.repeat(i);
+        let s3 = s1 + '*' + s2 + '\n';
+        a1.push(s3);
+    }
+    let a2 = [...a1];
+    a1.push('*'.repeat(n) + '\n');
+    return a1.concat(a2.reverse()).join('');
+}
+```
