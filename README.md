@@ -745,3 +745,34 @@ function diamond(n){
     return a1.concat(a2.reverse()).join('');
 }
 ```
+```javascript
+//Asterisk it
+function asteriscIt(n) { 
+    let str = String(n).replace(/,/g, '');
+    let arr = [];
+    for ( let i = 0; i < str.length; i++ ) {
+        if ( i < str.length - 1 && str[i] % 2 === 0 && str[i+1] % 2 === 0 ) {
+            arr.push(str[i]);
+            arr.push('*');
+        } else {
+            arr.push(str[i]);
+        }
+    }
+    return arr.join('');
+};
+
+//Switch/Case - Bug Fixing #6
+function evalObject(value){
+  var result = 0;
+  switch(value.operation){
+    case'+': return result = value.a + value.b; break;
+    case'-': return result = value.a - value.b; break;
+    case'/': return result = value.a / value.b; break;
+    case'*': return  result = value.a * value.b; break;
+    case'%': return result = value.a % value.b; break;
+    case'^': return result = Math.pow(value.a, value.b); break;
+  }
+  return result;
+}
+```
+
