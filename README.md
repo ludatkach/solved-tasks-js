@@ -819,6 +819,29 @@ function excludingVatPrice(price){
     }
 }
 ```
+```javascript
+//Thankful - String Drills: Repeater
+function repeater(string, n){
+  return string.repeat(n);
+}
+
+//Powers of 2
+function powersOfTwo(n){
+   const arr = [];
+   for(let i = 0; i <= n; i++){
+     arr.push(Math.pow(2, i));
+   }
+   return arr;
+}
+//second solution
+function powersOfTwo(n){
+    let newArr = [];
+    for ( let i = 0; i <= n; i++ ) {
+        newArr.push( 2 ** i );
+    }
+    return newArr;
+}
+```
 
 
 
