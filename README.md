@@ -801,5 +801,24 @@ function min(arr, toReturn) {
     }
 }
 ```
+```javascript
+Dubstep
+function songDecoder(song){
+  return song.replace(/(WUB)+/g, ' ').trim();
+}
+
+Calculate Price Excluding VAT
+//return price without vat
+function excludingVatPrice(price){
+    let prodPr = 0;
+    if ( price === null ) {
+        return -1;
+    } else {
+        prodPr = (100 * price)/115;
+        return +prodPr.toFixed(2);
+    }
+}
+```
+
 
 
