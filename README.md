@@ -854,6 +854,20 @@ function firstNonRepeated(s) {
     return null;
 }
 ```
+[Get initials from person name] (https://www.codewars.com/kata/57b56af6b69bfcffb80000d7/train/javascript)
+```javascript
+Get initials from person name
+JavaScript:
+function toInitials(name) {
+    let nameArray = name.split(' ');
+    let nameNew = '';
+    for ( let i = 0; i < nameArray.length; i++ ){
+        nameNew += nameArray[i][0] + '. ';
+    }
+     
+    return nameNew.trim();
+}
+```
 
 
 
