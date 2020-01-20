@@ -868,7 +868,18 @@ function toInitials(name) {
     return nameNew.trim();
 }
 ```
-
+[Sum of odd numbers](https://www.codewars.com/kata/55fd2d567d94ac3bc9000064/train/javascript)
+```javascript
+function rowSumOddNumbers(n) {
+	  let numberOfOddElementsBeforeN = (n - 1) * (1 + n - 1) / 2;
+    let nthOddNumber = (numberOfOddElementsBeforeN + 1) * 2 - 1;
+    let sum = 0;
+    for (let i = 0; i < n; i++ , nthOddNumber += 2) {
+        sum += nthOddNumber;
+    }
+    return sum;
+}
+```
 
 
 
