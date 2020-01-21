@@ -880,6 +880,12 @@ function rowSumOddNumbers(n) {
     return sum;
 }
 ```
+[Thinkful - String Drills: Repeater level 2](https://www.codewars.com/kata/585a1f0945376c112a00019a/train/javascript)
+```javascript
+function repeater(string, n) {
+    return `"${string}"` + ' repeated ' + n + ' times is: ' + `"${string.repeat(n)}"`;
+}
 
+```
 
 
