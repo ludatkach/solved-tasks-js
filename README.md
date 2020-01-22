@@ -887,5 +887,16 @@ function repeater(string, n) {
 }
 
 ```
-
+[Count the divisors of a number](https://www.codewars.com/kata/542c0f198e077084c0000c2e/train/javascript)
+```javascript
+function getDivisorsCnt(n){
+    let arr = [];
+    for ( let i = 1; i <= n; i++ ) {
+        if ( n % i === 0 ) {
+            arr.push(i);
+        } 
+    }
+    return arr.length;
+}
+```
 
