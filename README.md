@@ -899,4 +899,17 @@ function getDivisorsCnt(n){
     return arr.length;
 }
 ```
-
+[A Rule of Divisibility by 7](https://www.codewars.com/kata/55e6f5e58f7817808e00002e/train/javascript)
+```javascript
+function seven(m) {
+    let count = 0;
+    let lastNumber = 0;
+    while(m && String(m).length > 2) {
+        count++;
+        let x = Math.floor(m / 10);
+        let y = m - 10 * x;
+        m = x - 2 * y;
+    }
+    return [m, count];
+}
+```
