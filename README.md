@@ -921,3 +921,14 @@ function lostSheep(friday,saturday,total){
     return total - fridaySum - saturdaySum;
 }
 ```
+[String to integer conversion](https://www.codewars.com/kata/54fdadc8762e2e51e400032c/train/javascript)
+```javascript
+function myParseInt(str) {
+    str = str.trim();
+    if(/^\d+$/g.test(str)){
+        return Number(str);
+    }
+
+    return "NaN";
+}
+```
