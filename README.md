@@ -932,3 +932,11 @@ function myParseInt(str) {
     return "NaN";
 }
 ```
+[Most sales](https://www.codewars.com/kata/5e16ffb7297fe00001114824/train/javascript)
+```javascript
+function top3(products, amounts, prices) {
+    let indexes = [...Array(products.length).keys()];
+    return indexes.sort((a, b) => amounts[b] * prices[b] - amounts[a] * prices[a]).slice(0, 3).map(idx=>products[idx]);
+}
+```
+
