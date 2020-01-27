@@ -939,4 +939,30 @@ function top3(products, amounts, prices) {
     return indexes.sort((a, b) => amounts[b] * prices[b] - amounts[a] * prices[a]).slice(0, 3).map(idx=>products[idx]);
 }
 ```
+[Make the Deadfish swim](https://www.codewars.com/kata/51e0007c1f9378fa810002a9/train/javascript)
+```javascript
+// Return the output array, and ignore all non-op characters
+function parse( data ) {
+    let value = 0;
+    let arr = [];
+    for (let k = 0; k < data.length; k++ ) {
+        if ( data[k] === 'i') {
+            value ++;
+        }
+        if (data[k] === 'd') {
+            value --;
+        }
+        if (data[k] === 's') {
+            value = value * value;
+        }
+        if ( data[k] === 'o') {
+            arr.push(value);
+        }
+        if ( !data.includes('idso')) {
+            continue;
+        }
+    }
+    return arr;
+}
+```
 
