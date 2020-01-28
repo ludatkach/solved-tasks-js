@@ -965,4 +965,22 @@ function parse( data ) {
     return arr;
 }
 ```
+[Stop gninnipS My sdroW!](https://www.codewars.com/kata/5264d2b162488dc400000001/train/javascript)
+```javascript
+function spinWords(string){
+    let arrStr = string.split(' ');
+    let arrWord;
+    let newStr = [];
+    for ( let i = 0; i < arrStr.length; i++ ) {
+        if ( arrStr[i].length > 4 ) {
+            arrWord = arrStr[i].split('').reverse();
+            newStr.push(arrWord.join(''));            
+        } else {
+            newStr.push(arrStr[i]);
+        }
+    }
+    return newStr.join(' ');
+}
+```
+
 
