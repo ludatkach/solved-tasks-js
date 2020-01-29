@@ -982,5 +982,18 @@ function spinWords(string){
     return newStr.join(' ');
 }
 ```
-
-
+[Sum of all the multiples of 3 or 5](https://www.codewars.com/kata/57f36495c0bb25ecf50000e7/train/javascript)
+```javascript
+function findSum(n) {
+    let set = new Set()
+    for (let i = 1; i * 3 <= n; i++) {
+        set.add(i * 3);
+    }
+    for (let i = 1; i * 5 <= n; i++) {
+        set.add(i * 5);
+    }
+    let sum = 0;
+    set.forEach(val=>sum += val);
+    return sum;
+}
+```
