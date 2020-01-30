@@ -21,7 +21,6 @@ function explode(x) {
 ```
 ```javascript
 //Sort the odd
-JavaScript:
 function sortArray(array) {
   let oddEl = [];
     let newArr = array.slice();
@@ -726,8 +725,7 @@ function makeString(s){
 }
 ```
 ```javascript
-Give me a Diamond
-JavaScript:
+//Give Me a Diamond
 function diamond(n){
     if ( n % 2 === 0 || n < 0 ) {
         return null;
@@ -802,12 +800,12 @@ function min(arr, toReturn) {
 }
 ```
 ```javascript
-Dubstep
+//Dubstep
 function songDecoder(song){
   return song.replace(/(WUB)+/g, ' ').trim();
 }
 
-Calculate Price Excluding VAT
+//Calculate Price Excluding VAT
 //return price without vat
 function excludingVatPrice(price){
     let prodPr = 0;
@@ -856,8 +854,7 @@ function firstNonRepeated(s) {
 ```
 [Get initials from person name] (https://www.codewars.com/kata/57b56af6b69bfcffb80000d7/train/javascript)
 ```javascript
-Get initials from person name
-JavaScript:
+//Get initials from person name
 function toInitials(name) {
     let nameArray = name.split(' ');
     let nameNew = '';
@@ -995,5 +992,16 @@ function findSum(n) {
     let sum = 0;
     set.forEach(val=>sum += val);
     return sum;
+}
+```
+[Product Of Maximums Of Array (Array Series #2)](https://www.codewars.com/kata/5a63948acadebff56f000018/train/javascript)
+```javascript
+function maxProduct(numbers, size){
+    let num = 1;
+    let arr = numbers.sort((a,b) => b -a );
+    for (let i = 0; i < size; i++ ) {
+        num *= arr[i];
+    }
+    return num;
 }
 ```
