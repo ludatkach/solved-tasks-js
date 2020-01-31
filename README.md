@@ -1005,3 +1005,9 @@ function maxProduct(numbers, size){
     return num;
 }
 ```
+[Is my string repeating the same character over and over ?](https://www.codewars.com/kata/584fa5ae25dd087e6b000070/train/javascript)
+```javascript
+function hasOneChar(s) {
+  return (s.match(/^(.)\1*$/g)) ? true : false;
+}
+```
