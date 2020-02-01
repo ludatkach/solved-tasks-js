@@ -1011,3 +1011,15 @@ function hasOneChar(s) {
   return (s.match(/^(.)\1*$/g)) ? true : false;
 }
 ```
+[Absent vowel](https://www.codewars.com/kata/56414fdc6488ee99db00002c/train/javascript)
+```javascript
+function absentVowel(x){
+    let vowelsArr = ['A', 'E', 'I', 'O', 'U'];
+    let str = x.toUpperCase();
+    for ( let i = 0; i < str.length; i++ ) {
+        if ( str.indexOf(vowelsArr[i]) < 0 ) {
+            return i;
+        }
+    }
+}
+```
