@@ -1023,3 +1023,17 @@ function absentVowel(x){
     }
 }
 ```
+[Tidy Number (Special Numbers Series #9)](https://www.codewars.com/kata/5a87449ab1710171300000fd/train/javascript)
+```javascript
+function tidyNumber(n){
+    let arrN = Array.from(String(n), Number);
+    for ( let i = 1; i < arrN.length; i++ ) {
+        if( arrN[i-1] <= arrN[i] ) {
+            continue;
+        } else {
+            return false;
+        }
+    }
+    return true;
+}
+```
