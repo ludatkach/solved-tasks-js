@@ -1037,3 +1037,23 @@ function tidyNumber(n){
     return true;
 }
 ```
+[Lottery machine](https://www.codewars.com/kata/5832db03d5bafb7d96000107/train/javascript)
+```javascript
+function lottery(str) {
+    let myStr = str.match(/[0-9]+/g);
+    if (myStr) {
+        let allDigits = myStr.join('').split('');
+        let set = new Set();
+        let result = []
+        allDigits.forEach(digit => {
+            if (!set.has(digit)) {
+                set.add(digit);
+                result.push(digit);
+            }
+        });
+
+        return result.join('');
+    }
+    return "One more run!";
+}
+```
