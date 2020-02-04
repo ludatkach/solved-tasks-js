@@ -1057,3 +1057,17 @@ function lottery(str) {
     return "One more run!";
 }
 ```
+[Sum Mixed Array](https://www.codewars.com/kata/57eaeb9578748ff92a000009/train/javascript)
+```javascript
+function sumMix(x){
+    let sum = 0;
+    for ( let i = 0; i < x.length; i++ ) {
+        if ( typeof(x[i]) === 'string' ) {
+            sum += +x[i];
+        } else {
+            sum += x[i];
+        }      
+    }
+    return sum;  
+}
+```
