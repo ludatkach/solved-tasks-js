@@ -1086,5 +1086,23 @@ function countLettersAndDigits(input) {
     let arr = input.match(/[0-9a-zA-Z]/g);
     return arr ? arr.length : 0;
 }
-
+```
+[Sort Out The Men From Boys](https://www.codewars.com/kata/5af15a37de4c7f223e00012d/train/javascript)
+```javascript
+function menFromBoys(arr){
+    let set = new Set(arr);
+    let newArr = [...set];
+    let odd = [];
+    let even = [];
+    for ( let i = 0; i < newArr.length; i ++ ) {
+        if ( newArr[i] % 2 ) {
+            odd.push(newArr[i]);
+        } else {
+            even.push(newArr[i]);
+        }
+    }
+    even.sort((a, b) => a - b);
+    let oddArr = odd.sort((a, b) => b - a);
+    return even.concat(oddArr);
+}
 ```
