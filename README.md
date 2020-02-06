@@ -1080,3 +1080,11 @@ function cockroachSpeed(s) {
   return Math.floor(speed);
 }
 ```
+[Help Bob count letters and digits.](https://www.codewars.com/kata/5738f5ea9545204cec000155/train/javascript)
+```javascript
+function countLettersAndDigits(input) {
+    let arr = input.match(/[0-9a-zA-Z]/g);
+    return arr ? arr.length : 0;
+}
+
+```
