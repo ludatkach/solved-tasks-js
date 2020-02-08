@@ -1121,3 +1121,10 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
 }
 ```
+[noobCode 01: SUPERSIZE ME.... or rather, this integer!](https://www.codewars.com/kata/5709bdd2f088096786000008/train/javascript)
+```javascript
+function superSize(num){
+  let arr = String(num).split('').sort ((a, b) => b - a );
+  return +arr.join('');
+}
+```
