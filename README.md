@@ -1106,3 +1106,12 @@ function menFromBoys(arr){
     return even.concat(oddArr);
 }
 ```
+[The Wide-Mouthed frog!](https://www.codewars.com/kata/57ec8bd8f670e9a47a000f89/train/javascript)
+```javascript
+function mouthSize(animal) {
+  if ( animal.toLowerCase() === 'alligator' ) {
+    return "small";
+  }
+  return "wide";
+}
+```
