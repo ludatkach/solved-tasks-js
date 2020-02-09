@@ -1128,3 +1128,22 @@ function superSize(num){
   return +arr.join('');
 }
 ```
+[Sub-array elements sum](https://www.codewars.com/kata/5b5e0ef007a26632c400002a/train/javascript)
+```javascript
+function elementsSum(arr,d=0){
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        let idx = arr.length - 1 - i;
+        if (typeof (arr[i]) === 'object' && arr[i].length > idx) {
+            sum += arr[i][idx];
+        } else {
+            if (d) {
+                sum += d;
+            }
+        }
+    }
+
+    return sum;
+}
+
+```
