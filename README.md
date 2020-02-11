@@ -1158,3 +1158,38 @@ function flattenAndSort(array) {
     return newArr.sort((a,b) => a - b);
 }
 ```
+[Balanced Number (Special Numbers Series #1 )](https://www.codewars.com/kata/5a4e3782880385ba68000018/train/javascript)
+```javascript
+function balancedNum(number)
+{
+    let sumLeft = 0;
+    let sumRight = 0;
+    let middle1Indx;
+    let middle2Indx;
+    let arr = String(number).split(''); 
+    let length = arr.length;
+    if ( (length % 2) === 0 ) {
+        middle1Indx = length/2 - 1;
+        middle2Indx = length/2;
+        for ( let i = 0; i < middle1Indx; i++ ) {
+            sumLeft += +arr[i];
+        }    
+        for ( let i = middle2Indx + 1; i < arr.length; i++ ){
+            sumRight += +arr[i];
+        }
+    }
+    if ( (length % 2) != 0 ) {
+        middle1Indx = Math.floor(length/2);
+        for ( let i = 0; i < middle1Indx; i++ ) {
+            sumLeft += +arr[i];
+        }    
+        for ( let i = middle1Indx + 1; i < arr.length; i++ ){
+            sumRight += +arr[i];
+        }
+    }
+    if ( sumLeft === sumRight ){
+         return "Balanced";
+     } 
+     return "Not Balanced";
+}
+```
