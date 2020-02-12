@@ -1193,3 +1193,15 @@ function balancedNum(number)
      return "Not Balanced";
 }
 ```
+[My Languages](https://www.codewars.com/kata/5b16490986b6d336c900007d/train/javascript)
+```javascript
+function myLanguages(results) {
+    let arr = [];
+    for ( let key in results) {
+        if ( results[key] >= 60 ) {
+        arr.push(key);
+        }
+    }    
+    return arr.sort((a,b) => results[b] - results[a]); 
+}
+```
