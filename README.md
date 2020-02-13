@@ -1205,3 +1205,17 @@ function myLanguages(results) {
     return arr.sort((a,b) => results[b] - results[a]); 
 }
 ```
+[Sort array by string length](https://www.codewars.com/kata/57ea5b0b75ae11d1e800006c/train/javascript)
+```javascript
+function sortByLength (array) {
+    array.sort((a, b) => {
+        if (a.length !== b.length) {
+            return a.length - b.length;
+        } else {
+            return a.localeCompare(b)
+        }
+    });
+
+    return array;  
+};
+```
