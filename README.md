@@ -1231,3 +1231,15 @@ function sumEvenNumbers(input) {
     return sum;
 }
 ```
+[Does my number look big in this?](https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript)
+```javascript
+function narcissistic(value) {
+    let arrNum = String(value).split('');
+    let length = arrNum.length;
+    let sum = 0;
+    for ( let i = 0; i < arrNum.length; i++ ) {
+        sum += Math.pow(+arrNum[i], length);
+    }   
+    return sum === value ? true : false;
+}
+```
