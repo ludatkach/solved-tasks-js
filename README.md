@@ -1260,3 +1260,19 @@ function generateHashtag (str) {
     return stringWords;  
 }
 ```
+[Srot the inner ctonnet in dsnnieedcg oredr](https://www.codewars.com/kata/5898b4b71d298e51b600014b/train/javascript)
+```javascript
+function sortTheInnerContent(words)
+{
+    let arrWords = words.split(' ');
+    let stringWords = [];
+    for ( let i = 0; i < arrWords.length; i++ ) {
+        if (arrWords[i].length === 1) {            
+            stringWords.push(arrWords[i].split('').splice(0,1));
+        } else {
+            stringWords.push(arrWords[i].charAt(0) + arrWords[i].slice(1, arrWords[i].length-1).split('').sort().reverse().join('') + arrWords[i].slice(-1));
+        }
+    }
+    return stringWords.join(' ');
+}
+```
