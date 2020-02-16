@@ -1243,3 +1243,20 @@ function narcissistic(value) {
     return sum === value ? true : false;
 }
 ```
+[The Hashtag Generator](https://www.codewars.com/kata/52449b062fb80683ec000024/train/javascript)
+```javascript
+function generateHashtag (str) {
+    let newStr = str.trim();
+    if (newStr.length === 0 ) {
+        return false;
+    }
+    let arrWords = str.split(' ');
+    let stringWords = arrWords.map(val => val.charAt(0).toUpperCase() + val.slice(1));
+   
+    stringWords = '#' + stringWords.join('');
+    if (stringWords.length > 140) {
+        return false;
+    } 
+    return stringWords;  
+}
+```
