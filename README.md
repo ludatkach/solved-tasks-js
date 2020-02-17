@@ -1276,3 +1276,21 @@ function sortTheInnerContent(words)
     return stringWords.join(' ');
 }
 ```
+[Persistent Bugger.](https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train/javascript)
+```javascript
+function persistence(num) {
+    let mult = [];
+    let count = 0;
+    if ( String(num).length === 1 ) {
+        return 0;
+    }
+    do {
+        let numbers = String(num).split('').map(val => +val);
+        mult = String(numbers.reduce((acc, carr) => acc * carr));
+        count++;
+        num = +mult;
+    } while ( mult.length > 1 );
+    let x =0;
+    return count;
+}
+```
