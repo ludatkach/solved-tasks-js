@@ -1294,3 +1294,15 @@ function persistence(num) {
     return count;
 }
 ```
+[Alphabetized](https://www.codewars.com/kata/5970df092ef474680a0000c9/train/javascript)
+```javascript
+function alphabetized(s) {
+    let sorting1 = (arr, compare) => arr
+        .map((item, index) => ({ item, index }))
+        .sort((a, b) => compare(a.item, b.item) || a.index - b.index)
+        .map(({ item }) => item);
+    let arr = s.replace(/[.,\/#!$%\^&\*;:{}=\-_`~@+()\d]/g, '').split(' ').join('').split('');
+    let sorted = sorting1(arr, (a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+    return sorted.join('');
+}
+```
