@@ -1306,3 +1306,19 @@ function alphabetized(s) {
     return sorted.join('');
 }
 ```
+[Duplicate Encoder](https://www.codewars.com/kata/54b42f9314d9229fd6000d9c/train/javascript)
+```javascript
+function duplicateEncode(word){
+     let arr = word.toLowerCase().split('');
+    let setWord = ([...new Set(arr)]); 
+    let str = [];
+    for ( let i = 0; i < arr.length; i++ ) {
+        if ( arr.indexOf(arr[i]) === arr.lastIndexOf(arr[i]) ) {
+            str.push('(');
+        } else {
+            str.push(')');
+        }
+    }
+    return str.join('');
+}
+```
