@@ -1322,3 +1322,9 @@ function duplicateEncode(word){
     return str.join('');
 }
 ```
+[Your order, please](https://www.codewars.com/kata/55c45be3b2079eccff00010f/train/javascript)
+```javascript
+function order(words){
+  return words.length ? words.split(' ').sort((a, b) => a.replace(/\D/g, '').localeCompare(b.replace(/\D/g, ''))).join(' ') : '';
+}
+```
