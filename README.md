@@ -1328,3 +1328,15 @@ function order(words){
   return words.length ? words.split(' ').sort((a, b) => a.replace(/\D/g, '').localeCompare(b.replace(/\D/g, ''))).join(' ') : '';
 }
 ```
+[Multiples of 3 or 5](https://www.codewars.com/kata/514b92a657cdc65150000006/train/javascript)
+```javascript
+function solution(number){
+    let sum = 0;
+    for ( let i = 1; i < number; i++ ) {
+        if ( ((number -i) % 3) === 0 || ((number - i) % 5) === 0 ) {
+            sum += number-i;
+        }
+    }
+    return sum;
+}
+```
