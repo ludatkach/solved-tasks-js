@@ -1340,3 +1340,30 @@ function solution(number){
     return sum;
 }
 ```
+[Valid Parentheses](https://www.codewars.com/kata/52774a314c2333f0a7000688/train/javascript)
+```javascript
+function validParentheses(parens){
+    let arrL = [];
+    let arrParens = parens.split('');
+    for ( let i = 0; i < arrParens.length; i++ ) {
+        if ( arrParens[0] === ')') {
+            return false;
+        } 
+        if ( arrParens[i] === '(') {
+            arrL.push(arrParens[i]);
+        }
+
+        if ( arrParens[i] === ')') {
+            arrL.push(arrParens[i]);
+        }
+        if ( arrParens[i] === ')'  && arrL.includes('('))   {
+            arrL.pop();
+            arrL.pop();
+        } 
+    }
+    if ( arrL.length === 0 ) {
+        return true;
+    }
+    return false;
+}
+```
