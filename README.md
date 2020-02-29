@@ -1367,3 +1367,18 @@ function validParentheses(parens){
     return false;
 }
 ```
+[Sum of Minimums!](https://www.codewars.com/kata/5d5ee4c35162d9001af7d699)
+```javascript
+function sumOfMinimums(arr) {
+    let sum = 0;
+    let vari;
+    for ( let i = 0; i < arr.length; i++ ) {
+        for ( let j = 0; j < arr[i].length; j++ ) {
+            vari = Math.min(...arr[i]);
+        }
+
+        sum += vari;
+    }
+    return sum;
+}
+```
