@@ -1382,3 +1382,18 @@ function sumOfMinimums(arr) {
     return sum;
 }
 ```
+[String incrementer](https://www.codewars.com/kata/54a91a4883a7de5d7800009c/train/javascript)
+```javascript
+function incrementString (strng) {
+    let numbersMatch = strng.match(/(\D*)(\d+)/);
+    if (numbersMatch) {
+        let prefix = numbersMatch[1];
+        let numbers = numbersMatch[2];
+        let numbersOneUp = String(+numbers + 1);
+        let leadingZeroes = numbers.length - numbersOneUp.length;
+        return prefix + '0'.repeat(leadingZeroes >= 0 ? leadingZeroes : 0) + numbersOneUp;
+    }
+
+    return strng + '1';
+} 
+```
