@@ -1397,3 +1397,24 @@ function incrementString (strng) {
     return strng + '1';
 } 
 ```
+[Find the odd int](https://www.codewars.com/kata/54da5a58ea159efa38000836/train/javascript)
+```javascript
+function findOdd(A) {
+    let obj = {};
+    A.forEach(val => {
+        if(val in obj) {
+            obj[val]++;
+         } else {
+            obj[val] = 1;
+         } 
+    });
+    let odd;
+    Object.keys(obj).forEach((key) => {
+        if (obj[key] % 2) {
+            odd = key;
+        }
+    });
+
+    return +odd;
+}
+```
