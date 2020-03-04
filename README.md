@@ -1418,3 +1418,18 @@ function findOdd(A) {
     return +odd;
 }
 ```
+[Playing with digits](https://www.codewars.com/kata/5552101f47fc5178b1000050/train/javascript)
+```javascript
+function digPow(n, p){
+    let sum = 0;
+    let arr = String(n).split('');
+    for ( let i = 0, j = p; i < arr.length; i++, j++ ) {
+        sum += +Math.pow(arr[i], j);
+    }
+    let result = sum / n;
+    if ( Number.isInteger( result )) {
+        return result;
+    }
+    return -1;
+}
+```
