@@ -1433,3 +1433,15 @@ function digPow(n, p){
     return -1;
 }
 ```
+[Counting Duplicates](https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript)
+```javascript
+function duplicateCount(text){
+    let arr = text.toLowerCase().split('');
+    let duplicates = arr.filter(val => arr.indexOf(val) != arr.lastIndexOf(val));
+    let newArr = Array.from(new Set(duplicates));
+    if ( newArr.length > 0 ) {
+        return newArr.length;
+    }
+    return 0;
+}
+```
