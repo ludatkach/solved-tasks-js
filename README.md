@@ -1445,3 +1445,24 @@ function duplicateCount(text){
     return 0;
 }
 ```
+[Tribonacci Sequence](https://www.codewars.com/kata/556deca17c58da83c00002db/train/javascript)
+```javascript
+function tribonacci(signature,n){
+    let newArr = [];
+    if ( n === 0 ) {
+        return [];
+    }
+    if ( n === 1 ) {
+      newArr.push(signature[0]);
+      return newArr;
+    }
+    newArr = [...signature];
+    let sum = 0; 
+    for ( let i = 0; i < n-3; i++ ) {
+        sum += newArr[i] + newArr[i+1] + newArr[i+2];
+        newArr.push(sum);
+        sum = 0;
+    }
+    return newArr;
+}
+```
