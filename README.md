@@ -1466,3 +1466,18 @@ function tribonacci(signature,n){
     return newArr;
 }
 ```
+[Replace With Alphabet Position](https://www.codewars.com/kata/546f922b54af40e1e90001da/train/javascript)
+```javascript
+function alphabetPosition(text) {
+    let alph = "abcdefghijklmnopqrstuvwxyz";
+    let alphArr = alph.split('');
+    let textStr = text.toLowerCase().split(' ').join('').replace(/\W/g,'').split('');
+    let out = [];
+    for(let i = 0; i < textStr.length; i++ ) {
+        if ( alph.includes(textStr[i])) {
+            out.push(alphArr.indexOf(textStr[i]) + 1);
+        }
+    }
+    return out.join(' ');
+}
+```
