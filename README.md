@@ -1481,3 +1481,29 @@ function alphabetPosition(text) {
     return out.join(' ');
 }
 ```
+[IQ Test](https://www.codewars.com/kata/552c028c030765286c00007d/train/javascript)
+```javascript
+function iqTest(numbers){
+    let arr = numbers.split(' ');
+    let objOdd = {};
+    let objEv = {};
+    let countOdd = 0;
+    let countEv = 0;
+    arr.forEach(val => {
+        if ( val % 2) {
+            objOdd[val] = arr.indexOf(val);
+            countOdd++;
+        } else {
+            objEv[val] = arr.indexOf(val);
+            countEv++;
+        }
+    });
+    if ( countEv === 1 ) {
+        
+        return +Object.values(objEv) +1;
+    } 
+    if ( countOdd === 1) {
+        return +Object.values(objOdd) +1;
+    }
+}
+```
