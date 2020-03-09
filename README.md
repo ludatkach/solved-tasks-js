@@ -1507,3 +1507,17 @@ function iqTest(numbers){
     }
 }
 ```
+[Arrh, grabscrab!](https://www.codewars.com/kata/52b305bec65ea40fe90007a7/train/javascript)
+```javascript
+function grabscrab(anagram, dictionary) {
+    let newArr = [];
+    let anagramSorted = anagram.split('').sort().join('');
+    dictionary.forEach(word => {
+        let wordSorted = word.split('').sort().join('');
+        if(anagramSorted === wordSorted) {
+            newArr.push(word);
+        }
+    });
+    return newArr;
+}
+```
