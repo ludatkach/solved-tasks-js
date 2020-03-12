@@ -1553,3 +1553,21 @@ function sumStrings(a,b) {
     return c1.reverse().join('');
 }
 ```
+[Get the Middle Character](https://www.codewars.com/kata/56747fd5cb988479af000028/train/javascript)
+```javascript
+function getMiddle(s)
+{
+    let middle;
+    let arr = s.split('');
+    for ( let i = 0; i < arr.length; i++ ) {
+        if ( arr.length % 2 ) {
+            middle = arr[Math.floor(arr.length / 2)];
+        }
+        if ( arr.length % 2 === 0 ) {
+            let midIndx = arr.length / 2;
+            middle = '' + arr[midIndx-1] + arr[midIndx];
+        }
+    }
+    return middle;
+}
+```
