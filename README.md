@@ -1580,3 +1580,15 @@ function isIsogram(str){
     return (strLow.length === set.size ) ? true : false;
 }
 ```
+[List Filtering](https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/javascript)
+```javascript
+function filter_list(l) {
+    let newList = [];
+    l.forEach(el => {
+        if ( typeof el === 'number' ) {
+            newList.push(el);
+        }
+    });
+    return newList;
+}
+```
