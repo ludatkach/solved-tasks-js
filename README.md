@@ -1571,3 +1571,12 @@ function getMiddle(s)
     return middle;
 }
 ```
+[Isograms](https://www.codewars.com/kata/54ba84be607a92aa900000f1/train/javascript)
+```javascript
+function isIsogram(str){
+    let strLow = str.toLowerCase();
+    let arrStr = strLow.split('');
+    let set = new Set(arrStr);
+    return (strLow.length === set.size ) ? true : false;
+}
+```
