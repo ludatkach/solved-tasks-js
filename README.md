@@ -1601,3 +1601,10 @@ function longest(s1, s2) {
     return a.join('');
 }
 ```
+[You're a square!](https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/javascript)
+```javascript
+var isSquare = function(n){
+
+  return (Number.isInteger(Math.sqrt(n)) || n === 0 ) ? true : false;   
+}
+```
