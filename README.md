@@ -1592,3 +1592,12 @@ function filter_list(l) {
     return newList;
 }
 ```
+[Two to One](https://www.codewars.com/kata/5656b6906de340bd1b0000ac/train/javascript)
+```javascript
+function longest(s1, s2) {
+    let one = s1.concat(s2);
+    let set = new Set(one.split(''))
+    let a = Array.from(set).sort();
+    return a.join('');
+}
+```
