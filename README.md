@@ -1608,3 +1608,26 @@ var isSquare = function(n){
   return (Number.isInteger(Math.sqrt(n)) || n === 0 ) ? true : false;   
 }
 ```
+[Inside Out Strings](https://www.codewars.com/kata/57ebdf1c2d45a0ecd7002cd5/train/javascript)
+```javascript
+function insideOut(x){
+    let newArr = [];
+    x.split(' ').forEach(word => {
+        wordA = word.split('');
+        if (wordA.length % 2) {
+            // odd
+            let left = wordA.splice(0, Math.floor(wordA.length / 2)).reverse();
+            let right = wordA.splice(1).reverse();
+            newArr.push(left.concat(wordA.concat(right)).join(''));
+
+        } else {
+            // even
+            let left = wordA.splice(0, wordA.length/2).reverse();
+            let right = wordA.reverse();
+            newArr.push(left.concat(right).join(''));
+        }
+    });
+
+    return newArr.join(' ');
+}
+```
