@@ -1631,3 +1631,17 @@ function insideOut(x){
     return newArr.join(' ');
 }
 ```
+[Categorize New Member](https://www.codewars.com/kata/5502c9e7b3216ec63c0001aa/train/javascript)
+```javascript
+function openOrSenior(data){
+    let arr = [];
+    for ( let i = 0; i < data.length; i++ ) {        
+        if ( data[i][0] > 54  && data[i][1] > 7 ) {
+            arr.push("Senior");
+        } else {
+            arr.push("Open");
+        }
+    }
+    return arr;
+}
+```
