@@ -1645,3 +1645,16 @@ function openOrSenior(data){
     return arr;
 }
 ```
+[Reverse words](https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/train/javascript)
+```javascript
+function reverseWords(str) {
+  let words = str.split(' ');
+  let arrWords = [];
+  let one;
+  for (let i = 0; i < words.length; i++ ) {
+    one = words[i].split('').reverse().join('');
+    arrWords.push(one);
+  }
+  return arrWords.join(' ');
+}
+```
