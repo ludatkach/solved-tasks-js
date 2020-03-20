@@ -1680,3 +1680,12 @@ function stray(numbers) {
   }
 }
 ```
+[The highest profit wins!](https://www.codewars.com/kata/559590633066759614000063/train/javascript)
+```javascript
+function minMax(arr){
+    let returnArr = [];
+    returnArr.push(  Math.min(...arr) );
+    returnArr.push( Math.max(...arr) );
+    return returnArr;
+}
+```
