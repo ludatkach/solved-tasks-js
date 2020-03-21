@@ -1689,3 +1689,27 @@ function minMax(arr){
     return returnArr;
 }
 ```
+[Braces status](https://www.codewars.com/kata/58983deb128a54b530000be6/train/javascript)
+```javascript
+function bracesStatus(string){
+    let result = [];
+    let retCode = true;
+    string.split('').filter(val=>'()[]{}'.indexOf(val) >= 0).forEach(val=>{
+        if ('([{'.indexOf(val) >= 0) {
+            result.push(val)
+        } else {
+            let pairs = {
+                '(':')',
+                '[':']',
+                '{':'}',
+            };
+
+            if( val !== pairs[result.pop()]){
+                retCode = false
+            }
+        }
+    });
+
+    return retCode && result.length === 0;
+}
+```
