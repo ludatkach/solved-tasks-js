@@ -1726,6 +1726,32 @@ String.prototype.toJadenCase = function () {
     return this.replace(/(^|\s)([a-z])/g, (match) => match.toUpperCase());
 };
 ```
+[Who likes it?](https://www.codewars.com/kata/5266876b8f4bf2da9b000362/train/javascript)
+```javascript
+function likes(names) {
+    const phraseOne = ' likes this';
+    const phraseMany = ' like this';
+    if ( names.length === 0 ) {
+        return 'no one' + phraseOne;
+    }
+    for ( let i = 0; i < names.length; i++ ) {
+        if ( names.length === 1) {
+            return names[i] + phraseOne;
+        }
+        if ( names.length === 2) {
+            return names[i] +' and ' + names[i+1] + phraseMany;
+        }
+
+        if ( names.length === 3) {
+            return names[i] + ', ' + names[i+1] + ' and ' + names[i+2] + phraseMany;
+        }
+
+        if ( names.length > 3) {
+            return names[i] + ', ' + names[i+1] + ' and ' + (names.length - 2) + ' others' + phraseMany;
+        }
+    }
+}
+```
 
 
 
