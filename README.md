@@ -1752,6 +1752,22 @@ function likes(names) {
     }
 }
 ```
+[Equal Sides Of An Array](https://www.codewars.com/kata/5679aa472b8f57fb8c000047/train/javascript)
+```javascript
+function findEvenIndex(arr)
+{
+        for (let i = 0; i < arr.length; i++) {
+        let leftArr = i < 1 ? [] : arr.slice(0, i);
+        let leftSum = leftArr.length ? leftArr.reduce((acc, val) => acc + val) : 0;
+        let rightArr = i >= arr.length - 1 ? [] : arr.slice(i + 1);
+        let rightSum = rightArr.length ? rightArr.reduce((acc, val) => acc + val) : 0;
+        if (leftSum === rightSum) {
+            return i;
+        }
+    }
+    return -1;
+}
+```
 
 
 
