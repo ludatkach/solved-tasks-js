@@ -1768,6 +1768,19 @@ function findEvenIndex(arr)
     return -1;
 }
 ```
+[Triple trouble](https://www.codewars.com/kata/55d5434f269c0c3f1b000058/train/javascript)
+```javascript
+function tripledouble(num1, num2) {
+    let matchNum = String(num1).match(/(\d)\1\1/g);
+    for(let i = 0;  matchNum && i < matchNum.length; i++) {
+        let sub = matchNum[i].slice(1);
+        if(String(num2).search(sub) >= 0) {
+            return 1;
+        }
+    }
+    return 0;
+}
+```
 
 
 
