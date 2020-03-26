@@ -1781,6 +1781,18 @@ function tripledouble(num1, num2) {
     return 0;
 }
 ```
+[Summing a number's digits](https://www.codewars.com/kata/52f3149496de55aded000410/train/javascript)
+```javascript
+function sumDigits(number) {
+    let sum = 0;
+    let absNum = Math.abs(number);
+    let numStr = String(absNum).split('').map(val => +val);
+    for ( let i = 0;  i < numStr.length; i++ ) {
+        sum += numStr[i];
+    }
+    return sum;
+}
+```
 
 
 
