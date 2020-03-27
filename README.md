@@ -1802,6 +1802,17 @@ function minValue(values){
     return +newNum.join('');
 }
 ```
+[Testing 1-2-3](https://www.codewars.com/kata/54bf85e3d5b56c7a05000cf9/train/javascript)
+```javascript
+var number=function(array){
+    let newArr = [];
+    for (let i = 0; i < array.length; i++ ) {
+        let item = (i+1) + ": " + array[i];
+        newArr.push(item);
+    }
+    return newArr;
+}
+```
 
 
 
