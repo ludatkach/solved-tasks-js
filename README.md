@@ -1793,6 +1793,15 @@ function sumDigits(number) {
     return sum;
 }
 ```
+[Form The Minimum](https://www.codewars.com/kata/5ac6932b2f317b96980000ca/train/javascript)
+```javascript
+function minValue(values){
+    let set = new Set(values);
+    let arr = Array.from(set).sort();    
+    let newNum = arr.splice(0, arr.length);
+    return +newNum.join('');
+}
+```
 
 
 
