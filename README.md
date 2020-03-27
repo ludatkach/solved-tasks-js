@@ -1813,7 +1813,23 @@ var number=function(array){
     return newArr;
 }
 ```
-
+[Decode the Morse code](https://www.codewars.com/kata/54b724efac3d5402db00065e/train/javascript)
+```javascript
+decodeMorse = function(morseCode){
+    let decodePhrase = [];
+    let arrWords = morseCode.trim().split("   ");
+    let arrNew = arrWords.map(val => val.split(' '));
+    for ( let i = 0; i < arrNew.length; i++ ) {
+        let phrase = [];
+        for (let j = 0; j < arrNew[i].length; j++ ) {            
+            let element = MORSE_CODE[arrNew[i][j]];
+            phrase.push(element);
+        }
+        decodePhrase.push(phrase.join(''));        
+    }    
+    return decodePhrase.join(' ');
+}
+```
 
 
 
