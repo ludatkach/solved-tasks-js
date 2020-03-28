@@ -1837,6 +1837,22 @@ decodeMorse = function(morseCode){
 
 }
 ```
+[Consecutive strings](https://www.codewars.com/kata/56a5d994ac971f1ac500003e/train/javascript)
+```javascript
+function longestConsec(strarr, k) {
+    let strLongestWord = '';
+    for (let i = 0; i < strarr.length - k + 1; i++) {
+        let word = '';
+        for (let j = 0; j < k; j++) {
+            word = word.concat(strarr[i + j]);
+        }
+        if (strLongestWord.length < word.length) {
+            strLongestWord = word;
+        }
+    }
+    return strLongestWord;
+}
+```
 
 
 
