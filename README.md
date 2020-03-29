@@ -1853,6 +1853,21 @@ function longestConsec(strarr, k) {
     return strLongestWord;
 }
 ```
+[Sum of a sequence](https://www.codewars.com/kata/586f6741c66d18c22800010a/train/javascript)
+```javascript
+const sequenceSum = (begin, end, step) => {
+    let sum = 0;
+    for (let i = begin; i <= end; i += step) {
+        if (begin < end) {
+            sum += i;
+        }
+        else {
+            return i;
+        }        
+    }
+    return sum;
+};
+```
 
 
 
