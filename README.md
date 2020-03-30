@@ -1868,7 +1868,23 @@ const sequenceSum = (begin, end, step) => {
     return sum;
 };
 ```
-
+[Odd-Even String Sort](https://www.codewars.com/kata/580755730b5a77650500010c/train/javascript)
+```javascript
+function sortMyString(S) {
+    let odd = [];
+    let even = [];
+    let arrWords = S.split('');
+    for ( let i = 0; i < arrWords.length; i++ ) {
+        if ( i % 2 === 0 || i === 0) {
+            even.push(arrWords[i]);
+        } else {
+            odd.push(arrWords[i]);
+        }
+    }
+    even.push(' ');
+    return even.concat(odd).join('');
+}
+```
 
 
 
