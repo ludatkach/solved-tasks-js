@@ -1885,6 +1885,19 @@ function sortMyString(S) {
     return even.concat(odd).join('');
 }
 ```
+[Find the missing letter](https://www.codewars.com/kata/5839edaa6754d6fec10000a2/train/javascript)
+```javascript
+function findMissingLetter(array)
+{
+  let alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let indxL = alphabet.indexOf(array[0]);
+  for ( let i = 1; i < array.length; i++ ){
+      if ( array[i] !== alphabet.charAt(indxL+i)) {
+          return alphabet.charAt(indxL+i);
+      }
+  }
+}
+```
 
 
 
