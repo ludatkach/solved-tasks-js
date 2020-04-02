@@ -1898,6 +1898,17 @@ function findMissingLetter(array)
   }
 }
 ```
+[Chess Fun #1: Chess Board Cell Color](https://www.codewars.com/kata/5894134c8afa3618c9000146/train/javascript)
+```javascript
+function chessBoardCellColor(cell1, cell2) {
+    if ( (cell1.match(/([ACEG])([1357])/) || cell1.match(/([BDFH])([2468])/)) && (cell2.match(/([ACEG])([1357])/) || cell2.match(/([BDFH])([2468])/)) ||
+    (cell1.match(/([ACEG])([2468])/) || cell1.match(/([BDFH])([1357])/)) && (cell2.match(/([ACEG])([2468])/) || cell2.match(/([BDFH])([1357])/))) {
+        return true;
+    }
+    return false;
+  
+}
+```
 
 
 
