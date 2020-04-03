@@ -1909,6 +1909,27 @@ function chessBoardCellColor(cell1, cell2) {
   
 }
 ```
+[Dan's great power generator](https://www.codewars.com/kata/582c42e0f000e54a7d000086/train/javascript)
+```javascript
+function danspower(num, power) {
+   let result = 0;
+   let number =  Math.pow(num,power);
+   if ( number % 2 ) {
+       let arr = String(number).split('');
+       let digit = arr[arr.length-1];
+       if (  digit > 4 ) {
+        result = (Math.round(number / 10)) * 10;
+        return result;
+       } else {
+        result = (Math.floor(number / 10)) * 10;
+        return result;
+       }       
+   } else {
+       return Math.pow(num,power);
+   } 
+   return result; 
+}
+```
 
 
 
