@@ -1930,6 +1930,13 @@ function danspower(num, power) {
    return result; 
 }
 ```
+[Return substring instance count](https://www.codewars.com/kata/5168b125faced29f66000005/train/javascript)
+```javascript
+function solution(fullText, searchText){
+    let m = fullText.match(new RegExp(searchText, 'g'))
+    return m ? m.length : 0;
+}
+```
 
 
 
