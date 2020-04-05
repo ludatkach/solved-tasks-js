@@ -1937,6 +1937,30 @@ function solution(fullText, searchText){
     return m ? m.length : 0;
 }
 ```
+[Pick peaks](https://www.codewars.com/kata/5279f6fe5ab7f447890006a7/train/javascript)
+```javascript
+function pickPeaks(arr){
+    let arrPos = [];
+    let arrPeaks = [];
+    let uphillVal = 0;
+    let uphillIdx = -1;
+
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i - 1] < arr[i]) {
+
+            uphillVal = arr[i];
+            uphillIdx = i;
+        } else if (arr[i - 1] > arr[i]) {
+            if (uphillIdx > 0) {
+                arrPos.push(uphillIdx);
+                arrPeaks.push(uphillVal);
+                uphillIdx = -1;
+            }
+        }
+    }
+    return { pos: arrPos, peaks: arrPeaks };
+}
+```
 
 
 
