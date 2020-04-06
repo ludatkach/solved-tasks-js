@@ -1961,6 +1961,17 @@ function pickPeaks(arr){
     return { pos: arrPos, peaks: arrPeaks };
 }
 ```
+[No oddities here](https://www.codewars.com/kata/51fd6bc82bc150b28e0000ce/train/javascript)
+```javascript
+function noOdds( values ){
+    let result = [];
+    for (let i = 0; i < values.length; i++ ) {
+        if ( i === 0 || i % 2 === 0 )
+        result.push(values[i]);
+    }
+    return result;
+}
+```
 
 
 
