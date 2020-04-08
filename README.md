@@ -1972,6 +1972,18 @@ function noOdds( values ){
     return result;
 }
 ```
+[Complete The Pattern #2](https://www.codewars.com/kata/55733d3ef7c43f8b0700007c/train/javascript)
+```javascript
+function pattern(n){
+    let num = '';
+    let newArr = [];
+    for (let i = n; i > 0; i--) {
+        num += String(i);
+        newArr.push(num);
+    }
+    return newArr.reverse().join('\n');
+}
+```
 
 
 
