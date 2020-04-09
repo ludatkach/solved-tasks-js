@@ -1984,7 +1984,19 @@ function pattern(n){
     return newArr.reverse().join('\n');
 }
 ```
-
+[Format words into a sentence](https://www.codewars.com/kata/51689e27fe9a00b126000004/train/javascript)
+```javascript
+function formatWords(words){
+    words = [].concat.apply([], words).filter(val => val.length > 0);
+    if (words.length == 0) {
+        return '';
+    } else if (words.length == 1) {
+        return words[0];
+    } else {
+        return words.splice(0, words.length - 1).join(', ') + " and " + words[0];
+    }
+}
+```
 
 
 
