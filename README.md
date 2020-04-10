@@ -1997,6 +1997,22 @@ function formatWords(words){
     }
 }
 ```
+[Evens times last](https://www.codewars.com/kata/5a1a9e5032b8b98477000004/train/javascript)
+```javascript
+function evenLast(numbers) {
+   let sum = 0;
+   if ( numbers.length === 0 ) {
+     return 0;
+   }
+   let last = numbers[numbers.length-1];
+   for ( let i = 0; i < numbers.length; i++ ) {
+       if ( i % 2 === 0 ) {
+           sum += numbers[i];
+       }
+   }
+   return sum * last;
+}
+```
 
 
 
