@@ -2025,6 +2025,17 @@ function firstNonConsecutive (arr) {
     return null;
 }
 ```
+[Complete The Pattern #1](https://www.codewars.com/kata/5572f7c346eb58ae9c000047/train/javascript)
+```javascript
+function pattern(n){
+    let arr = [];
+    for (let i = 1; i <= n; i++) {
+        arr.push(String(i).repeat(i))
+    }
+    return arr.join('\n');
+}
+```
+
 
 
 
