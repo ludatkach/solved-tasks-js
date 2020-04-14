@@ -2035,7 +2035,12 @@ function pattern(n){
     return arr.join('\n');
 }
 ```
-
+[IP Validation](https://www.codewars.com/kata/515decfd9dcfc23bb6000006/train/javascript)
+```javascript
+function isValidIP(str) {
+  return str.split('.').filter(val => val.match(/^0$|^[1-9]+\d*$/) && +val < 256 && +val >= 0).length === 4;   
+}
+```
 
 
 
