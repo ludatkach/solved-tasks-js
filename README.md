@@ -2041,6 +2041,20 @@ function isValidIP(str) {
   return str.split('.').filter(val => val.match(/^0$|^[1-9]+\d*$/) && +val < 256 && +val >= 0).length === 4;   
 }
 ```
+[Largest 5 digit number in a series](https://www.codewars.com/kata/51675d17e0c1bed195000001/train/javascript)
+```javascript
+function solution(digits){
+    let strNum = String(digits);
+    let max = 0;
+    for (let i = 0; i < strNum.length - 4; i++) {
+        let number = strNum.slice(i, i + 5);
+        if (+number > max) {
+            max = +number;
+        }
+    }
+    return max;
+}
+```
 
 
 
