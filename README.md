@@ -2055,6 +2055,17 @@ function solution(digits){
     return max;
 }
 ```
+[Is this a triangle?](https://www.codewars.com/kata/56606694ec01347ce800001b/train/javascript)
+```javascript
+function isTriangle(a,b,c)
+{
+  if ( a + b > c && a + c > b && c + b > a ) {
+    return true;
+  } else {
+   return false;
+  }
+}
+```
 
 
 
