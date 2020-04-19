@@ -2095,6 +2095,17 @@ const rps = (p1, p2) => {
   }
 };
 ```
+[Are You Playing Banjo?](https://www.codewars.com/kata/53af2b8861023f1d88000832/train/javascript)
+```javascript
+function areYouPlayingBanjo(name) {
+    let strName = name.split('');
+    if ( strName[0] === 'R' || strName[0] === 'r' ) {
+        return name + " plays banjo";
+    } else {
+        return name + " does not play banjo";
+    }
+}
+```
 
 
 
