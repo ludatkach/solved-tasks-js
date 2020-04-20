@@ -2106,7 +2106,30 @@ function areYouPlayingBanjo(name) {
     }
 }
 ```
-
+[The Supermarket Queue](https://www.codewars.com/kata/57b06f90e298a7b53d000a86/train/javascript)
+```javascript
+function queueTime(customers, n) {
+    let registers = [];
+    let queueTime = 0;
+    if ( customers.length === 0 ) {
+      return 0;
+    }
+    for (let i = 0; customers.length && i < n; i++) {
+        registers.push(customers.shift())
+    }
+    do {
+        registers.sort((a, b) => a - b);
+        let minTime = registers[0];
+        queueTime += minTime;
+        registers = registers.map(val => val - minTime).filter(val => val > 0);
+        let openRegisters = n - registers.length;
+        for (let i = 0; customers.length && i < openRegisters; i++) {
+            registers.push(customers.shift())
+        }
+    } while (registers.length);
+    return queueTime;
+}
+```
 
 
 
