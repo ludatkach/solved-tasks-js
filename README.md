@@ -2135,9 +2135,33 @@ function queueTime(customers, n) {
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return (( mpg * fuelLeft > distanceToPump) || ( mpg * fuelLeft === distanceToPump )) ? true : false;
 };
-
 ```
-
+[Maximum Length Difference](https://www.codewars.com/kata/5663f5305102699bad000056/train/javascript)
+```javascript
+function mxdiflg(a1, a2) {
+    if ( a1.length === 0 || a2.length === 0 ) {
+        return -1;
+    }
+    let maxArr = [];
+    if ( a1.length > a2.length ) {
+        for ( let i = 0; i < a1.length; i++ ) {
+            for ( let j = 0; j < a2.length; j++ ) {
+                let result = Math.abs(a1[i].length - a2[j].length);
+                maxArr.push(result);
+            }
+        }
+    } else {
+        for ( let i = 0; i < a2.length; i++ ) {
+            for ( let j = 0; j < a1.length; j++ ) {
+                let result = Math.abs(a2[i].length - a1[j].length);
+                maxArr.push(result);
+            }
+        }
+    }
+    maxArr.sort((a,b) => b - a);
+    return maxArr[0]; 
+}
+```
 
 
 
