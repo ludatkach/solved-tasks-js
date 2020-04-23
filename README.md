@@ -2162,7 +2162,12 @@ function mxdiflg(a1, a2) {
     return maxArr[0]; 
 }
 ```
-
+[Transportation on vacation](https://www.codewars.com/kata/568d0dd208ee69389d000016/train/java)
+```javascript
+function rentalCarCost(d) {
+  return d > 0 && d < 3 ? 40 * d : ( d < 7 ? 40 * d - 20 : ( d >= 7 ? 40 * d - 50 : 0));
+}
+```
 
 
 
