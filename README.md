@@ -2168,6 +2168,16 @@ function rentalCarCost(d) {
   return d > 0 && d < 3 ? 40 * d : ( d < 7 ? 40 * d - 20 : ( d >= 7 ? 40 * d - 50 : 0));
 }
 ```
+[Short Long Short](https://www.codewars.com/kata/50654ddff44f800200000007/train/javascript)
+```javascript
+function solution(a, b){
+  if (  a.length <  b.length ) {
+    return a.concat(b) + a;
+  } else {
+    return b.concat(a) + b;
+  }
+}
+```
 
 
 
