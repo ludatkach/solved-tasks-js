@@ -2178,6 +2178,42 @@ function solution(a, b){
   }
 }
 ```
+[Simple parenthesis removal](https://www.codewars.com/kata/5a3bedd38f27f246c200005f/train/javascript)
+```javascript
+function solve(s) {
+    let m = s.replace(/\(([a-z])/g, "(+$1").match(/(\-\()|(\+\()|(\()|(\))|(\+[a-z])|(\-[a-z])|([a-z])/gi);
+    let vec = [];
+    if(m) {
+        let braces = [];
+    
+        m.forEach(val=>{
+            switch (val) {
+                case '+(':
+                case '-(':
+                case '(':
+                    braces.push(val);
+                    break;
+                case ')':
+                    braces.pop();
+                    break;
+                default:
+                    let inversion = braces.filter(val=>val==='-(').length % 2;
+                    if(inversion) {
+                        let lex = val.split('');
+                        if(lex.length > 1) {
+                            lex[0] = lex[0]==='+' ? '-' : '+';
+                        }
+                        val = lex.join('');
+                    }
+                    vec.push(val);
+            }
+
+        });
+    }
+
+    return vec.join('').replace(/^\+/,"");
+}
+```
 
 
 
