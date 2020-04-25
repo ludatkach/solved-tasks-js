@@ -2214,7 +2214,23 @@ function solve(s) {
     return vec.join('').replace(/^\+/,"");
 }
 ```
-
+[Factorial](https://www.codewars.com/kata/54ff0d1f355cfd20e60001fc/train/javascript)
+```javascript
+function factorial(n)
+{
+  let product = 1;
+  if ( n < 0 || n > 12 ) {
+    throw RangeError;
+  } 
+  if( n === 0 ) {
+      return 1;
+  }
+  for (let i = 1; i <= n; i++ ) {
+    product *= i;
+  }
+  return product;
+}
+```
 
 
 
