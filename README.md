@@ -2231,6 +2231,17 @@ function factorial(n)
   return product;
 }
 ```
+[The Office VI - Sabbatical](https://www.codewars.com/kata/57fe50d000d05166720000b1/train/javascript)
+```javascript
+function sabb(x, val, happ){
+    let count = 0;
+    'sabticl'.split('').forEach(letter=> {
+        count += x.split('').filter(val=>val===letter).length;
+    });
+    let sum = count + val + happ;
+    return sum > 22 ? 'Sabbatical! Boom!' : 'Back to your desk, boy.';
+}
+```
 
 
 
