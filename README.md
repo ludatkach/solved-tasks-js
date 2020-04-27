@@ -2242,7 +2242,19 @@ function sabb(x, val, happ){
     return sum > 22 ? 'Sabbatical! Boom!' : 'Back to your desk, boy.';
 }
 ```
+[Palindrome chain length](https://www.codewars.com/kata/525f039017c7cd0e1a000a26/train/javascript)
+```javascript
+var palindromeChainLength = function(n) {
+    let steps = 0;
+    for(let str = String(n); str !== str.split('').reverse().join(''); steps++) {
+        let num = +str.split('').reverse().join('');
+        let sum = +str + num;
+        str = String(sum);
+    }
 
+    return steps;
+};
+```
 
 
 
