@@ -2255,6 +2255,13 @@ var palindromeChainLength = function(n) {
     return steps;
 };
 ```
+[Words to sentence](https://www.codewars.com/kata/57a06005cf1fa5fbd5000216/train/javascript)
+```javascript
+function wordsToSentence(words) {
+  
+  return words.join(' ');
+}
+```
 
 
 
