@@ -2262,7 +2262,18 @@ function wordsToSentence(words) {
   return words.join(' ');
 }
 ```
-
+[Find the Difference in Age between Oldest and Youngest Family Members](https://www.codewars.com/kata/5720a1cb65a504fdff0003e2/train/javascript)
+```javascript
+function differenceInAges(ages){
+    let result = [];
+    let minR = Math.min(...ages);
+    let maxR = Math.max(...ages);
+    result.push(minR);
+    result.push(maxR);
+    result.push(maxR - minR);
+    return result;
+}
+```
 
 
 
