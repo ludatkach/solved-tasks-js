@@ -2274,6 +2274,18 @@ function differenceInAges(ages){
     return result;
 }
 ```
+[Anagram Detection](https://www.codewars.com/kata/529eef7a9194e0cbc1000255/train/javascript)
+```javascript
+// write the function isAnagram
+var isAnagram = function(test, original) {
+    let newTest = test.toLowerCase().split('').sort().join('');
+    let newOriginal = original.toLowerCase().split('').sort().join('');
+    if ( newTest === newOriginal) {
+        return true;
+    }
+    return false;
+};
+```
 
 
 
