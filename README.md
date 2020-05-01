@@ -2310,6 +2310,21 @@ function f(n) {
     return false;
 };
 ```
+[Merge two arrays](https://www.codewars.com/kata/583af10620dda4da270000c5/train/javascript)
+```javascript
+function mergeArrays(a, b) {
+    let result = [];
+    for (let i = 0; i < Math.max(a.length, b.length); i++) {
+        if(a.length > i) {
+            result.push(a[i]);
+        }
+        if(b.length > i) {
+            result.push(b[i]);
+        }
+    }
+    return result;
+}
+```
 
 
 
