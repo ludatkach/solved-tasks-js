@@ -2286,6 +2286,18 @@ var isAnagram = function(test, original) {
     return false;
 };
 ```
+[Sort Numbers](https://www.codewars.com/kata/5174a4c0f2769dd8b1000003/train/javascript)
+```javascript
+function solution(nums){
+   let newArr = [];
+   if (nums === null || nums.length === 0 ) {
+        return [];
+    }  else {
+       newArr = nums.sort((a,b) => a - b);
+    } 
+    return newArr;
+}
+```
 
 
 
