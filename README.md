@@ -2325,6 +2325,18 @@ function mergeArrays(a, b) {
     return result;
 }
 ```
+[Remove exclamation marks](https://www.codewars.com/kata/57a0885cbb9944e24c00008e)
+```javascript
+function removeExclamationMarks(s) {
+    let str = s.split('');
+    for (let i = 0; i < str.length; i++ ) {
+        if ( str[i].match(/!/g)) {
+          str[i] = '';          
+        }
+      } 
+      return str.join('');
+}
+```
 
 
 
