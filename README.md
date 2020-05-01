@@ -2298,6 +2298,18 @@ function solution(nums){
     return newArr;
 }
 ```
+[Gauß needs help! (Sums of a lot of numbers).](https://www.codewars.com/kata/54df2067ecaa226eca000229/train/javascript)
+```javascript
+function f(n) {
+    if (typeof n === 'number' && n > 0 && n % 1 === 0) {
+        for(let i = n-1; i > 0; i--) {
+            n += i;
+        }
+        return n;
+    }
+    return false;
+};
+```
 
 
 
