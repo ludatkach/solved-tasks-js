@@ -2337,6 +2337,15 @@ function removeExclamationMarks(s) {
       return str.join('');
 }
 ```
+[How many lightsabers do you own?](https://www.codewars.com/kata/51f9d93b4095e0a7200001b8/train/javascript)
+```javascript
+function howManyLightsabersDoYouOwn(name) {
+  if ( name === 'Zach') {
+    return 18;
+  } 
+  return 0;
+}  
+```
 
 
 
