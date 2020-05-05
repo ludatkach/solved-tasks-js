@@ -2352,7 +2352,15 @@ function lovefunc(flower1, flower2){
    return( ((flower1 % 2) && (flower2 % 2 === 0 )) || (( flower2 % 2) && (flower1 % 2 === 0 ))) ? true : false; 
 }
 ```
-
+[Grasshopper - Personalized Message](https://www.codewars.com/kata/5772da22b89313a4d50012f7/train/javascript)
+```javascript
+function greet (name, owner) {
+  if ( name === owner ) {
+    return 'Hello boss';
+  }
+  return 'Hello guest';
+}
+```
 
 
 
