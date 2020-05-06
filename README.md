@@ -2368,6 +2368,18 @@ function xor(a, b) {
  
 }
 ```
+[Will there be enough space?](https://www.codewars.com/kata/5875b200d520904a04000003/train/javascript)
+```javascript
+function enough(cap, on, wait) {
+let pas = cap - on;
+  if ( pas - wait >= 0 ) {
+    return 0;
+  }
+  if ( pas - wait < 0 ) {
+    return Math.abs(pas - wait);
+  }
+}
+```
 
 
 
