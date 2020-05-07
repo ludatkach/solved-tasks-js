@@ -2408,6 +2408,15 @@ function expressionMatter(a, b, c) {
   return Math.max(num1, num2, num3, num4, num5);
 }
 ```
+[Watermelon](https://www.codewars.com/kata/55192f4ecd82ff826900089e/train/javascript)
+```javascript
+function divide(weight){
+  if (weight === 2) {
+    return false;
+  }
+  return ( weight % 2 === 0 ) ? true : false;
+}
+```
 
 
 
