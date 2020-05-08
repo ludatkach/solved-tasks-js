@@ -2432,6 +2432,34 @@ function gooseFilter (birds) {
     return birds;
 }
 ```
+[Alternate capitalization](https://www.codewars.com/kata/59cfc000aeb2844d16000075/train/javascript)
+```javascript
+function capitalize(s){
+    let result1 = '';
+    let result2 = '';
+    let arrayRes = [];
+    for (let i = 0; i < s.length; i++ ) {
+        if ( i % 2 === 0 ) {
+            let letter = s[i].toUpperCase();
+            result1 += letter;
+        } else {
+            result1 += s[i];
+        }
+    }
+    arrayRes.push(result1);
+    for ( let i = 0; i < s.length; i++ ) {
+        if ( i % 2 ) {
+            let letter = s[i].toUpperCase();
+            result2 += letter;
+        } else {
+            result2 += s[i];
+        }
+    }
+    arrayRes.push(result2);
+    return arrayRes;
+};
+
+```
 
 
 
