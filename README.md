@@ -2417,6 +2417,21 @@ function divide(weight){
   return ( weight % 2 === 0 ) ? true : false;
 }
 ```
+[Filter out the geese](https://www.codewars.com/kata/57ee4a67108d3fd9eb0000e7/train/javascript)
+```javascript
+function gooseFilter (birds) {
+  var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+    let result = [];
+    for ( let i = 0; i < birds.length;) {
+      if ( geese.includes(birds[i])) {
+        birds.splice(i, 1);
+      } else {
+        i++;
+      }
+    }
+    return birds;
+}
+```
 
 
 
