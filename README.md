@@ -2458,7 +2458,29 @@ function capitalize(s){
     arrayRes.push(result2);
     return arrayRes;
 };
+```
+[Moves in squared strings (I)](https://www.codewars.com/kata/56dbe0e313c2f63be4000b25/train/javascript)
+```javascript
+function vertMirror(strng) {
+    let newArr = strng.split('\n');
+    let result = [];
+    let val = [];
+    for ( let i = 0; i < newArr.length; i++ ){
+        val = newArr[i].split('').reverse().join('');
+        result.push(val);
+    }
+    return result.join('\n');
+}
 
+function horMirror(strng) {
+    let newArr = strng.split('\n').reverse();
+    return newArr.join('\n');
+}
+
+
+function oper(fct, s) {
+    return fct(s);
+}
 ```
 
 
