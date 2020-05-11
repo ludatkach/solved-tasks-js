@@ -2482,6 +2482,37 @@ function oper(fct, s) {
     return fct(s);
 }
 ```
+[Take a Ten Minute Walk](https://www.codewars.com/kata/54da539698b8a2ad76000228/train/javascript)
+```javascript
+function isValidWalk(walk) {
+    if (walk.length != 10) {
+        return false;
+    }
+    let x = 0;
+    let y = 0;
+    walk.forEach(element => {
+        switch (element) {
+            case 'n':
+                y++;
+                break;
+            case 's':
+                y--;
+                break;
+            case 'e':
+                x++;
+                break;
+            case 'w':
+                x--;
+                break;
+        }
+    });
+    if (x || y) {
+        return false;
+    }
+
+    return true;
+}
+```
 
 
 
