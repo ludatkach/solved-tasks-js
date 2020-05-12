@@ -2513,6 +2513,32 @@ function isValidWalk(walk) {
     return true;
 }
 ```
+[Build Tower](https://www.codewars.com/kata/576757b1df89ecf5bd00073b/train/javascript)
+```javascript
+function towerBuilder(nFloors) {
+    let result = [];
+    for (let i = 0; i < nFloors; i++) {
+        let row = '';
+        let spaces = nFloors - i - 1;
+        let stars = i;
+        for (let j = 0; j < spaces; j++) {
+            row += ' ';
+        }
+        for (let j = 0; j < stars; j++) {
+            row += '*';
+        }
+        row += '*';
+        for (let j = 0; j < stars; j++) {
+            row += '*';
+        }
+        for (let j = 0; j < spaces; j++) {
+            row += ' ';
+        }
+        result.push(row);
+    }
+    return result;
+}
+```
 
 
 
