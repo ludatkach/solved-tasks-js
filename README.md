@@ -2582,6 +2582,9 @@ function tickets(peopleInLine){
     return "YES";
 }
 ```
-
-
+[SQL Basics: Simple GROUP BY](https://www.codewars.com/kata/58111f4ee10b5301a7000175/train/sql)
+```sql
+SELECT age, count(*) as people_count from people
+GROUP BY age; 
+```
 
