@@ -2587,4 +2587,18 @@ function tickets(peopleInLine){
 SELECT age, count(*) as people_count from people
 GROUP BY age; 
 ```
+[Count the Digit](https://www.codewars.com/kata/566fc12495810954b1000030/train/javascript)
+```javascript
+function nbDig(n, d) {
+    let result = [];
+    let count = 0;
+    for (let i = 0; i <= n; i++) {
+        result.push(i ** 2);
+    }
+    for (let i = 0; i < result.length; i++) {
+        count += String(result[i]).split('').filter(val => val === String(d)).length;
+    }
+    return count;
+}
+```
 
