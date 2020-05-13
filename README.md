@@ -2539,6 +2539,11 @@ function towerBuilder(nFloors) {
     return result;
 }
 ```
+[Building Strings From a Hash](https://www.codewars.com/kata/51c7d8268a35b6b8b40002f2/train/javascript)
+```javascript
+https://docs.google.com/spreadsheets/d/1QQaljCrFc7n3ZPZWv69sZYvmcnXqqLHn7OeJXGcxRJc/edit?usp=sharing
+
+```
 
 
 
