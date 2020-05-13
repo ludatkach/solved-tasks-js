@@ -2544,6 +2544,12 @@ function towerBuilder(nFloors) {
 https://docs.google.com/spreadsheets/d/1QQaljCrFc7n3ZPZWv69sZYvmcnXqqLHn7OeJXGcxRJc/edit?usp=sharing
 
 ```
+[Building Strings From a Hash](https://www.codewars.com/kata/51c7d8268a35b6b8b40002f2/train/javascript)
+```javascript
+function solution(pairs){
+  return Object.keys(pairs).map(key=> key + ' = ' + pairs[key]).join(',');
+}
+```
 
 
 
