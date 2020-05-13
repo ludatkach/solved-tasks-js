@@ -2550,7 +2550,38 @@ function solution(pairs){
   return Object.keys(pairs).map(key=> key + ' = ' + pairs[key]).join(',');
 }
 ```
+[Vasya - Clerk](https://www.codewars.com/kata/555615a77ebc7c2c8a0000b8/train/javascript)
+```javascript
+function tickets(peopleInLine){
+    let bank = {
+        25: 0,
+        50: 0,
+        100: 0
+    };
 
+    for (let i = 0; i < peopleInLine.length; i++) {
+        let val = peopleInLine[i];
+        bank[val]++;
+        let change = val - 25;
+
+        while (change) {
+            let d25 = change / 25;
+            let d50 = change / 50;
+            if (d50 >= 1 && bank[50] > 0) {
+                change -= 50;
+                bank[50]--;
+            } else if (d25 >= 1 && bank[25] > 0) {
+                change -= 25;
+                bank[25]--;
+            } else {
+                return "NO";
+            }
+        }
+    }
+
+    return "YES";
+}
+```
 
 
 
