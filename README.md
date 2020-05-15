@@ -2601,4 +2601,36 @@ function nbDig(n, d) {
     return count;
 }
 ```
+[Sum Strings as Numbers](https://www.codewars.com/kata/5324945e2ece5e1f32000370/train/javascript)
+```javascript
+function sumStrings(a,b) { 
+    a = a.replace(/^0+/g, '');
+    b = b.replace(/^0+/g, '');
+    if (a.length < b.length) {
+        a = '0'.repeat(b.length-a.length) + a;
+    } else if (b.length < a.length) {
+        b = '0'.repeat(a.length-b.length) + b;
+    }
+
+    let a1 = a.split('').reverse().map(val=>+val);
+    let b1 = b.split('').reverse().map(val=>+val);;
+
+    let carryOver = 0;
+    let c1 = a1.map((val, index) => { 
+        let sum = val + b1[index] + carryOver;
+        if( sum > 9) {
+            carryOver = 1;
+        } else {
+            carryOver = 0;
+        }
+        return sum % 10;
+    });
+
+    if( carryOver ) {
+        c1.push(1);
+    }
+
+    return c1.reverse().join('');
+}
+```
 
