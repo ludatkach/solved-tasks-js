@@ -2640,4 +2640,13 @@ var gimme = function (inputArray) {
     return inputArray.findIndex(val => val === sorted[1]);
 };
 ```
+[You're a square!](https://www.codewars.com/kata/54c27a33fb7da0db0100040e/train/javascript)
+```javascript
+var isSquare = function(n){
+  if ( n < 0 ) {
+    return false;
+  }
+  return (Number.isInteger(Math.sqrt(n))) ? true : false;
+}
+```
 
