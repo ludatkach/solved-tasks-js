@@ -2649,4 +2649,16 @@ var isSquare = function(n){
   return (Number.isInteger(Math.sqrt(n))) ? true : false;
 }
 ```
+[Triple Trouble](https://www.codewars.com/kata/5704aea738428f4d30000914/train/javascript)
+```javascript
+function tripleTrouble(one, two, three){
+  let str = '';
+  for ( let i = 0; i < one.length; i++ ) {
+    str += one[i];
+    str += two[i];
+    str += three[i];
+  }
+  return str;
+ }
+```
 
