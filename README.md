@@ -2661,4 +2661,18 @@ function tripleTrouble(one, two, three){
   return str;
  }
 ```
-
+[Convert string to camel case](https://www.codewars.com/kata/517abf86da9663f1d2000003/train/javascript)
+```javascript
+function toCamelCase(str){
+    let newStrArr = str.replace(/[^a-zA-Z]/g, ' ').split(' ');
+    for ( let i = 0; i < newStrArr.length; i++ ) {
+        let newWord = newStrArr[i].split('');
+        if ( i > 0 ) {
+            let letter = newWord.splice(0,1).join('').toUpperCase();
+            let myStr = newWord.join('');
+            newStrArr[i] = letter.concat(myStr);
+        }
+    }
+    return newStrArr.join('');
+}
+```
