@@ -2676,3 +2676,15 @@ function toCamelCase(str){
     return newStrArr.join('');
 }
 ```
+[Number Of Occurrences](https://www.codewars.com/kata/52829c5fe08baf7edc00122b/train/javascript)
+```javascript
+Array.prototype.numberOfOccurrences = function(val) {
+  let count = 0;
+  for ( let i = 0; i < this.length; i++ ) {
+    if ( this[i] === val ) {
+      count++;
+    }
+  }
+  return count;
+}
+```
