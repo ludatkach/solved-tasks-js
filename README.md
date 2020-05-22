@@ -2709,3 +2709,9 @@ function comp(array1, array2){
     return true;
 }
 ```
+[Functional Addition](https://www.codewars.com/kata/538835ae443aae6e03000547/train/javascript)
+```javascript
+function add(n) {
+  return function(m) {return n+m;};
+}
+```
