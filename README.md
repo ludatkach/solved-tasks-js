@@ -2715,3 +2715,28 @@ function add(n) {
   return function(m) {return n+m;};
 }
 ```
+[Split Strings](https://www.codewars.com/kata/515de9ae9dcfc28eb6000001/train/javascript)
+```javascript
+function solution(str){
+   let newStr = '';
+   let arrStr = [];
+   for ( let i = 0; i <= str.length-1; i+=2 ) {
+       if ( str.length % 2 === 0 ) {
+           newStr += str[i] + str[i+1];
+           arrStr.push(newStr);
+           newStr ='';
+       } 
+       if ( str.length % 2 ) {
+            if ( i === str.length-1 ){
+                newStr += str[i] + '_';
+                arrStr.push(newStr);
+            } else {
+                newStr += str[i] + str[i+1];
+                arrStr.push(newStr);
+                newStr ='';
+            } 
+       }
+   }
+   return arrStr;
+}
+```
