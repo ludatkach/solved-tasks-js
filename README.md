@@ -2740,3 +2740,15 @@ function solution(str){
    return arrStr;
 }
 ```
+[TV channels](https://www.codewars.com/kata/5836dce6966f8d1d43000007/train/javascript)
+```javascript
+function redarr(arr) {
+    let newObj  = {};
+    let newSet = new Set(arr);
+    let newArr = Array.from(newSet).sort();
+    for ( let  i = 0; i < newArr.length; i++ ) {
+        newObj[String(i)] = newArr[i];
+    }
+    return newObj;
+}
+```
