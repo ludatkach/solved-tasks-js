@@ -2752,3 +2752,28 @@ function redarr(arr) {
     return newObj;
 }
 ```
+[Common array elements](https://www.codewars.com/kata/5a6225e5d8e145b540000127/train/javascript)
+```javascript
+function common(a,b,c){
+    let objB = {};
+    let objC = {};
+
+    b.forEach(element => {
+        objB[element] = element in objB ? objB[element] + 1 : 1;
+    });
+    c.forEach(element => {
+        objC[element] = element in objC ? objC[element] + 1 : 1;
+    });
+
+    let summ = 0;
+    a.forEach(element => {
+        if(objB[element] > 0 && objC[element] > 0) {
+            summ += element;
+            objB[element]--;
+            objC[element]--;
+        }
+    });
+
+    return summ;
+}
+```
