@@ -2777,3 +2777,31 @@ function common(a,b,c){
     return summ;
 }
 ```
+[Simple Fun #321: Scratch lottery II](https://www.codewars.com/kata/594a2758954a44749f000359/train/javascript)
+```javascript
+function scratch(lottery){
+    let numbers = [5, 10, 20, 50, 100, 200, 500, 1000, 2000, 5000, 10000];
+    let sum = 0;
+    let oneElArr = [];
+    for (let i = 0; i < lottery.length; i++) {
+        oneElArr = lottery[i].split(' ');
+        let myset = new Set();
+        for (let j = 0; j < oneElArr.length - 1; j++) {
+            if (oneElArr[j] !== '###') {
+                myset.add(oneElArr[j]);
+            }
+        }
+        if(myset.size < 2) {
+            let amount = 0;
+            let num = oneElArr[oneElArr.length-1];
+            if (num === '###') {
+                amount = 10000;
+            } else if (numbers.includes(+num)) {
+                amount = +num;
+            } 
+            sum += amount;
+        }       
+    }
+    return sum;  
+}
+```
