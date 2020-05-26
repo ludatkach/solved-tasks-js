@@ -2805,3 +2805,23 @@ function scratch(lottery){
     return sum;  
 }
 ```
+[Consonant value](https://www.codewars.com/kata/59c633e7dcc4053512000073/train/javascript)
+```javascript
+function solve(s) {
+    let alphabetArr = [0, 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+    let newArr = s.split(/[aeiou]/g);
+    let sumArr = [];
+    let sum = 0;
+    for ( let i = 0; i < newArr.length; i++ ) {
+        for ( let j = 0; j < newArr[i].length; j++ ) {
+            if ( alphabetArr.includes(newArr[i][j])){
+                sum += alphabetArr.indexOf(newArr[i][j]);
+            }
+        }
+        sumArr.push(sum);
+        sum = 0;
+    }
+    let result = Math.max(...sumArr);
+    return result;
+};
+```
