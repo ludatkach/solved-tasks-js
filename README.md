@@ -2825,3 +2825,16 @@ function solve(s) {
     return result;
 };
 ```
+[Sums of Parts](https://www.codewars.com/kata/5ce399e0047a45001c853c2b/train/javascript)
+```javascript
+function partsSums(ls) {
+    if ( ls === null || !ls.length ) {
+      return [0];
+    }
+    let result = [];
+    let sum = ls.reduce((acc, val) => acc + val);    
+    result.push(sum);
+    ls.forEach(element => result.push((sum -= element)));
+    return result;
+}
+```
