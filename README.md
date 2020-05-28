@@ -2838,3 +2838,16 @@ function partsSums(ls) {
     return result;
 }
 ```
+[Detect Pangram](https://www.codewars.com/kata/545cedaa9943f7fe7b000048/train/javascript)
+```javascript
+function isPangram(string){
+    let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+    let newStr = string.toLowerCase().match(/[a-z]/g);
+    let mySet = new Set(newStr);
+    let arr = Array.from(mySet).sort().join('');
+    if ( alphabet === arr ) {
+        return true;
+    }
+    return false;
+}
+```
