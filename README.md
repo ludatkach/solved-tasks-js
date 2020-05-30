@@ -2857,3 +2857,20 @@ function predictAge(age1,age2,age3,age4,age5,age6,age7,age8){
   return Math.floor(Math.sqrt(age1*age1 + age2*age2 + age3*age3 + age4*age4 + age5*age5 + age6*age6 + age7*age7 + age8*age8)/2);
 }
 ```
+[A String of Sorts](https://www.codewars.com/kata/536c6b8749aa8b3c2600029a/train/javascript)
+```javascript
+function sortString(string,ordering) {
+    let result = [];
+    let stringArr = string.split('');
+    let orderingArr = ordering.split('');
+    let newOrdering = Array.from(new Set(orderingArr));
+
+    newOrdering.forEach(element => {
+        result.push(...stringArr.filter(val=>val === element));
+        stringArr = stringArr.filter(val=>val !== element);
+    });
+    result.push(...stringArr);
+
+    return result.join('');
+}
+```
