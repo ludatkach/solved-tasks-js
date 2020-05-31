@@ -2874,3 +2874,33 @@ function sortString(string,ordering) {
     return result.join('');
 }
 ```
+[Sorted? yes? no? how?](https://www.codewars.com/kata/580a4734d6df748060000045/train/javascript)
+```javascript
+function isSortedAndHow(array) {
+    let asc = array.every((element, index)=>{
+        if(index>0) {
+            return array[index-1] <= element;
+        } else {
+            return true;
+        }
+    });
+
+    if(asc) {
+        return 'yes, ascending'; 
+    }
+
+    let des = array.every((element, index)=>{
+        if(index>0) {
+            return array[index-1] >= element;
+        } else {
+            return true;
+        }
+    });
+
+    if(des) {
+        return 'yes, descending';
+    }
+
+    return 'no';
+}
+```
