@@ -2915,3 +2915,14 @@ function digits(n) {
     return count;
 }
 ```
+[Number of Decimal Digits](https://www.codewars.com/kata/58fa273ca6d84c158e000052/train/javascript)
+```javascript
+function digits(n) {
+    let arrDigits = String(n).split('');
+    let count = 0;
+    for ( let i = 0; i < arrDigits.length; i++ ) {
+        count++;
+    }
+    return count;
+}
+```
