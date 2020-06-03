@@ -2932,3 +2932,16 @@ function one(arr, fun) {
     return arr.filter(value=>fun(value)).length === 1;
 }
 ```
+[Find all non-consecutive numbers](https://www.codewars.com/kata/58f8b35fda19c0c79400020f/train/javascript)
+```javascript
+function allNonConsecutive (arr) {
+    let result = [];
+    for (let j = 1; j < arr.length; j++) {
+        if ((arr[j - 1] + 1) != arr[j]) {
+            result.push({i:j,n:arr[j]});
+        }
+    }
+
+    return result;
+}
+```
