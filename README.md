@@ -2978,3 +2978,10 @@ var copaDelReyGoals = 5;
 
 var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
 ```
+[N-th Power](https://www.codewars.com/kata/57d814e4950d8489720008db/train/javascript)
+```javascript
+function index(array, n){
+  return  ( n < array.length ) ? (Math.pow(array[n], n)) : -1;
+    
+}
+```
