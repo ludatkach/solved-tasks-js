@@ -2995,3 +2995,22 @@ function between(a, b) {
   return arr;
 }
 ```
+[Tip Calculator](https://www.codewars.com/kata/56598d8076ee7a0759000087/train/javascript)
+```javascript
+function calculateTip(amount, rating) {
+    let tipCalc = {
+        terrible: 0,
+        poor: .05,
+        good: .1,
+        great: .15,
+        excellent: .2
+    };
+    rating = rating.toLowerCase();
+    let tip = 0;
+    if (rating.toLowerCase() in tipCalc) {
+        tip = tipCalc[rating];
+        return Math.ceil(amount * tip);
+    }
+    return "Rating not recognised";
+}
+```
