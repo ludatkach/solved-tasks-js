@@ -3039,3 +3039,20 @@ function noBoringZeros(n) {
     return +str.reverse().join('');
 }
 ```
+[Coding 3min : Symmetric Sort](https://www.codewars.com/kata/5705aeb041e5befba20010ba/train/javascript)
+```javascript
+function sc(array){
+    let sorted = array.sort((a,b) => a - b);
+    let leftArr = [];
+    let rightArr = [];
+    for ( let i = 0; i < sorted.length; i++ ) {
+        if ( i % 2 === 0 ) {
+            leftArr.push(sorted[i]);
+        } 
+        if ( i % 2) {
+            rightArr.push(sorted[i]);
+        }
+    }
+    return leftArr.concat(rightArr.reverse());
+}
+```
