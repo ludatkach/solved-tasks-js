@@ -3023,3 +3023,19 @@ function paperwork(n, m) {
   return n * m;
 }
 ```
+[No zeros for heros](https://www.codewars.com/kata/570a6a46455d08ff8d001002/train/javascript)
+```javascript
+function noBoringZeros(n) {
+    let str = String(n).split('');
+    str = str.reverse();
+    for ( let i = 0; i < str.length; i++ ) {
+        if ( str[i] != "0" ) {
+            return +str.reverse().join('');
+        } else {
+            str.splice(str[i], 1);
+            i--;
+        }
+    }
+    return +str.reverse().join('');
+}
+```
