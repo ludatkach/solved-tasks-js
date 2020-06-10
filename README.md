@@ -3056,3 +3056,9 @@ function sc(array){
     return leftArr.concat(rightArr.reverse());
 }
 ```
+[Is the string uppercase?](https://www.codewars.com/kata/56cd44e1aa4ac7879200010b/train/javascript)
+```javascript
+String.prototype.isUpperCase = function() {
+  return /^[A-Z\s\W]+$/.test(this);
+}
+```
