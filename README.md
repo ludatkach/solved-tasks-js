@@ -3062,3 +3062,15 @@ String.prototype.isUpperCase = function() {
   return /^[A-Z\s\W]+$/.test(this);
 }
 ```
+[Computer problem series #1: Fill the Hard Disk Drive](https://www.codewars.com/kata/5d49c93d089c6e000ff8428c/train/javascript)
+```javascript
+function save(sizes, hd) {
+    let i = 0;
+    for ( ; i < sizes.length; i++ ) {
+      if( (hd -= sizes[i]) < 0 ) {
+        return i;
+      }
+    }    
+    return i;
+}
+```
