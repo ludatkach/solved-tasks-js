@@ -3105,3 +3105,11 @@ console.log(str);
     
 }
 ```
+[Find Screen Size](https://www.codewars.com/kata/5bbd279c8f8bbd5ee500000f/train/javascript)
+```javascript
+function findScreenHeight(width, ratio) {
+    let arr = ratio.split(':');
+    let height = (width * +arr[1]) / +arr[0];
+    return '' + width + 'x' + height;
+}
+```
