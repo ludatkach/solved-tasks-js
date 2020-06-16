@@ -2541,7 +2541,7 @@ function towerBuilder(nFloors) {
 ```
 [Building Strings From a Hash](https://www.codewars.com/kata/51c7d8268a35b6b8b40002f2/train/javascript)
 ```javascript
-https://docs.google.com/spreadsheets/d/1QQaljCrFc7n3ZPZWv69sZYvmcnXqqLHn7OeJXGcxRJc/edit?usp=sharing
+//https://docs.google.com/spreadsheets/d/1QQaljCrFc7n3ZPZWv69sZYvmcnXqqLHn7OeJXGcxRJc/edit?usp=sharing
 
 ```
 [Building Strings From a Hash](https://www.codewars.com/kata/51c7d8268a35b6b8b40002f2/train/javascript)
@@ -3072,5 +3072,36 @@ function save(sizes, hd) {
       }
     }    
     return i;
+}
+```
+[Find the Middle of the Product](https://www.codewars.com/kata/5ac54bcbb925d9b437000001/train/javascript)
+```javascript
+function findMiddle(str){
+console.log(str);
+    let nums = [];
+    if ( str === null  || typeof str != 'string' ) {
+      return -1;
+    }
+    for ( let i = 0; i < str.length; i++ ) {
+        if ( /[0-9]/.test(str[i]) ) {
+            nums.push(+str[i]);
+        } 
+    }
+    if (nums.length === 0 ) {
+        return -1;
+    }
+    let product = nums.reduce((acc,cur) => acc * cur);
+    let sumArr = String(product).split('');
+    if ( sumArr.length % 2 ) {
+        return +sumArr[Math.floor(sumArr.length/2)];
+    } 
+    if ( sumArr.length % 2 === 0 ) {
+        let result = [];
+        result.push(sumArr[sumArr.length/2-1]);
+        result.push(sumArr[sumArr.length/2]);
+        return +result.join('');
+    } 
+    return -1;
+    
 }
 ```
