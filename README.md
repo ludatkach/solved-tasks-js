@@ -3119,3 +3119,17 @@ function area(d,l){
   return ( d < l || d === l ) ? "Not a rectangle" : +((Math.sqrt(d**2 - l**2)) * l).toFixed(2);
 }
 ```
+[Integer Difference](https://www.codewars.com/kata/57741d8f10a0a66915000001/train/javascript)
+```javascript
+const intDiff = (arr, n) => {
+    let count = 0;
+    for (let i = 0; i < arr.length; i++ ) {
+        for ( let j = i+1; j < arr.length; j++ ) {
+            if ( Math.abs(arr[i] - arr[j]) === n ) {
+                count++;
+           }
+        }            
+    }
+    return count;
+}
+```
