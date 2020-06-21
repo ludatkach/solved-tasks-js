@@ -3113,3 +3113,9 @@ function findScreenHeight(width, ratio) {
     return '' + width + 'x' + height;
 }
 ```
+[Find the area of the rectangle!](https://www.codewars.com/kata/580a0347430590220e000091/train/javascript)
+```javascript
+function area(d,l){
+  return ( d < l || d === l ) ? "Not a rectangle" : +((Math.sqrt(d**2 - l**2)) * l).toFixed(2);
+}
+```
