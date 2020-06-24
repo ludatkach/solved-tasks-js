@@ -3133,3 +3133,22 @@ const intDiff = (arr, n) => {
     return count;
 }
 ```
+[What dominates your array?](https://www.codewars.com/kata/559e10e2e162b69f750000b4/train/javascript)
+```javascript
+function dominator(arr) {
+    let arrLength = arr.length;
+    let obj = {};
+    arr.forEach(element => {
+        element in obj ? obj[element]++ : obj[element] = 1; 
+    }); 
+    let maxKey;
+    let maxEl = Number.MIN_VALUE;
+    for ( key in obj) {
+        if (obj[key] >= maxEl){
+            maxEl = obj[key]
+            maxKey = +key;
+        }
+    }
+    return ( obj[maxKey] > arrLength/2 ) ? maxKey : -1;
+}
+```
