@@ -3152,3 +3152,19 @@ function dominator(arr) {
     return ( obj[maxKey] > arrLength/2 ) ? maxKey : -1;
 }
 ```
+[Find all occurrences of an element in an array](https://www.codewars.com/kata/59a9919107157a45220000e1/train/javascript)
+```javascript
+const findAll = (array, n) => {
+    if ( !array.includes(n) ) {
+        return [];
+    }
+    let result = [];
+    for ( let i = 0; i < array.length; i++ ) {
+        if ( array[i] === n ) {
+            result.push(i);
+        }
+    }
+    return result;
+}
+
+```
