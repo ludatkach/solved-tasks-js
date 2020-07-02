@@ -3166,5 +3166,21 @@ const findAll = (array, n) => {
     }
     return result;
 }
+```
+[The Poet And The Pendulum](https://www.codewars.com/kata/5bd776533a7e2720c40000e5/train/javascript)
+```javascript
+function pendulum(values) {
+    let left = [];
+    let right = [];
+    values.sort((a,b) => a - b);
+    for ( let i = 0; i < values.length; i++ ) {
+        if ( i % 2 === 0 ) {
+            left.push(values[i]);
+        } else {
+            right.push(values[i]);
+        }
+    }
+    return left.reverse().concat(right);
+}
 
 ```
