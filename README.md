@@ -3184,3 +3184,12 @@ function pendulum(values) {
 }
 
 ```
+[Find min and max](https://www.codewars.com/kata/57a1ae8c7cb1f31e4e000130/train/javascript)
+```javascript
+function getMinMax(arr){
+    let newArr = [];
+    arr.sort((a,b) => a - b);
+    newArr.push(arr[0], arr[arr.length-1]);
+    return newArr;
+};
+```
