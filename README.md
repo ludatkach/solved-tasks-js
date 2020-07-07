@@ -3193,3 +3193,14 @@ function getMinMax(arr){
     return newArr;
 };
 ```
+[Halving Sum](https://www.codewars.com/kata/5a58d46cfd56cb4e8600009d/train/javascript)
+```javascript
+function halvingSum(n) {
+console.log(n);
+    let sum = n;
+    for ( let i = 2; i < n ; i*=2 ) {
+        sum += Math.floor(n/i);
+    }
+    return sum;
+}
+```
