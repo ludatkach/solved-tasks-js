@@ -3204,3 +3204,26 @@ console.log(n);
     return sum;
 }
 ```
+[Sort rectangles and circles by area II](https://www.codewars.com/kata/5a1ebc2480171f29cf0000e5/train/javascript)
+```javascript
+function sortByArea(array) {
+  const clone = [...array];
+  return clone.sort((a, b) => {
+        let areaA = 0;
+        let areaB = 0;
+        if (typeof a === 'object') {
+            areaA = a[0] * a[1];
+        } else {
+            areaA = Math.pow(a, 2) * Math.PI;
+        }
+
+        if (typeof b === 'object') {
+            areaB = b[0] * b[1];
+        } else {
+            areaB = Math.pow(b, 2) * Math.PI;
+        }
+
+        return areaA - areaB;
+    });
+}
+```
