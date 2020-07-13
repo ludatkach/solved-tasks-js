@@ -3251,3 +3251,21 @@ function converter (mpg) {
   return  ( kmlt[kmlt.length-1] === 0 ) ? +(kmlt.slice(0, kmlt[kmlt.length-1])) :  +kmlt;
 }
 ```
+[Not above the one!](https://www.codewars.com/kata/5b5097324a317afc740000fe/train/javascript)
+```javascript
+function binaryCleaner(arr) {
+  let arr1 =[];
+  let arr2 = [];
+  for ( let i = 0; i < arr.length; i++ ) {
+    if ( arr[i] === 1 || arr[i] === 0 ) {
+      arr1.push(arr[i]);
+    } else {
+      arr2.push(i);
+    }
+  }
+  let result = [];
+  result.push(arr1);
+  result.push(arr2);
+  return result;
+}
+```
