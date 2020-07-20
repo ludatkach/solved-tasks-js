@@ -3319,3 +3319,16 @@ function caffeineBuzz(n){
 
 }
 ```
+[Enumerable Magic #25 - Take the First N Elements](https://www.codewars.com/kata/545afd0761aa4c3055001386/train/javascript)
+```javascript
+public class ZywOo {
+  public static int[] take(int[] arr, int n) {
+    int size = Math.min(arr.length, n);
+    int[] result = new int[size];
+    for ( int i = 0; i < size; i++ ) {
+      result[i] = arr[i];
+    }     
+    return result;
+  }
+}
+```
