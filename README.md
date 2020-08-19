@@ -3400,3 +3400,20 @@ function sortByArea(array) {
     });
 }
 ```
+[Basic Calculator](https://www.codewars.com/kata/5296455e4fe0cdf2e000059f/train/javascript)
+```javascript
+function calculate(num1, operation, num2) {
+   switch ( operation) {
+        case "+":  return num1 + num2;
+            breake;
+        case "-": return num1 - num2;
+            breake;
+        case "/": if ( num2 === 0) return null;
+                    else return num1 / num2;
+            breake;
+        case "*": return num1 * num2;
+            breake;
+        default: return null;
+    }
+}
+```
