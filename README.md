@@ -3417,3 +3417,10 @@ function calculate(num1, operation, num2) {
     }
 }
 ```
+[Miles per gallon to kilometers per liter](https://www.codewars.com/kata/557b5e0bddf29d861400005d/train/javascript)
+```javascript
+function converter (mpg) {
+  let kmlt = ( mpg * 1.609344/ 4.54609188 ).toFixed(2);
+  return  ( kmlt[kmlt.length-1] === 0 ) ? +(kmlt.slice(0, kmlt[kmlt.length-1])) :  +kmlt;
+}
+```
