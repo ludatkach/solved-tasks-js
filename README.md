@@ -3442,3 +3442,22 @@ function binaryCleaner(arr) {
   return result;
 }
 ```
+[Next bigger number with the same digits](https://www.codewars.com/kata/55983863da40caa2c900004e/train/javascript)
+```javascript
+function nextBigger(n){
+    let arr = String(n).split('')
+    // find split location
+    for (var i = arr.length-1; i > 0 && +arr[i - 1] >= +arr[i]; i--);
+    if (i > 0) {
+        // splice and sort tail
+        let tailSorted = arr.splice(i).sort();
+        for (var j = 0; j < tailSorted.length && +arr[i-1] >= +tailSorted[j]; j++);
+        // swap
+        [arr[i-1], tailSorted[j]] = [tailSorted[j], arr[i-1]];
+
+        return +arr.concat(tailSorted).join('');
+    }
+
+    return -1;
+}
+```
