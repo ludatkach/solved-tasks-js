@@ -3471,3 +3471,24 @@ function even_or_odd(number) {
   }
 }
 ```
+[Caffeine Script](https://www.codewars.com/kata/5434283682b0fdb0420000e6/train/javascript)
+```javascript
+function caffeineBuzz(n){
+  let answer ='';
+  
+  if (n % 3 === 0 ) {
+    answer = "Java";
+  }
+
+  if ( n % 3 === 0 && n % 4 === 0 ) {
+    answer = "Coffee";
+  }
+
+  if ( answer.length && n % 2 === 0) {
+    answer += "Script";
+  }  
+  
+  return answer.length ? answer : "mocha_missing!";
+
+}
+```
