@@ -3531,3 +3531,18 @@ var AmIAfraid = function(day, num){
     }
 }
 ```
+[Difference of 2](https://www.codewars.com/kata/5340298112fa30e786000688/train/javascript)
+```javascript
+function twosDifference(input){
+    let pairs = [];
+    input.sort((a,b)=>a-b);
+    input.forEach((element, index) => {
+        for(let j = index + 1; j < input.length; j++) {
+            if(Math.abs(element - input[j]) === 2) {
+                pairs.push([element, input[j]]);
+            }
+        }
+    });
+    return pairs;
+}
+```
