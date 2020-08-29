@@ -3552,3 +3552,15 @@ function reverseLetter(str) {
   return str.match(/[a-z]+/g).join('').split('').reverse().join('');
 }
 ```
+[Multiply array values and filter non-numeric](https://www.codewars.com/kata/55ed875819ae85ca8b00005c/train/javascript)
+```javascript
+function multiplyAndFilter(array, multiplier){
+    let result = [];
+    array.forEach(element => {
+        if ( typeof element === "number" ) {
+            result.push(element * multiplier);
+        }
+    });
+    return result;
+}
+```
