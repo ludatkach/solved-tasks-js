@@ -3564,3 +3564,19 @@ function multiplyAndFilter(array, multiplier){
     return result;
 }
 ```
+[Pandemia](https://www.codewars.com/kata/5e2596a9ad937f002e510435/train/javascript)
+```javascript
+function infected(s) {
+    let continentArr = s.split('X');
+    let total = 0;
+    let infected = 0;
+    for (let i = 0; i < continentArr.length; i++) {
+        total += continentArr[i].length;
+        let ones = continentArr[i].search("1");
+        if (ones >= 0) {
+            infected += continentArr[i].length
+        }
+    }
+    return !total ? 0 : 100 * infected / total;
+}
+```
