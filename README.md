@@ -3621,3 +3621,9 @@ const areaOrPerimeter = function(l , w) {
   
 };
 ```
+[Get Nth Even Number](https://www.codewars.com/kata/5933a1f8552bc2750a0000ed/train/javascript)
+```javascript
+function nthEven(n){
+    return n * 2 - 2;
+}
+```
