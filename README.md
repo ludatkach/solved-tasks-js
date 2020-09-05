@@ -3627,3 +3627,14 @@ function nthEven(n){
     return n * 2 - 2;
 }
 ```
+[Debug Sum of Digits of a Number](https://www.codewars.com/kata/563d59dd8e47a5ed220000ba/train/javascript)
+```javascript
+function getSumOfDigits(integer) {
+  let sum = 0;
+  let digits =  Math.floor(integer).toString();
+  for(let ix = 0; ix < digits.length; ix++) {
+    sum += +digits[ix];
+  }
+  return sum;
+}
+```
