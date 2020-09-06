@@ -3638,3 +3638,16 @@ function getSumOfDigits(integer) {
   return sum;
 }
 ```
+[Consecutive Ducks](https://www.codewars.com/kata/5dae2599a8f7d90025d2f15f/train/javascript)
+```javascript
+function consecutiveDucks(num) {
+    let  count = 0; 
+    for (let  i = 1; i * (i + 1) < 2 * num; i++) 
+    { 
+        let a = (1.0 * num-(i * (i + 1)) / 2) / (i + 1) % 1; 
+        if (a === 0)  
+            return true;      
+    } 
+    return false; 
+}
+```
