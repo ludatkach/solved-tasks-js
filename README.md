@@ -3651,3 +3651,16 @@ function consecutiveDucks(num) {
     return false; 
 }
 ```
+[noobCode 03: CHECK THESE LETTERS... see if letters in "String 1" are present in "String 2"](https://www.codewars.com/kata/57470efebf81fea166001627/train/javascript)
+```javascript
+function letterCheck(arr) {
+    let newArr1 = arr[0].toLowerCase().split('');
+    let newArr2 = arr[1].toLowerCase().split('');
+    for (let i = 0; i < newArr2.length; i++) {
+        if (newArr1.indexOf(newArr2[i]) < 0) {
+            return false;
+        }
+    }
+    return true;
+}
+```
