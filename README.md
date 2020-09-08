@@ -3679,3 +3679,14 @@ function rowWeights(array){
     return [sum1, sum2];
 }
 ```
+[Maximum Multiple](https://www.codewars.com/kata/5aba780a6a176b029800041c/train/javascript)
+```javascript
+function maxMultiple(divisor, bound){
+    for ( let i = bound; i >= 0; i-- ){
+        if ( Number.isInteger(i/divisor) ) {
+            return i;
+        }
+    }
+    return 0;
+}
+```
