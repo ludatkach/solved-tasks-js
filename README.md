@@ -3690,3 +3690,11 @@ function maxMultiple(divisor, bound){
     return 0;
 }
 ```
+[Maximum Triplet Sum (Array Series #7)](https://www.codewars.com/kata/5aa1bcda373c2eb596000112/train/cpp)
+```javascript
+function maxTriSum(numbers){
+    let newArr = new Set(numbers);
+    let arr = Array.from(newArr).sort((a,b) => b - a );
+    return arr[0] + arr[1] + arr[2];
+}
+```
