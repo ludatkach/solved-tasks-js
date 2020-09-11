@@ -3698,3 +3698,18 @@ function maxTriSum(numbers){
     return arr[0] + arr[1] + arr[2];
 }
 ```
+[Number Zoo Patrol](https://www.codewars.com/kata/5276c18121e20900c0000235/train/javascript)
+```javascript
+function findNumber(array) {
+    if(array.length) {
+      let max =  array.reduce((prev, curr) => Math.max(prev, curr));
+      if (max != array.length) {
+          let sum = array.reduce((prev, curr) => prev + curr);
+          let n = array.length + 1;
+          let expectedSum = n*(n + 1) / 2;
+          return expectedSum - sum;
+      }
+    }
+    return array.length + 1;
+}
+```
