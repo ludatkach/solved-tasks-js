@@ -3713,3 +3713,22 @@ function findNumber(array) {
     return array.length + 1;
 }
 ```
+[Highest Scoring Word](https://www.codewars.com/kata/57eb8fcdf670e99d9b000272/train/javascript)
+```javascript
+function high(x){
+    let result = [];
+    let sum = 0;
+    let newArr = x.split(" ");
+    let alphabet =  '0abcdefghijklmnopqrstuvwxyz'.split('');
+    for ( let i = 0; i < newArr.length; i++ )  {
+        for ( let j = 0; j < newArr[i].length; j++ ) {
+            let indx = alphabet.indexOf(newArr[i][j]);
+            sum += indx;
+        }
+        result.push([newArr[i], sum]);
+        sum = 0;
+    }  
+    result.sort((a,b) => b[1] - a[1]);
+    return result[0][0];
+}
+```
