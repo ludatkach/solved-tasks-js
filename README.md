@@ -3732,3 +3732,22 @@ function high(x){
     return result[0][0];
 }
 ```
+[Which are in?](https://www.codewars.com/kata/550554fd08b86f84fe000a58/train/javascript)
+```javascript
+function inArray(array1,array2){
+    let result = [];
+    for ( let i = 0; i < array1.length; i++ ) {
+      if ( typeof array1[i] != 'string' ) {
+        continue;
+      }
+        for ( let j = 0; j < array2.length; j++ ) {
+            if ( array2[j].search(array1[i]) >= 0 ) {
+                result.push(array1[i]);
+            }
+        }        
+    }
+    let newArr = result.filter((el, i) => i === result.indexOf(el)).sort();
+    return newArr;
+}
+
+```
