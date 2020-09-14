@@ -3766,3 +3766,22 @@ function deleteNth(arr,n){
     return result;
 }
 ```
+[CamelCase Method](https://www.codewars.com/kata/587731fda577b3d1b0001196/train/ruby)
+```javascript
+String.prototype.camelCase=function(){
+    if ( !this.length ) {
+      return "";
+    }
+    let str = this.split(' ');
+    let result = [];
+    for ( let i = 0; i < str.length; i++ ) { 
+        let word = str[i];
+        if(word.length) {
+          word = word[0].toUpperCase() + word.substring(1);     
+          result.push(word);
+        }
+    }
+    return result.join("");
+}
+
+```
