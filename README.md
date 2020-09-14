@@ -3751,3 +3751,18 @@ function inArray(array1,array2){
 }
 
 ```
+[Delete occurrences of an element if it occurs more than n times](https://www.codewars.com/kata/554ca54ffa7d91b236000023/train/javascript)
+```javascript
+function deleteNth(arr,n){
+    let objCounters = {};
+    let result = [];
+    arr.forEach(element => {
+        let elementCount = element in objCounters ? objCounters[element] : 0;
+        if(elementCount < n) {
+            objCounters[element] = elementCount + 1;
+            result.push(element);
+        }
+    });
+    return result;
+}
+```
