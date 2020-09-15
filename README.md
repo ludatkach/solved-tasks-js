@@ -3783,5 +3783,23 @@ String.prototype.camelCase=function(){
     }
     return result.join("");
 }
-
+```
+[Take a Number And Sum Its Digits Raised To The Consecutive Powers And ....¡Eureka!!](https://www.codewars.com/kata/5626b561280a42ecc50000d1/train/javascript)
+```javascript
+function sumDigPow(a, b) {
+    let result= [];
+    let sum = 0;
+    for ( let i = a; i <= b; i++ ) {
+        let num = (""+ i).split('');
+        for ( let j = 0; j < num.length; j++ ) {
+            let newD = Math.pow(+num[j],j+1);
+            sum += newD;
+            if ( sum === i) {
+                result.push( sum);
+            } 
+        }
+        sum = 0;
+    }
+    return result;
+}
 ```
