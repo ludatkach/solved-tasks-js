@@ -3803,3 +3803,19 @@ function sumDigPow(a, b) {
     return result;
 }
 ```
+[Count characters in your string](https://www.codewars.com/kata/52efefcbcdf57161d4000091/train/javascript)
+```javascript
+function count (string) {  
+    let result = {};
+    let count = 0;
+    if ( !string.length ) {
+        return {};
+    }
+    let newStr = string.match(/[a-zA-Z]+/g).join('').split('');
+    newStr.forEach(el  => {
+        result[el] ? count++ : count = 1;
+        result[el] = count; 
+    });
+    return result;
+}
+```
