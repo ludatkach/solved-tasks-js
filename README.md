@@ -3819,3 +3819,22 @@ function count (string) {
     return result;
 }
 ```
+[Mexican Wave](https://www.codewars.com/kata/58f5c63f1e26ecda7e000029/train/javascript)
+```javascript
+function wave(str){
+   let result = [];
+    let arrStr = str.split('');
+    let newArr;
+    for ( let i = 0; i < str.length; i++ ) {
+        if ( arrStr[i] === ' ') {
+            continue;
+        }
+        let oldLetter = arrStr[i];
+        arrStr[i] = arrStr[i].toUpperCase();  
+        newArr = arrStr.join(''); 
+        arrStr[i] = oldLetter;
+        result.push(newArr);
+    }       
+    return result;
+}
+```
