@@ -3838,3 +3838,9 @@ function wave(str){
     return result;
 }
 ```
+[Valid Phone Number](https://www.codewars.com/kata/525f47c79f2f25a4db000025/train/javascript)
+```javascript
+function validPhoneNumber(phoneNumber){
+  return phoneNumber.match(/^\(\d\d\d\)\s{1}\d\d\d\-\d\d\d\d$/) ? true : false;
+}
+```
