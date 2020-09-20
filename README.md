@@ -3844,3 +3844,26 @@ function validPhoneNumber(phoneNumber){
   return phoneNumber.match(/^\(\d\d\d\)\s{1}\d\d\d\-\d\d\d\d$/) ? true : false;
 }
 ```
+[Word a10n (abbreviation)](https://www.codewars.com/kata/5375f921003bf62192000746/train/javascript)
+```javascript
+function abbreviate(string) {
+    let result = [];
+    let allStr = string.split(/[a-zA-Z]+/);
+    let arr = string.trim().split(/[\W]+/);
+    let output = [];
+    for ( let i = 0; i < arr.length; i++ ) {
+        let word = arr[i].split('');
+        if ( word.length > 3 ) {
+               let str = '' + word[0] + ( word.length - 2) + word[word.length-1];
+                result.push(str);
+           
+        } else {
+            result.push(arr[i]);
+        }
+    }
+    for ( let i = 0; i < result.length; i++ ) {
+        output.push(allStr[i], result[i]);
+    }
+    return output.join("");
+}
+```
