@@ -3867,3 +3867,24 @@ function abbreviate(string) {
     return output.join("");
 }
 ```
+[Dashatize it](https://www.codewars.com/kata/58223370aef9fc03fd000071/train/javascript)
+```javascript
+function dashatize(num) {
+    let newNum = String(Math.abs(num)).split('');
+    let result = [];
+
+    let last = "";
+    newNum.forEach((value, index) => {
+        if (result.length && last !== "-" && +value % 2) {
+            result.push("-");
+        }
+        result.push(value);
+        last = value;
+        if (index < newNum.length - 1 && +value % 2) {
+            result.push("-");
+            last = "-";
+        }
+    });
+    return result.join("");
+}
+```
