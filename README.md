@@ -3904,3 +3904,17 @@ function cakes(recipe, available) {
     return Math.min(...res);
 }
 ```
+[Moving Zeros To The End](https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/javascript)
+```javascript
+var moveZeros = function (arr) {
+    let zeros = [];
+    for ( let i = 0; i < arr.length; i++ ) {
+        if (arr[i] === 0 ) {
+            zeros.push(arr[i]);
+            arr.splice(i,1);   
+            i--;         
+        }
+    }
+    return arr.concat(zeros);
+}
+```
