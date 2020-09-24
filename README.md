@@ -3932,3 +3932,14 @@ function anagrams(word, words) {
     return result;
 }
 ```
+[Find the missing term in an Arithmetic Progression](https://www.codewars.com/kata/52de553ebb55d1fca3000371/train/javascript)
+```javascript
+var findMissing = function (list) { 
+    let step = (list[list.length-1] - list[0])/list.length;
+    for ( let i = 0; i < list.length-1; i++ ) {
+        if ( list[i+1] !== list[i] + step) {
+            return list[i] + step;
+        }
+    }
+}
+```
