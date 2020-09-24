@@ -3918,3 +3918,17 @@ var moveZeros = function (arr) {
     return arr.concat(zeros);
 }
 ```
+[Where my anagrams at?](https://www.codewars.com/kata/523a86aa4230ebb5420001e1/train/javascript)
+```javascript
+function anagrams(word, words) {
+    let result = [];
+    let nwWords = [...words];
+    let wrd = word.split('').sort().join('');
+    for ( let i = 0; i < nwWords.length; i++ ) {
+        if ( nwWords[i].split('').sort().join('') === wrd ) {
+            result.push(words[i]);
+        }
+    }
+    return result;
+}
+```
