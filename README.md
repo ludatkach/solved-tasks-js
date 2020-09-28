@@ -3960,3 +3960,15 @@ function firstNonRepeatingLetter(s) {
     return arr[0];
 }
 ```
+[Human Readable Time](https://www.codewars.com/kata/52685f7382004e774f0001f7/train/javascript)
+```javascript
+function humanReadable(seconds) {
+    let minutes = Math.floor(seconds / 60);
+    let sec = seconds % 60;
+    let mins = minutes % 60;
+    let hours = Math.floor(minutes / 60);
+
+    return ("00" + hours).slice(-2) + ":" + ("00" + mins).slice(-2) + ":" + ("00" + sec).slice(-2);
+}
+```
+
