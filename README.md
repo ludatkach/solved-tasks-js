@@ -4006,4 +4006,32 @@ function perimeter(n) {
     return Math.round( fibSumNPlus * 4 );
 }
 ```
+[Math Issues](https://www.codewars.com/kata/5267faf57526ea542e0007fb/train/javascript)
+```javascript
+Math.round = function(number) {
+    let intN = +String(number).match(/^[1-9]+/);
+    let decN = +String(number).match(/\.[1-9]/);
+    if ( decN > 0.4 ) {
+        return intN + 1;
+    }
+    return +(number - decN).toFixed(); 
+  };
+  
+  Math.ceil = function(number) {
+    let intN = +String(number).match(/^[1-9]+/);
+    let decN = number - intN;
+    if ( decN === 0 ) {
+        return intN; 
+    }
+    return intN + 1;
+  };
+  
+  Math.floor = function(number) {
+    let intN = +String(number).match(/^[1-9]+/);
+    if ( intN > 0 ) {
+        return intN; 
+    }
+    return 0;
+  };
+```
 
