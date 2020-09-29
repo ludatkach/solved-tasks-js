@@ -4034,4 +4034,20 @@ Math.round = function(number) {
     return 0;
   };
 ```
+[Sum of pairs](https://www.codewars.com/kata/54d81488b981293527000c8f/train/javascript)
+```javascript
+var sum_pairs=function(ints, s){
+  let set = new Set();
+  set.add(ints[0]);
+  for (let i = 1; i < ints.length; i++ ){
+    let num = s - ints[i];
+    if (set.has(num)){
+      return [num,ints[i]];
+    } else {
+        set.add(ints[i]);
+    }  
+}
+  return undefined;
+}
+```
 
