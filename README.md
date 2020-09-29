@@ -3998,4 +3998,12 @@ function orderWeight(strng) {
     return resStr.join(' ');
 }
 ```
+[Perimeter of squares in a rectangle](https://www.codewars.com/kata/559a28007caad2ac4e000083/train/javascript)
+```javascript
+function perimeter(n) {
+    let nPlus = n + 3;
+    let fibSumNPlus = (Math.pow(1+Math.sqrt(5),nPlus) - Math.pow(1-Math.sqrt(5),nPlus))/(Math.pow(2,nPlus)*Math.sqrt(5)) - 1;
+    return Math.round( fibSumNPlus * 4 );
+}
+```
 
