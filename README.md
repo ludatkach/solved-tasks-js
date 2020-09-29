@@ -3971,4 +3971,31 @@ function humanReadable(seconds) {
     return ("00" + hours).slice(-2) + ":" + ("00" + mins).slice(-2) + ":" + ("00" + sec).slice(-2);
 }
 ```
+[Weight for weight](https://www.codewars.com/kata/55c6126177c9441a570000cc/train/javascript)
+```javascript
+function orderWeight(strng) {
+    let string = strng;
+    let arr = string.trim().split(' ');
+    let sum = 0;
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < arr[i].length; j++) {
+            sum += +arr[i][j];
+        }
+        result.push([sum, arr[i]]);
+        sum = 0;
+    }
+    let resStr = [];
+    result.sort((a, b) => {
+        let compResult = a[0]- b[0];
+        if( compResult === 0) {
+            return a[1].localeCompare(b[1])
+        } 
+        return compResult;
+    });
+
+    result.forEach(b => resStr.push(b[1]));
+    return resStr.join(' ');
+}
+```
 
