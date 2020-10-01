@@ -4060,4 +4060,31 @@ function domainName(url){
     return 0;
 }
 ```
+[Scramblies](https://www.codewars.com/kata/55c04b4cc56a697bb0000048/train/javascript)
+```javascript
+function scramble(str1, str2) {
+    let str1M = {};
+    for (const c of str1) {
+        if (str1M.hasOwnProperty(c)) {
+            str1M[c]++;
+        } else {
+            str1M[c] = 1;
+        }
+    }
+
+    for (const c of str2) {
+        if (!str1M.hasOwnProperty(c)) {
+            return false;
+        } else {
+            if (str1M[c] < 1) {
+                return false;
+            } else {
+                str1M[c]--;
+            }
+        }
+    }
+
+    return true;
+}
+```
 
