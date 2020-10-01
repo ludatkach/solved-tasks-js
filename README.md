@@ -4087,4 +4087,25 @@ function scramble(str1, str2) {
     return true;
 }
 ```
+[Beeramid](https://www.codewars.com/kata/51e04f6b544cf3f6550000c1/train/javascript)
+```javascript
+// Returns number of complete beeramid levels
+var beeramid = function(bonus, price) {
+
+  let level = 0;
+  let sum = 0;
+  if ( bonus <= 0 ) {
+      return 0;
+  }
+  let cans = Math.floor(bonus/price);
+  let res = Math.sqrt(cans);
+  for ( let i = 1; i <= res; i++ ) {
+      sum += i*i;
+    if ( sum <= cans ) {
+        level++;
+    }
+  }
+  return level;
+}
+```
 
