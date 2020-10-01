@@ -4050,4 +4050,14 @@ var sum_pairs=function(ints, s){
   return undefined;
 }
 ```
+[Extract the domain name from a URL](https://www.codewars.com/kata/514a024011ea4fb54200004b/train/javascript)
+```javascript
+function domainName(url){
+   let group = url.match(/(?:http(?:s)*\:\/\/)*(?:www\.)*([\da-zA-Z\-]+)(?:\..*)/);
+    if ( group ) {
+        return group[1];
+    }
+    return 0;
+}
+```
 
