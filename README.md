@@ -4108,4 +4108,17 @@ var beeramid = function(bonus, price) {
   return level;
 }
 ```
-
+[Is my friend cheating?](https://www.codewars.com/kata/5547cc7dcad755e480000004/train/javascript)
+```javascript
+function removeNb (n) {
+    let result = [];
+    let sum =  n * (n+1) / 2;
+    for ( let i = 1; i <= n; i++) {
+        let num = (sum - i) /(1 + i);
+        if (  Number.isInteger(num) && num <= n ) {
+            result.push([i, num]);
+        }
+    }
+    return result;
+}
+```
