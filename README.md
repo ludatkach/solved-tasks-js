@@ -4122,3 +4122,10 @@ function removeNb (n) {
     return result;
 }
 ```
+[Add new item (collections are passed by reference)](https://www.codewars.com/kata/566dc05f855b36a031000048/train/javascript)
+```javascript
+function addExtra( listOfNumbers ){
+    let newArr = listOfNumbers.concat(5);
+    return newArr;
+}
+```
