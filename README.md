@@ -4174,3 +4174,18 @@ function redarr(arr) {
   return newObj;
 }
 ```
+[Freudian translator](https://www.codewars.com/kata/5713bc89c82eff33c60009f7/train/javascript)
+```javascript
+function toFreud(string) {
+  if ( !string.length ) {
+    return "";
+  }
+  let result = [];
+  let arr = string.split(" ");
+  for ( let i = 0; i < arr.length; i++ ) {
+    result.push("sex");
+  }
+
+return result.join(" ");
+}
+```
