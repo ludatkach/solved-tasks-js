@@ -4129,3 +4129,27 @@ function addExtra( listOfNumbers ){
     return newArr;
 }
 ```
+[Convert PascalCase string into snake_case](https://www.codewars.com/kata/529b418d533b76924600085d/train/javascript)
+```javascript
+function toUnderscore(string) {
+    if ( /^\d+$/.test(string) ) {
+        return '' + string;
+    }
+    let result = [];
+    let upLetter = '';
+    for ( let i = 0; i < string.length; i++ ) {
+        if ( /[A-Z]/.test(string[i]) ) {            
+            if ( i === 0 ) {
+                upLetter = string.substring(i,i+1);
+                result.push(upLetter.toLowerCase());                
+            } else {
+                upLetter = string.substring(i,i+1);
+                result.push('_', upLetter.toLowerCase());                
+            }  
+        } else {
+            result.push(string[i]);            
+        }
+    }
+    return result.join(''); 
+}
+```
