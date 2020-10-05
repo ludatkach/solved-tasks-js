@@ -4164,4 +4164,13 @@ function redarr(arr) {
     }
     return newObj;
 }
+
+function redarr(arr) {
+ let newObj = {};
+ let newArr = [... new Set(arr)].sort();
+  for ( let i = 0; i < newArr.length; i++ ) {
+    newObj[String(i)] = newArr[i];
+  }
+  return newObj;
+}
 ```
