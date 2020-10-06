@@ -4189,3 +4189,40 @@ function toFreud(string) {
 return result.join(" ");
 }
 ```
+[Snail](https://www.codewars.com/kata/521c2db8ddc89b9b7a0000c1/train/javascript)
+```javascript
+snail = function(array) {
+    let result = [];
+    let limLeft = 0, limRight = array[0].length, limTop = 0, limBottom = array.length;
+
+    let locX = limLeft;
+    let locY = limTop;
+
+    while (limLeft < limRight && limTop < limBottom) {
+        // move right
+        for (; locX < limRight; locX++) {
+            result.push(array[locY][locX]);
+        }
+        limTop++;
+        // move down
+        for (locX--, locY++; locY < limBottom; locY++) {
+            result.push(array[locY][locX]);
+        }
+        limRight--;
+        // move left
+        for (locX--, locY--; locX >= limLeft; locX--) {
+            result.push(array[locY][locX]);
+        }
+        limBottom--;
+        // move up
+        for (locX++, locY--; locY >= limTop; locY--) {
+            result.push(array[locY][locX]);
+        }
+        limLeft++;
+        locY++;
+        locX++;
+    }
+
+    return result;
+}
+```
