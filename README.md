@@ -4245,3 +4245,42 @@ function findUniq(arr) {
     }
 }
 ```
+[Tic-Tac-Toe Checker](https://www.codewars.com/kata/525caa5c1bf619d28c000335/train/javascript)
+```javascript
+function isSolved(board) {
+    let win = [
+        [[0, 0], [0, 1], [0, 2]],
+        [[1, 0], [1, 1], [1, 2]],
+        [[2, 0], [2, 1], [2, 2]],
+        [[0, 0], [1, 0], [2, 0]],
+        [[0, 1], [1, 1], [2, 1]],
+        [[0, 2], [1, 2], [2, 2]],
+        [[0, 0], [1, 1], [2, 2]],
+        [[0, 2], [1, 1], [2, 0]]
+    ];
+    let emptyCounter = 0;
+    for (let i = 0; i < win.length; i++) {
+        let check = win[i];
+        let set = new Set();
+        for (let j = 0; j < check.length; j++) {
+            let cell = check[j];
+            let rowCheck = cell[0];
+            let colCheck = cell[1];
+            let value = board[rowCheck][colCheck];
+            if (value === 0) {
+                emptyCounter++;
+            }
+            set.add(value);
+        }
+        if (set.size === 1) {
+            if (set.has(1)) {
+                return 1;
+            } else if (set.has(2)) {
+                return 2;
+            }
+        }
+    }
+
+    return emptyCounter ? -1 : 0;
+}
+```
