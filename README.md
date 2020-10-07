@@ -4226,3 +4226,22 @@ snail = function(array) {
     return result;
 }
 ```
+[Find the unique number](https://www.codewars.com/kata/585d7d5adb20cf33cb000235/train/javascript)
+```javascript
+function findUniq(arr) {
+    let obj = {};
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] in obj) {
+            obj[arr[i]]++;
+        } else {
+            obj[arr[i]] = 1;
+        }
+    }
+    
+    for (let [key, value] of Object.entries(obj)) {
+        if (value === 1) {
+            return +key;
+        }
+    }
+}
+```
