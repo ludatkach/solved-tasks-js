@@ -4284,3 +4284,16 @@ function isSolved(board) {
     return emptyCounter ? -1 : 0;
 }
 ```
+[Encrypt this!](https://www.codewars.com/kata/5848565e273af816fb000449/train/javascript)
+```javascript
+var encryptThis = function(text) {
+    let textArr = text.split(' ');
+    for (let i = 0; i < textArr.length; i++) {
+        let wordAr = textArr[i].split('');
+        wordAr[0] = String(wordAr[0].charCodeAt(0));
+        [wordAr[1], wordAr[wordAr.length - 1]] = [wordAr[wordAr.length - 1], wordAr[1]];
+        textArr[i] = wordAr.join('');
+    }
+    return textArr.join(' ');
+}
+```
