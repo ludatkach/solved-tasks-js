@@ -4297,3 +4297,17 @@ var encryptThis = function(text) {
     return textArr.join(' ');
 }
 ```
+[Josephus Survivor](https://www.codewars.com/kata/555624b601231dc7a400017a/train/java)
+```javascript
+function josephusSurvivor(n,k){
+    let arr = [];
+    for (let i = 1; i <= n; i++ ) {
+        arr.push(i);
+    }
+    for ( let j = k - 1; arr.length > 1; j += (k-1) ) {
+        j = j % arr.length;
+        arr.splice(j,1);
+    }
+    return arr[0];
+}
+```
