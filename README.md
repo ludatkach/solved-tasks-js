@@ -4311,7 +4311,7 @@ function josephusSurvivor(n,k){
     return arr[0];
 }
 ```
-[](https://www.codewars.com/kata/515dfd2f1db09667a0000003/train/javascript)
+[Get key/value pairs as arrays](https://www.codewars.com/kata/515dfd2f1db09667a0000003/train/javascript)
 ```javascript
 function keysAndValues(data){
      let keys = [];
