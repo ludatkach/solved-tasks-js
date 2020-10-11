@@ -4311,3 +4311,15 @@ function josephusSurvivor(n,k){
     return arr[0];
 }
 ```
+[](https://www.codewars.com/kata/515dfd2f1db09667a0000003/train/javascript)
+```javascript
+function keysAndValues(data){
+     let keys = [];
+     let value = [];
+     for( key in data) {
+         keys.push(key);
+         value.push(data[key]);
+     }
+     return [keys, value];
+}
+```
