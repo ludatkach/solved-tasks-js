@@ -4323,3 +4323,25 @@ function keysAndValues(data){
      return [keys, value];
 }
 ```
+[What is my name score? #1](https://www.codewars.com/kata/576a29ab726f4bba4b000bb1/train/javascript)
+```javascript
+function nameScore(name){
+    let sum = 0;
+    let newName = name.toUpperCase().split('');
+    for ( key in alpha) {
+        let smth = key.split('');
+        let val = alpha[key];
+        smth.forEach(element => {
+            alpha[element] = val;
+        });
+    }
+    for ( let i = 0; i < newName.length; i++ ) {      
+      if ( newName[i] in alpha ) {
+        sum += alpha[newName[i]];
+      } else {
+          sum += 0;
+      }
+    }
+  return {[name]: sum};
+}
+```
