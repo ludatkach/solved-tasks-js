@@ -4354,3 +4354,9 @@ function nameScore(name){
     return {[name]: sum};
 }
 ```
+[Leap Years](https://www.codewars.com/kata/526c7363236867513f0005ca/train/javascript)
+```javascript
+function isLeapYear(year) {
+  return ( Number.isInteger(year / 4) && !Number.isInteger(year / 100)|| Number.isInteger(year / 4) && Number.isInteger(year/400) ) ? true : false;
+}
+```
