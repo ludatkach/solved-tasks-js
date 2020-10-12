@@ -4344,4 +4344,13 @@ function nameScore(name){
     }
   return {[name]: sum};
 }
+
+function nameScore(name){
+    for(key in alpha) {
+        key.split('').forEach(letter => alpha[letter] = alpha[key]);
+    }
+    let sum = 0;
+    name.toUpperCase().split('').forEach(letter => letter in alpha ? sum += alpha[letter]:0);
+    return {[name]: sum};
+}
 ```
