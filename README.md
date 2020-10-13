@@ -4360,3 +4360,14 @@ function isLeapYear(year) {
   return ( Number.isInteger(year / 4) && !Number.isInteger(year / 100)|| Number.isInteger(year / 4) && Number.isInteger(year/400) ) ? true : false;
 }
 ```
+[Return the Missing Element](https://www.codewars.com/kata/5299413901337c637e000004/train/javascript)
+```javascript
+function getMissingElement(superImportantArray){
+  let sorted = superImportantArray.sort((a,b) => a - b);
+  for ( let i = 0; i < sorted.length; i++ ) {
+    if ( sorted[i] != i ) {
+      return i;
+    }
+  }
+}
+```
