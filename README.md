@@ -4389,3 +4389,16 @@ function formatMoney(amount){
   }
 }
 ```
+[Find Multiples of a Number](https://www.codewars.com/kata/58ca658cc0d6401f2700045f/train/javascript)
+```javascript
+function findMultiples(integer, limit) {
+    const result = [];
+    for ( let i = integer; i <= limit; i++ ) {
+        let res = i / integer;
+        if (Number.isInteger(res)) {
+            result.push(i);
+        }
+    }
+    return result;
+}
+```
