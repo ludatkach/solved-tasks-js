@@ -4377,3 +4377,15 @@ function combat(health, damage) {
   return health - damage > 0 ?  health - damage : 0;
 }
 ```
+[Dollars and Cents](https://www.codewars.com/kata/55902c5eaa8069a5b4000083/train/javascript)
+```javascript
+function formatMoney(amount){
+  if (Number.isInteger(amount)) {
+    return '$' + amount + '.00';
+  } else if ( /^\d+\.\d{1}$/.test(amount)) {
+    return '$' + amount + '0';
+  } else {
+    return '$' + amount;
+  }
+}
+```
