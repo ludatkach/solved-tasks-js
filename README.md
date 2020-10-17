@@ -4416,3 +4416,17 @@ function move (position, roll) {
   return roll * 2 + position;
 }
 ```
+[Cat years, Dog years](https://www.codewars.com/kata/5a6663e9fd56cb5ab800008b/train/javascript)
+```javascript
+var humanYearsCatYearsDogYears = function(humanYears) {
+  if( humanYears === 1) {
+    return [humanYears, 15, 15]
+  }
+  if ( humanYears === 2) {
+    return [humanYears, 24, 24]
+  }
+  if(humanYears > 2) {
+    return [humanYears, 24+ (humanYears-2)*4, 24+ (humanYears-2)*5]
+  }
+}
+```
