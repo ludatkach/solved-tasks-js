@@ -4440,3 +4440,13 @@ function twiceAsOld(dadYearsOld, sonYearsOld) {
   }
 }
 ```
+[Grasshopper - Check for factor](https://www.codewars.com/kata/55cbc3586671f6aa070000fb/train/javascript)
+```javascript
+function checkForFactor (base, factor) {
+  if (base % factor === 0) {
+    return true;
+  }  else {
+    return false;
+  } 
+}
+```
