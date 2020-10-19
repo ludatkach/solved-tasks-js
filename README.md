@@ -4430,3 +4430,13 @@ var humanYearsCatYearsDogYears = function(humanYears) {
   }
 }
 ```
+[Twice as old](https://www.codewars.com/kata/5b853229cfde412a470000d0/train/javascript)
+```javascript
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  if (sonYearsOld*2 > dadYearsOld) {
+    return (sonYearsOld*2) - dadYearsOld;
+  } else {
+    return dadYearsOld - (sonYearsOld*2);
+  }
+}
+```
