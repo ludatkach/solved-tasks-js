@@ -4450,3 +4450,18 @@ function checkForFactor (base, factor) {
   } 
 }
 ```
+[Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence](https://www.codewars.com/kata/57fb09ef2b5314a8a90001ed/train/javascript)
+```javascript
+function replace(s){
+  let str = 'aeuioAEUIO';
+  let result = [];
+  for ( let i = 0; i < s.length; i++ ) {
+    if (str.match(s[i])) {
+      result.push('!');
+    } else {
+      result.push(s[i]);
+    }
+  }
+  return result.join('');  
+}
+```
