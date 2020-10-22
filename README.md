@@ -4472,3 +4472,9 @@ function sayHello( name, city, state ) {
   return "Hello, " + person + "! " + "Welcome to " + city + ', ' + state + '!';
 }
 ```
+[Grasshopper - Debug sayHello](https://www.codewars.com/kata/5625618b1fe21ab49f00001f/train/javascript)
+```javascript
+function sayHello(name) {
+  return 'Hello, ' + name;
+}
+```
