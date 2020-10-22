@@ -4478,3 +4478,13 @@ function sayHello(name) {
   return 'Hello, ' + name;
 }
 ```
+[Exclamation marks series #1: Remove a exclamation mark from the end of string](https://www.codewars.com/kata/57fae964d80daa229d000126/train/javascript)
+```javascript
+function remove(s){
+  if (s[s.length-1] === '!' ) {
+    return s.slice(0, s.length-1)
+  } else 
+     return s 
+  
+}
+```
