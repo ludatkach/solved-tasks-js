@@ -4503,3 +4503,17 @@ function remove(s,n){
     return arr.join('');
 }
 ```
+[Round up to the next multiple of 5](https://www.codewars.com/kata/55d1d6d5955ec6365400006d/train/java)
+```javascript
+function roundToNext5(n){
+  if(n < 0 && Math.abs(n%5) != 0 ) {
+        return n + Math.abs(n%5);
+    } else {
+        if( (Math.abs(n%5)) === 0 ) {
+            return n;
+        } else {
+            return n - Math.abs(n%5) + 5;
+        }
+    } 
+}
+```
