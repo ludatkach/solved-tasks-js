@@ -4488,3 +4488,18 @@ function remove(s){
   
 }
 ```
+[Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right](https://www.codewars.com/kata/57faf7275c991027af000679/train/java)
+```javascript
+function remove(s,n){
+    let arr = [];
+    let num = 0;
+    for (let j = 0; j < s.length; j++) {
+        if(s[j] === '!' && num < n) {
+          num++;
+        } else {
+          arr.push(s[j]);
+        }
+    }
+    return arr.join('');
+}
+```
