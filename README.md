@@ -4534,5 +4534,16 @@ function fizzbuzz(n) {
   }
   return result;
 }
-
+```
+[Running out of space](https://www.codewars.com/kata/56576f82ab83ee8268000059/train/javascript)
+```javascript
+function spacey(array){
+  let newArr = [];
+  let element = '';
+  for(let i = 0; i < array.length; i++) {
+    element += array[i];
+    newArr.push(element);
+  }
+  return newArr;
+}
 ```
