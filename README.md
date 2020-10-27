@@ -4547,3 +4547,19 @@ function spacey(array){
   return newArr;
 }
 ```
+[Return a string's even characters.](https://www.codewars.com/kata/566044325f8fddc1c000002c/train/javascript)
+```javascript
+function evenChars(string) {
+  let arr = [];
+ if(string.length < 2 || string.length > 100 ) {
+   return "invalid string";
+ } else {
+   for(let i = 0; i < string.length; i++) {
+     if(i %2 != 0 ) {
+       arr.push(string[i]);
+      }
+   }   
+ }
+   return arr;
+}
+```
