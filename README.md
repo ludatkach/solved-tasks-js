@@ -4570,3 +4570,16 @@ function digitize(n) {
     return arr.map(el => +el);
 }
 ```
+[Find the nth Digit of a Number](https://www.codewars.com/kata/577b9960df78c19bca00007e/train/javascript)
+```javascript
+var findDigit = function(num, nth){
+    let n = Math.abs(num).toString().split('');
+    if(nth < 1) {
+      return -1;
+    }  else if(nth > n.length) {
+        return 0;
+    } else {
+        return +n[n.length-nth];
+    }
+}
+```
