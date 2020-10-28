@@ -4563,3 +4563,10 @@ function evenChars(string) {
    return arr;
 }
 ```
+[Digitize](https://www.codewars.com/kata/5417423f9e2e6c2f040002ae/train/javascript)
+```javascript
+function digitize(n) {
+    let arr = n.toString().split('');
+    return arr.map(el => +el);
+}
+```
