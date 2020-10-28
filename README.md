@@ -4583,3 +4583,14 @@ var findDigit = function(num, nth){
     }
 }
 ```
+[Name Array Capping](https://www.codewars.com/kata/5356ad2cbb858025d800111d/train/javascript)
+```javascript
+function capMe(names) {
+  let result = [];  
+  for(el of names) {
+    let nm = el.toLowerCase().slice(1);
+    result.push(el[0].toUpperCase() + nm);
+  }
+  return result;
+}
+```
