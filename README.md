@@ -4600,3 +4600,16 @@ function countRedBeads(n) {
   return n < 2 ? 0 : (n - 1 ) * 2;
 }
 ```
+[Find the vowels](https://www.codewars.com/kata/5680781b6b7c2be860000036/train/haskell)
+```javascript
+function vowelIndices(word){
+    let result = [];
+    for (let i = 0; i < word.length; i++) {
+        let s = word.charAt(i);
+        if (s.match(/[aeiouy]/gi)) {
+            result.push(i+1);
+        }
+    }
+    return result;
+}
+```
