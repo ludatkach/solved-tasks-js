@@ -4613,3 +4613,19 @@ function vowelIndices(word){
     return result;
 }
 ```
+[All Inclusive?](https://www.codewars.com/kata/5700c9acc1555755be00027e/train/javascript)
+```javascript
+function containAllRots(strng, arr) {
+    let count = 0;
+    let strngAr = strng.split('');
+    for(let i = 0; i < strngAr.length; i++ ) {
+        let el = strngAr.shift();
+        let newEl = strngAr.join('') + el;
+        if( !arr.includes(newEl)) {
+          count++;
+        } 
+        strngAr = newEl.split('');
+    }
+    return count > 0 ? false : true;
+}
+```
