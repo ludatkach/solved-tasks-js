@@ -4629,3 +4629,11 @@ function containAllRots(strng, arr) {
     return count > 0 ? false : true;
 }
 ```
+[The Coupon Code](https://www.codewars.com/kata/539de388a540db7fec000642/train/javascript)
+```javascript
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+    let curDate = new Date(currentDate).getTime();
+    let expDate = new Date(expirationDate).getTime(); 
+    return (enteredCode === correctCode && curDate <= expDate) ? true : false;
+}
+```
