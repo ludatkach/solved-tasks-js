@@ -4637,3 +4637,27 @@ function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
     return (enteredCode === correctCode && curDate <= expDate) ? true : false;
 }
 ```
+[The most common letter](https://www.codewars.com/kata/5a434a9dc5e284724f000011/train/javascript)
+```javascript
+function replaceCommon(string, letter) {
+    let newStr = string.split('');
+    let arr = string.split(' ').join('').split('');
+    let obj = {};
+    let myLet = '';
+    arr.forEach(el => el in obj ? obj[el]++ : obj[el] = 1);
+    let values = Object.values(obj);
+    let maxEl = Math.max(...values);
+
+    for( let j = 0; j < newStr.length; j++) {
+        if(myLet === '' && obj[newStr[j]] === maxEl) {
+            myLet = newStr[j];
+        }
+
+        if(newStr[j] === myLet) {
+            newStr[j] = letter;
+        }
+    }
+
+    return newStr.join('');
+}
+```
