@@ -4661,3 +4661,32 @@ function replaceCommon(string, letter) {
     return newStr.join('');
 }
 ```
+[16+18=214](https://www.codewars.com/kata/5effa412233ac3002a9e471d/train/javascript)
+```javascript
+function add(num1, num2) {
+    let result = [];
+    let num1Arr = num1.toString().split('').reverse();
+    let num2Arr = num2.toString().split('').reverse();
+    let length1 = +num1.toString().length;
+    let length2 = +num2.toString().length;
+    if(length1 > length2) {
+        for( let i = 0;  i < length1; i++ ) {
+            if( !num2Arr[i]) {
+                result.push(+num1Arr[i]);
+            } else {
+                result.push(+num1Arr[i] + +(num2Arr[i]));
+            }            
+        }
+    } else {
+        for( let i = 0;  i < length2; i++ ) {
+            if( !num1Arr[i]) {
+                result.push(+num2Arr[i]);
+            } else {
+                result.push(+num1Arr[i] + +(num2Arr[i]));
+            }
+            
+        }
+    }
+    return +result.reverse().join('');  
+}
+```
