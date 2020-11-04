@@ -4690,3 +4690,13 @@ function add(num1, num2) {
     return +result.reverse().join('');  
 }
 ```
+[Substituting Variables Into Strings: Padded Numbers](https://www.codewars.com/kata/51c89385ee245d7ddf000001/train/javascript)
+```javascript
+function solution(value){
+   let val = value.toString();
+   while(val.length < 5 ) {
+    val = '0' + val;
+  }
+  return 'Value is ' + val;
+}
+```
