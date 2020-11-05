@@ -4700,3 +4700,9 @@ function solution(value){
   return 'Value is ' + val;
 }
 ```
+[Area of a Circle](https://www.codewars.com/kata/537baa6f8f4b300b5900106c/train/javascript)
+```javascript
+var circleArea = function(radius) {
+ return (radius <= 0 || typeof radius != 'number') ? false : +(radius * radius * Math.PI).toFixed(2) ;  
+};
+```
