@@ -4706,3 +4706,22 @@ var circleArea = function(radius) {
  return (radius <= 0 || typeof radius != 'number') ? false : +(radius * radius * Math.PI).toFixed(2) ;  
 };
 ```
+[Collatz Conjecture Length](https://www.codewars.com/kata/54fb963d3fe32351f2000102/train/javascript)
+```javascript
+function collatz(n){
+   let arr = [];
+    arr.push(n);
+    for(let i = n; i > 1;) {        
+        if( i % 2 === 0 ) {
+            let res = i/2;
+            arr.push(res);
+            i = res;
+        } else {
+            let res = i*3 + 1
+            arr.push(res);
+            i = res;
+        }    
+    }    
+    return arr.length;
+}
+```
