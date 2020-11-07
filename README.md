@@ -4725,3 +4725,9 @@ function collatz(n){
     return arr.length;
 }
 ```
+[Use reduce() to calculate the sum of the values in an array](https://www.codewars.com/kata/532b4057484b0e58e8000766/train/javascript)
+```javascript
+function sum(array) {
+  return array.reduce((a,b) => a + b);
+}
+```
