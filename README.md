@@ -4748,3 +4748,20 @@ function toBinary(n){
   return +n.toString(2);
 }
 ```
+[Logical calculator](https://www.codewars.com/kata/57096af70dad013aa200007b/train/javascript)
+```javascript
+function logicalCalc(array, op){
+  let result = array[0];
+  for(let i = 1; i < array.length; i++) {
+    if(op === "XOR") {
+      result ^= array[i];
+    } else if(op === "OR") {
+       result |= array[i];
+    } else if(op === "AND") {
+      result &= array[i];
+    }
+  }
+  return result ? true : false;
+}
+```
+
