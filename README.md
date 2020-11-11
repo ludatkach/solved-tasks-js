@@ -4764,4 +4764,14 @@ function logicalCalc(array, op){
   return result ? true : false;
 }
 ```
+[Grasshopper - If/else syntax debug](https://www.codewars.com/kata/57089707fe2d01529f00024a/train/javascript)
+```javascript
+function checkAlive (health) {
+  if (health <= 0) {    
+    return false
+  } else {
+    return true
+  }
+}
+```
 
