@@ -4774,4 +4774,20 @@ function checkAlive (health) {
   }
 }
 ```
+[Grasshopper - Debug](https://www.codewars.com/kata/55cb854deb36f11f130000e1/train/javascript)
+```javascript
+function weatherInfo (temp) {
+  var c = convertToCelsius(temp)
+  if (c > 0)
+    return (c + " is above freezing temperature")
+  else
+    return (c + " is freezing temperature")
+}
+
+function convertToCelsius (temperature) {
+  var celsius = (temperature - 32) * (5/9)
+  return celsius
+}
+
+```
 
