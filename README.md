@@ -4788,6 +4788,12 @@ function convertToCelsius (temperature) {
   var celsius = (temperature - 32) * (5/9)
   return celsius
 }
-
+```
+[Palindrome Strings](https://www.codewars.com/kata/57a5015d72292ddeb8000b31/train/javascript)
+```javascript
+function isPalindrome(line) {
+  let word = line.toString().split('').reverse().join('');
+  return line.toString() === word ? true : false;
+}
 ```
 
