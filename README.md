@@ -4802,4 +4802,17 @@ function validateUsr(username) {
    return /^[0-9a-z_]{4,16}$/.test(username);
 }
 ```
+[Power](https://www.codewars.com/kata/562926c855ca9fdc4800005b/train/javascript)
+```javascript
+function numberToPower(number, power){
+ let res = number;
+    if(power === 0) {
+        return 1;
+    } 
+    for(let i = 1; i < power; i++ ) {
+        res *= number;    
+    }
+    return res;
+}
+```
 
