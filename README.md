@@ -4827,4 +4827,19 @@ Array.prototype.filter = function(fnc) {
     return result;
  };
 ```
-
+[Add Length](https://www.codewars.com/kata/559d2284b5bb6799e9000047/train/javascript)
+```javascript
+function addLength(str) {
+  let arr = str.split(' ');
+  let result = [];
+  let count = 0;
+  for(let i = 0; i < arr.length; i++) {
+      for(let j = 0; j < arr[i].length; j++){
+        count++;
+      }
+      result.push(arr[i] + ' ' + count);
+      count = 0;
+  }
+  return result; 
+}
+```
