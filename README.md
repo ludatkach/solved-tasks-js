@@ -4843,3 +4843,19 @@ function addLength(str) {
   return result; 
 }
 ```
+[Simple Fun #152: Invite More Women?](https://www.codewars.com/kata/58acfe4ae0201e1708000075/train/javascript)
+```javascript
+function inviteMoreWomen(L) {
+  let men = 0;
+  let women = 0;
+ for(let i = 0; i < L.length; i++){
+   if(L[i] === 1) men++;
+   else women++;
+ }
+  if(women < men){
+    return true;
+  }
+ return false; 
+}
+```
+
