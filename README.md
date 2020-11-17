@@ -4858,4 +4858,16 @@ function inviteMoreWomen(L) {
  return false; 
 }
 ```
-
+[Greatest common divisor](https://www.codewars.com/kata/5500d54c2ebe0a8e8a0003fd/train/javascript)
+```javascript
+function mygcd(x,y){
+    let result = [];
+    for(let i = 1; i <= y; i++){
+       if(Number.isInteger(x/i) && Number.isInteger(y/i)){
+        result.push(i);
+       } 
+    }
+    result.reverse();
+    return result[0];
+}
+```
