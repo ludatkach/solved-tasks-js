@@ -4889,3 +4889,9 @@ function maxNumber(n){
  return +(n.toString().split('').sort().reverse().join(''));
 }
 ```
+[Milk and Cookies for Santa](https://www.codewars.com/kata/52af7bf41f5a1291a6000025/train/javascript)
+```javascript
+function timeForMilkAndCookies(date){
+  return (date.getMonth() == 11 && date.getDate() == 24) ? true : false;
+}
+```
