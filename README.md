@@ -4895,3 +4895,16 @@ function timeForMilkAndCookies(date){
   return (date.getMonth() == 11 && date.getDate() == 24) ? true : false;
 }
 ```
+[Reverse a Number](https://www.codewars.com/kata/555bfd6f9f9f52680f0000c5/train/javascript)
+```javascript
+function reverseNumber(n) {
+    let str = n.toString().split('');
+    let negativeNum;
+    if(str[0] === '-') {
+        negativeNum = str.splice(str[0],1);
+        return +(negativeNum + str.reverse().join(''));
+    } else {
+        return +(str.reverse().join(''));
+    }
+}
+```
