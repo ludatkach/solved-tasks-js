@@ -4908,3 +4908,15 @@ function reverseNumber(n) {
     }
 }
 ```
+[Format With](https://www.codewars.com/kata/5892c13cd9f2a384d6000100)
+```javascript
+String.prototype.formatWith = function () {
+    let output = this;
+    for (let i = 0; i < arguments.length; i++) {
+        let arg = arguments[i];
+        let reg = new RegExp("\\{" + i + "\\}", "g");
+        output = output.replace(reg, arg);
+    }
+    return output;
+}
+```
