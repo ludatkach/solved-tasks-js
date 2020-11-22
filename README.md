@@ -4930,3 +4930,26 @@ function shorter_reverse_longer(a,b){
     }
 }
 ```
+[Alphabet war](https://www.codewars.com/kata/59377c53e66267c8f6000027/train/javascript)
+```javascript
+function alphabetWar(fight)
+{
+    let left = {"w": 4, "p": 3, "b": 2, "s": 1};
+    let right = {"m": 4, "q": 3, "d": 2, "z": 1};
+    let countLeft = 0;
+    let countRight = 0;
+    for(let i = 0; i < fight.length; i++){
+        if(fight[i] in left) {
+            countLeft += left[fight[i]];
+        } else if( fight[i] in right) {
+            countRight += right[fight[i]];
+        }
+    }
+    if(countLeft > countRight) {
+        return "Left side wins!";
+    } else if (countRight > countLeft){
+        return "Right side wins!";
+    }
+    return "Let's fight again!";
+}
+```
