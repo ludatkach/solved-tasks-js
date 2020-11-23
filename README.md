@@ -4953,3 +4953,15 @@ function alphabetWar(fight)
     return "Let's fight again!";
 }
 ```
+[Small enough? - Beginner](https://www.codewars.com/kata/57cc981a58da9e302a000214/train/javascript)
+```javascript
+function smallEnough(a, limit){
+  count = true;
+  for(let i = 0; i < a.length; i++) {
+    if(a[i] > limit) {
+      count = false;
+    }
+  }
+  return count;
+}
+```
