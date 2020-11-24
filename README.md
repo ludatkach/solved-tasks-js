@@ -4985,3 +4985,13 @@ function mostFrequentItemCount(collection) {
  return Math.max(...Object.values(obj));
 }
 ```
+[Bumps in the Road](https://www.codewars.com/kata/57ed30dde7728215300005fa/train/javascript)
+```javascript
+function bump(x){
+  let count = 0;
+  for(let i = 0; i < x.length; i++){
+    if(x[i] === 'n') count++;
+  }
+  return (count > 15) ? "Car Dead" : "Woohoo!";
+}
+```
