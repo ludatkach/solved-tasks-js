@@ -4972,3 +4972,16 @@ function hasUniqueChars(str){
   return str.length === mySet.size;
 }
 ```
+[Find Count of Most Frequent Item in an Array](https://www.codewars.com/kata/56582133c932d8239900002e/train/javascript)
+```javascript
+function mostFrequentItemCount(collection) {
+  if(collection.length === 0) {
+    return 0;
+  }
+  let obj = {};
+  collection.forEach(el => {
+    el in obj ? obj[el]++ : obj[el] = 1;    
+  });
+ return Math.max(...Object.values(obj));
+}
+```
