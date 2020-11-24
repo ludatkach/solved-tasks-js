@@ -4965,3 +4965,10 @@ function smallEnough(a, limit){
   return count;
 }
 ```
+[All unique](https://www.codewars.com/kata/553e8b195b853c6db4000048/train/javascript)
+```javascript
+function hasUniqueChars(str){
+  let mySet = new Set(str);
+  return str.length === mySet.size;
+}
+```
