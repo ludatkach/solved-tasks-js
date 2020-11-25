@@ -4995,3 +4995,16 @@ function bump(x){
   return (count > 15) ? "Car Dead" : "Woohoo!";
 }
 ```
+[Monotone travel](https://www.codewars.com/kata/54466996990c921f90000d61/train/javascript)
+```javascript
+var isMonotone = function(arr){
+  for(let i = 0; i < arr.length-1; i++){
+    if(arr[i] <= arr[i+1]){
+      continue;
+    } else {
+      return false;
+    }
+  }
+  return true; 
+}
+```
