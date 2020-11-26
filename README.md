@@ -5008,3 +5008,18 @@ var isMonotone = function(arr){
   return true; 
 }
 ```
+[Indexed capitalization](https://www.codewars.com/kata/59cfc09a86a6fdf6df0000f1/train/javascript)
+```javascript
+function capitalize(s,arr){
+  let result = [];
+  for(let i = 0; i < s.length; i++){
+    if(arr.includes(i) ){
+      result.push(s[i].toUpperCase());
+    } else {
+      result.push(s[i]);
+    }
+  }
+  return result.join('');
+};
+
+```
