@@ -5023,3 +5023,20 @@ function capitalize(s,arr){
 };
 
 ```
+[Build a square](https://www.codewars.com/kata/59a96d71dbe3b06c0200009c/train/javascript)
+```javascript
+function generateShape(integer){
+    let result ='';
+    for(let i = 1; i <= integer; i++){
+      for(let j = 1; j <= integer; j++){
+        result += '+';        
+      }
+      if(i === integer){
+        continue;
+      } else {
+        result += '\n';
+      }      
+    }
+    return result;
+}
+```
