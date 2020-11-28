@@ -5040,3 +5040,10 @@ function generateShape(integer){
     return result;
 }
 ```
+[How many stairs will Suzuki climb in 20 years?](https://www.codewars.com/kata/56fc55cd1f5a93d68a001d4e/train/javascript)
+```javascript
+function stairsIn20(s){
+  let res = [].concat(...s);
+  return res.reduce((a,b) => a + b) * 20;
+}
+```
