@@ -5047,3 +5047,9 @@ function stairsIn20(s){
   return res.reduce((a,b) => a + b) * 20;
 }
 ```
+[Grasshopper - Function syntax debugging](https://www.codewars.com/kata/56dae9dc54c0acd29d00109a/train/javascript)
+```javascript
+function main (verb, noun){
+  return verb + noun;
+}
+```
