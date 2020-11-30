@@ -5053,3 +5053,15 @@ function main (verb, noun){
   return verb + noun;
 }
 ```
+[Javascript filter - 1](https://www.codewars.com/kata/525d9b1a037b7a9da7000905/train/javascript)
+```javascript
+function searchNames( logins ){
+    let result = [];
+    logins.filter(el => {
+       if(el[0].charAt(el[0].length-1) === '_'){
+           result.push(el);
+       }
+    })
+    return result;
+}
+```
