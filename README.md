@@ -5065,3 +5065,18 @@ function searchNames( logins ){
     return result;
 }
 ```
+[Search for letters](https://www.codewars.com/kata/52dbae61ca039685460001ae/train/javascript)
+```javascript
+function change(string){
+    let  arrL = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    let result = [];
+    for(let i = 0; i < arrL.length; i++){
+        if(string.toLowerCase().includes(arrL[i])) {
+            result.push(1);
+        } else {
+            result.push(0);
+        }
+    }
+    return result.join('');
+}
+```
