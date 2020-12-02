@@ -5080,3 +5080,15 @@ function change(string){
     return result.join('');
 }
 ```
+[Find The Duplicated Number in a Consecutive Unsorted List](https://www.codewars.com/kata/558dd9a1b3f79dc88e000001/train/javascript)
+```javascript
+function findDup( arr ){
+  for(let i = 0; i < arr.length-1; i++){
+    if(arr.indexOf(arr[i]) != arr.lastIndexOf(arr[i])){
+         return arr[i];
+       }
+  }
+  return false;
+  
+}
+```
