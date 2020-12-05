@@ -5119,3 +5119,14 @@ function greet(name) {
   
 }
 ```
+[Minimize Sum Of Array (Array Series #1)](https://www.codewars.com/kata/5a523566b3bfa84c2e00010b/train/javascript)
+```javascript
+function minSum(arr) {
+  let newArr = arr.sort((a,b) => a - b);
+    let result = [];
+    for(let  i = 0; i < newArr.length/2; i++){
+      result.push(newArr[i] * newArr[newArr.length-1-i]);
+    }
+    return result.reduce((cur, next) => cur + next);
+}
+```
