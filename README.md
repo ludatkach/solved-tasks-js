@@ -5130,3 +5130,14 @@ function minSum(arr) {
     return result.reduce((cur, next) => cur + next);
 }
 ```
+[Maximum Product](https://www.codewars.com/kata/5a4138acf28b82aa43000117/train/javascript)
+```javascript
+function adjacentElementsProduct(array) {
+  let result = [];
+  for(let i = 0; i < array.length-1; i++){
+    result.push(array[i] * array[i+1]);
+  }
+  result.sort((a,b) => b-a);
+  return result[0];
+}
+```
