@@ -5159,3 +5159,14 @@ var arrayLeaders = numbers => {
     return result;
 }
 ```
+[Maximum Gap (Array Series #4)](https://www.codewars.com/kata/5a7893ef0025e9eb50000013/train/javascript)
+```javascript
+function maxGap (numbers){
+    let newArr = numbers.sort((a,b) => a - b);
+    let result = [];
+    for(let i = 0; i < newArr.length-1; i++){
+        result.push(Math.abs(newArr[i] - newArr[i+1]));
+    }
+    return Math.max(...result);
+}
+```
