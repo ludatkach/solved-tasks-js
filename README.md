@@ -5170,3 +5170,11 @@ function maxGap (numbers){
     return Math.max(...result);
 }
 ```
+[Simple remove duplicates](https://www.codewars.com/kata/5ba38ba180824a86850000f7/train/javascript)
+```javascript
+function solve(arr){
+    let newArr = arr.reverse();
+    let result = new Set(newArr);
+    return [...result].reverse();
+}
+```
