@@ -5205,3 +5205,20 @@ function validate(n){
     return (result.reduce((a,b) => a + b) % 10  === 0) ;
 }
 ```
+[Alternate case](https://www.codewars.com/kata/57a62154cf1fa5b25200031e/train/javascript)
+```javascript
+function alternateCase(s) {
+  let result = [];
+    let arr = s.split('');
+    for(let i = 0; i < arr.length; i++){
+      for(let j = 0; j < arr[i].length; j++) {
+        if(arr[i][j] == arr[i][j].toUpperCase()){
+          result.push(arr[i][j].toLowerCase());
+        } else {
+          result.push(arr[i][j].toUpperCase());
+        }
+      }
+    }
+    return result.join('');
+}
+```
