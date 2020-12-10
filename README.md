@@ -5178,3 +5178,30 @@ function solve(arr){
     return [...result].reverse();
 }
 ```
+[Validate Credit Card Number](https://www.codewars.com/kata/5418a1dd6d8216e18a0012b2/train/java)
+```javascript
+function validate(n){
+    let nArr = ('' + n).split('');
+    let result = [];
+    for(let i = 0; i < nArr.length; i++) {
+        if(nArr.length % 2 === 0) {
+            if(i % 2 === 0) {
+                nArr[i] = +nArr[i] * 2;
+                if(nArr[i] > 9) nArr[i] = nArr[i] - 9;
+                result.push(nArr[i]);
+            } else {
+                result.push(+nArr[i]);
+            }
+        } else {
+            if(i % 2 != 0) {
+                nArr[i] = +nArr[i] * 2;
+                if(nArr[i] > 9) nArr[i] = nArr[i] - 9;
+                result.push(nArr[i]);
+            } else {
+                result.push(+nArr[i]);
+            }
+        }  
+    } 
+    return (result.reduce((a,b) => a + b) % 10  === 0) ;
+}
+```
