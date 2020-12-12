@@ -5222,3 +5222,20 @@ function alternateCase(s) {
     return result.join('');
 }
 ```
+[Data Reverse](https://www.codewars.com/kata/569d488d61b812a0f7000015/train/javascript)
+```javascript
+function dataReverse(data) {
+    let newData = [];
+    let oneB = [];
+    for(let i = 0; i < data.length; i++){
+        if(i && i % 8 == 0) {
+            newData.push(oneB);
+            oneB = [];
+        }
+        oneB.push(data[i]);
+    }
+    if(oneB.length)
+        newData.push(oneB);
+    return [].concat(...newData.reverse());
+}
+```
