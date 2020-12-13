@@ -5239,3 +5239,20 @@ function dataReverse(data) {
     return [].concat(...newData.reverse());
 }
 ```
+[Counting in the Amazon](https://www.codewars.com/kata/55b95c76e08bd5eef100001e/train/javascript)
+```javascript
+function countArara(n) {
+    let result = [];  
+    if(n % 2 === 0) {
+      for(let i = 0; i < n/2; i++){
+        result.push("adak");
+      }    
+    } else {
+      for(let i = 0; i < (n-1)/2; i++){
+        result.push("adak");
+      }  
+      result.push("anane");
+    }      
+    return result.join(' ');
+}
+```
