@@ -5256,3 +5256,17 @@ function countArara(n) {
     return result.join(' ');
 }
 ```
+[Smallest unused ID](https://www.codewars.com/kata/55eea63119278d571d00006a/train/javascript)
+```javascript
+function nextId(ids){
+  console.log(ids);
+    let arr =  Array.from(new Set(ids.sort((a,b) => a - b)));
+    let i;
+    for(i = 0; i < arr.length; i++){
+      if( i != arr[i] ) {
+        return i;
+      }         
+    }
+    return i;
+}
+```
