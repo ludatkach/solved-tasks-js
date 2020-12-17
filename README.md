@@ -5303,5 +5303,12 @@ function equal5(){
 [Push a hash/an object into array](https://www.codewars.com/kata/527b3cd0492b6b15250060af/train/javascript)
 ```javascript
 items = []
-items.push ({a: "b", c: "d"})
+items.
+
+```
+[Training JS #5: Basic data types--Object](https://www.codewars.com/kata/571f1eb77e8954a812000837/train/javascript)
+```javascript
+function animal(obj){
+  return "This " + obj.color + ' ' + obj.name + " has " + obj.legs + " legs.";
+}
 ```
