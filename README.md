@@ -5312,3 +5312,27 @@ function animal(obj){
   return "This " + obj.color + ' ' + obj.name + " has " + obj.legs + " legs.";
 }
 ```
+[Meeting](https://www.codewars.com/kata/59df2f8f08c6cec835000012/train/javascript)
+```javascript
+function meeting(s) {
+    let arr = s.split(";");
+    let family = [];
+    for(let i = 0; i < arr.length; i++){
+        let person = arr[i].split(":");
+        let first = person[0].toUpperCase();
+        let last = person[1].toUpperCase();
+        family.push([last, first]);
+    }
+    let all = family.sort((a,b) => {
+        let res = a[0].localeCompare(b[0]);
+        if(res)
+            return res;
+        return a[1].localeCompare(b[1]); 
+    });
+    let result ='';
+    for(let i = 0; i < all.length; i++){
+        result += '(' + all[i][0] + ', ' + all[i][1] + ')';
+    }
+    return result;
+}
+```
