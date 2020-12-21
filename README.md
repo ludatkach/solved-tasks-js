@@ -5361,3 +5361,24 @@ const quarterOf = (month) => {
   
 }
 ```
+[FIXME: Get Full Name](https://www.codewars.com/kata/597c684822bc9388f600010f/train/javascript)
+```javascript
+class Dinglemouse{
+  
+  constructor( firstName, lastName ){
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  
+  getFullName(){
+    if(!this.lastName){
+      return this.firstName;
+    }
+    if(!this.firstName){
+      return this.lastName;
+    }
+    return this.firstName + " " + this.lastName;
+  }
+  
+}
+```
