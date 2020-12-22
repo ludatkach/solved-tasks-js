@@ -5382,3 +5382,29 @@ class Dinglemouse{
   
 }
 ```
+[NATO Phonetic Alphabet](https://www.codewars.com/kata/54530f75699b53e558002076/train/javascript)
+```javascript
+var nato = (function() {
+  var letters =  {
+    "A": "Alpha",  "B": "Bravo",   "C": "Charlie",
+    "D": "Delta",  "E": "Echo",    "F": "Foxtrot",
+    "G": "Golf",   "H": "Hotel",   "I": "India",
+    "J": "Juliett","K": "Kilo",    "L": "Lima",
+    "M": "Mike",   "N": "November","O": "Oscar",
+    "P": "Papa",   "Q": "Quebec",  "R": "Romeo",
+    "S": "Sierra", "T": "Tango",   "U": "Uniform",
+    "V": "Victor", "W": "Whiskey", "X": "X-ray",
+    "Y": "Yankee", "Z": "Zulu"
+  }
+  
+  return function(word) {
+    let arr = word.split('');
+    let result = [];
+    arr.forEach(el => {
+      let upCase = el.toUpperCase();
+      if(upCase in letters) result.push(letters[upCase]);
+    })
+    return result.join(' ');
+  }
+})()
+```
