@@ -5419,3 +5419,15 @@ function evenNumbers(array, number) {
     return result.reverse();
 }
 ```
+[Find sum of top-left to bottom-right diagonals](https://www.codewars.com/kata/5497a3c181dd7291ce000700/train/javascript)
+```javascript
+function diagonalSum(matrix){
+    let newArr = [].concat(...matrix);
+    let step = Math.sqrt(newArr.length) + 1;
+    let sum = 0;
+    for(let i = 0; i < newArr.length; i+=step){
+        sum += newArr[i];
+    }
+    return sum;
+}
+```
