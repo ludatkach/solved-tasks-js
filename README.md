@@ -5431,3 +5431,20 @@ function diagonalSum(matrix){
     return sum;
 }
 ```
+[Word values](https://www.codewars.com/kata/598d91785d4ce3ec4f000018/train/javascript)
+```javascript
+function wordValue(a) {
+    let alphabet = "abcdefghijklmnopqrstuvwxyz";
+    let result = [];
+    for(let i = 0; i < a.length; i++){
+        let sum = 0;
+        for(let j = 0; j < a[i].length; j++) {
+            if(alphabet.includes(a[i][j])){
+                sum += alphabet.indexOf(a[i][j])+1;
+            }
+        }
+        result.push(sum * (i+1));
+    }
+    return result;
+}
+```
