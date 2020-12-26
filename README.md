@@ -5448,7 +5448,7 @@ function wordValue(a) {
     return result;
 }
 ```
-[Who ate the cookie?(https://www.codewars.com/kata/55a996e0e8520afab9000055/train/javascript)
+[Who ate the cookie?](https://www.codewars.com/kata/55a996e0e8520afab9000055/train/javascript)
 ```javascript
 function cookie(x){
   if(typeof x === 'number'){
