@@ -5459,3 +5459,21 @@ function cookie(x){
     return "Who ate the last cookie? It was the dog!";
 }
 ```
+[Collatz Conjecture (3n+1)](https://www.codewars.com/kata/577a6e90d48e51c55e000217/train/javascript)
+```javascript
+var hotpo = function(n){
+ if(n == 0 ) return 0; 
+  let count = 0;
+  while(n > 1) {
+    if(n % 2 === 0 && n > 1){
+       count++;
+      n = n/2;
+    } 
+    if( n % 2 != 0 && n > 1){
+      count++;
+      n = 3*n+1;
+    }  
+  }  
+  return count;
+}
+```
