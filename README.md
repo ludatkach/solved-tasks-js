@@ -5477,3 +5477,17 @@ var hotpo = function(n){
   return count;
 }
 ```
+[Array element parity](https://www.codewars.com/kata/5a092d9e46d843b9db000064/train/javascript)
+```javascript
+function solve(arr){
+   let set = new Set();
+    arr.forEach(el => {
+        if(set.has(el*(-1))){
+            set.delete(el);
+            set.delete(el*(-1));
+        }else
+           set.add(el);
+    });
+    return set.values().next().value;
+};
+```
