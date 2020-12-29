@@ -5491,3 +5491,17 @@ function solve(arr){
     return set.values().next().value;
 };
 ```
+[Multiplication table for number](https://www.codewars.com/kata/5a2fd38b55519ed98f0000ce/train/javascript)
+```javascript
+function multiTable(number) {
+  let result = [];
+  for(let i = 1; i < 11; i++){
+    if(i === 10) {
+      result.push(i + ' * ' + number + ' = ' + number*i);
+    } else {
+      result.push(i + ' * ' + number + ' = ' + number*i + '\n');
+    }
+  }
+  return result.join('');
+}
+```
