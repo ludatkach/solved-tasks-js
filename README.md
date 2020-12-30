@@ -5505,3 +5505,19 @@ function multiTable(number) {
   return result.join('');
 }
 ```
+[Averages of numbers](https://www.codewars.com/kata/57d2807295497e652b000139/train/javascript)
+```javascript
+function averages(numbers) {
+  let result = [];
+  if(numbers == undefined || numbers.length < 2){
+    return [];
+  }
+  for(let i = 0; i < numbers.length-1; i++){
+    if(numbers.length > 1) {
+      let el = (numbers[i] + numbers[i+1]) / 2;
+      result.push(el);
+     }
+  }    
+    return result;
+  }
+```
