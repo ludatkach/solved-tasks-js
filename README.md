@@ -5521,3 +5521,22 @@ function averages(numbers) {
     return result;
   }
 ```
+[Return the day](https://www.codewars.com/kata/59dd3ccdded72fc78b000b25/train/javascript)
+```javascript
+function whatday(num) { 
+  if(num > 7 || num < 1) {
+    return "Wrong, please enter a number between 1 and 7";
+  }
+  switch(num) {
+      case 1: return"Sunday";
+      case 2: return "Monday";
+      case 3: return "Tuesday";
+      case 4: return "Wednesday";
+      case 5: return "Thursday";
+      case 6: return "Friday";
+      case 7: return "Saturday";
+  }
+
+
+}
+```
