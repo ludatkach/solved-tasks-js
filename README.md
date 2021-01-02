@@ -5540,3 +5540,19 @@ function whatday(num) {
 
 }
 ```
+[Is there a vowel in there?](https://www.codewars.com/kata/57cff961eca260b71900008f/train/javascript)
+```javascript
+function isVow(a){
+   let letters = String.fromCharCode.apply(null, a).split('');
+   let result = [];
+   let  vowels = ['a','e','o','u','i'];
+   for(let i = 0; i < letters.length; i++){
+     if(vowels.includes(letters[i])){
+       result.push(letters[i]);
+     } else {
+         result.push(a[i]);
+     }
+   }
+   return result;
+}
+```
