@@ -5566,3 +5566,15 @@ function rainAmount(mm){
     }
 }
 ```
+[Are arrow functions odd?](https://www.codewars.com/kata/559f80b87fa8512e3e0000f5/train/javascript)
+````javascript
+function odds(values){
+  let array = [];
+  for(let i = 0; i < values.length; i++){
+    if(values[i] % 2 != 0) {
+      array.push(values[i]);
+    }
+  }
+  return array;
+}
+````
