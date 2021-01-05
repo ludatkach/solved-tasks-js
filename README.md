@@ -5578,3 +5578,13 @@ function odds(values){
   return array;
 }
 ````
+[Multiply characters](https://www.codewars.com/kata/52e9aa89b5acdd26d3000127/train/javascript)
+```javascript
+function spam(number){
+  let result = '';
+  for(let i = 0; i < number; i++){
+    result += "hue";
+  }
+  return result;
+}
+```
