@@ -5685,3 +5685,10 @@ function popElement(arr){
   return arr;
 }
 ```
+[Remove the time](https://www.codewars.com/kata/56b0ff16d4aa33e5bb00008e/train/javascript)
+```javascript
+function shortenToDate(longDate) {
+    let coma = longDate.indexOf(',');
+    return longDate.substring(0,coma);
+}
+```
