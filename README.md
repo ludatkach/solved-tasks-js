@@ -5692,7 +5692,7 @@ function shortenToDate(longDate) {
     return longDate.substring(0,coma);
 }
 ```
-[]()
+[They say that only the name is long enough to attract attention.](https://www.codewars.com/kata/574b1916a3ebd6e4fa0012e7/train/javascript)
 ```javascript
 function isOpposite(s1,s2){
   if(s1.length === 0  || s2.length === 0){
@@ -5703,5 +5703,13 @@ function isOpposite(s1,s2){
       return false;
   }
   return true;
+}
+```
+["this" is a problem](https://www.codewars.com/kata/547c71fdc5b2b38db1000098/train/javascript)
+```javascript
+function NameMe(first, last) {
+    this.firstName = first;
+    this.lastName = last;
+    return {firstName: first, lastName: last, name: this.firstName + ' ' + this.lastName};
 }
 ```
