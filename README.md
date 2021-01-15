@@ -5743,3 +5743,18 @@ class Dog extends Animal {
   
 }
 ```
+[Age Range Compatibility Equation](https://www.codewars.com/kata/5803956ddb07c5c74200144e/train/javascript)
+```javascript
+function datingRange(age){
+    let minAge;
+    let maxAge;
+    if(age <= 14){
+        minAge = age - 0.10 * age;
+        maxAge = age + 0.10 * age;        
+    } else {
+        minAge = age / 2 + 7;
+        maxAge = (age - 7) * 2;
+    }
+    return Math.floor(minAge) + "-" + Math.floor(maxAge);
+}
+```
