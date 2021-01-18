@@ -5783,3 +5783,24 @@ var quote = function(fighter) {
   }
 };
 ```
+[Homogenous arrays](https://www.codewars.com/kata/57ef016a7b45ef647a00002d/train/javascript)
+```javascript
+function filterHomogenous(arrays) {
+    let count = 0;
+    let result = [];
+    for(let i = 0; i < arrays.length; i++){
+      for(let j = 0; j < arrays[i].length-1; j++){          
+        if(typeof arrays[i][j] === typeof arrays[i][j+1]){
+          count++;
+        } else{
+          break;
+        }
+      }
+      if((count+1) === arrays[i].length){
+          result.push(arrays[i]);
+      } 
+      count = 0;     
+    }
+    return result;
+}
+```
