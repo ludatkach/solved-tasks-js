@@ -5804,3 +5804,24 @@ function filterHomogenous(arrays) {
     return result;
 }
 ```
+[Sum of array singles](https://www.codewars.com/kata/59f11118a5e129e591000134/train/javascript)
+```javascript
+function repeats(arr){
+  let result = [];
+  let obj = {};
+  for(let i = 0; i < arr.length; i++){
+    if(obj[arr[i]] ){
+      obj[arr[i]]++;
+    } else {
+      obj[arr[i]] = 1;
+    }
+  }
+  for(el in obj){
+    if(obj[el] === 1){
+      result.push(+el);
+    }
+  }
+  let sum = result.reduce((el, ex) => el + ex);
+  return sum;
+};
+```
