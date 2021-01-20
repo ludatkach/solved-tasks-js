@@ -5825,3 +5825,18 @@ function repeats(arr){
   return sum;
 };
 ```
+[Counting Array Elements](https://www.codewars.com/kata/5569b10074fe4a6715000054/train/javascript)
+```javascript
+function count(array){
+  let obj = {};
+  for(let i = 0; i < array.length; i++){
+    if(obj[array[i]]){
+      obj[array[i]]++;
+    } else {
+      obj[array[i]] = 1;
+    }
+  }
+  return obj;
+}
+
+```
