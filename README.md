@@ -5840,3 +5840,10 @@ function count(array){
 }
 
 ```
+[validate code with simple regex](https://www.codewars.com/kata/56a25ba95df27b7743000016/train/javascript)
+```javascript
+function validateCode (code) {  
+  let patt = new RegExp(/^[123]/);
+  return patt.test(code);
+}
+```
