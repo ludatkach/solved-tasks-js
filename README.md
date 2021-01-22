@@ -5847,3 +5847,9 @@ function validateCode (code) {
   return patt.test(code);
 }
 ```
+[MakeUpperCase](https://www.codewars.com/kata/57a0556c7cb1f31ab3000ad7/train/javascript)
+```javascript
+function makeUpperCase(str) {
+  return str.toUpperCase();
+}
+```
