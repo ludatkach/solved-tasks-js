@@ -5853,3 +5853,13 @@ function makeUpperCase(str) {
   return str.toUpperCase();
 }
 ```
+[Remove First and Last Character](https://www.codewars.com/kata/56bc28ad5bdaeb48760009b0/train/javascript)
+```javascript
+function removeChar(str){
+let newArr = str.split('');
+    newArr.splice(0,1);
+    newArr.splice(-1);
+    return newArr.join('');
+
+};
+```
