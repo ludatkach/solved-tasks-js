@@ -20,7 +20,7 @@ function explode(x) {
 }
 ```
 ```javascript
-//Sort the odd
+[Sort the odd](https://www.codewars.com/kata/578aa45ee9fd15ff4600090d/train/javascript)
 function sortArray(array) {
   let oddEl = [];
     let newArr = array.slice();
