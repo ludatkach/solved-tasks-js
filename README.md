@@ -5863,3 +5863,12 @@ let newArr = str.split('');
 
 };
 ```
+[Find the Remainder](https://www.codewars.com/kata/524f5125ad9c12894e00003f/train/javascript)
+```javascript
+function remainder(a, b){
+  if(b === 0){
+    return NaN;
+  } 
+  return a > b ?  a % b : b % a;
+}
+```
