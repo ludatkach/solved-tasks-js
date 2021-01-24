@@ -40,8 +40,8 @@ function sortArray(array) {
     return newArr;
 }
 ```
+[RGB To Hex Conversion](https://www.codewars.com/kata/513e08acc600c94f01000001/train/javascript)
 ```javascript
-//RGB To Hex Conversion
 function rgb(r, g, b){
     let arrDec = [ r, g, b];
     let hexNum = '';
@@ -85,8 +85,8 @@ function toWeirdCase(string){
     return weirdStr;
 }
 ```
+[Bit Counting](https://www.codewars.com/kata/526571aae218b8ee490006f4/train/javascript)
 ```javascript
-//Bit Counting
 var countBits = function(n) {
     let count = 0;
     let binNum = (n >>> 0).toString(2);
@@ -99,8 +99,8 @@ var countBits = function(n) {
     return count;
 }
 ```
+[Array.diff](https://www.codewars.com/kata/523f5d21c841566fde000009/train/javascript)
 ```javascript
-//Array.diff
 function array_diff(a, b) {
     let newArr = [];
     for ( let i = 0; i < b.length; i++ ) {
@@ -111,8 +111,8 @@ function array_diff(a, b) {
     return a;
 }
 ```
+[Find the next perfect square!](https://www.codewars.com/kata/56269eb78ad2e4ced1000013/train/javascript)
 ```javascript
-//Find the next perfect square!
 function findNextSquare(sq) {
     let n = Math.sqrt(sq);
     if ( n % 1 === 0 ) {
@@ -128,16 +128,17 @@ function findNextSquare(sq) {
     }
 }
 ```
+[Sum of two lowest positive integers](https://www.codewars.com/kata/558fc85d8fd1938afb000014/train/javascript)
 ```javascript
-//Sum of two lowest positive integers
 function sumTwoSmallestNumbers(numbers) {  
   let sum = 0;
     numbers.sort((a,b) => a - b);
     sum = numbers[0] + numbers[1];
     return sum;
 }
-
-//Odd or Even?
+```
+[Odd or Even?](https://www.codewars.com/kata/5949481f86420f59480000e7/train/javascript)
+```javascript
 function oddOrEven(array) {
      let sum = 0;
     if ( !array) {
@@ -152,8 +153,9 @@ function oddOrEven(array) {
         return "odd";
     }
 }
-
-//Sum of Odd Cubed Numbers
+```
+[Sum of Odd Cubed Numbers](https://www.codewars.com/kata/580dda86c40fa6c45f00028a/train/javascript)
+```javascript
 function cubeOdd(arr) {
      let sum = 0;
      let result = 0;
@@ -170,8 +172,8 @@ function cubeOdd(arr) {
      return sum;
 }
 ```
+[Squares sequence](https://www.codewars.com/kata/5546180ca783b6d2d5000062/train/javascript)
 ```javascript
-//Squares sequence
 function squares(x, n) {
     let arr = [];
     if ( n <= 0 ) {
@@ -184,8 +186,9 @@ function squares(x, n) {
     }
     return arr;
 }
-
-//Square Every Digit
+````
+[Square Every Digit](https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript)
+```javascript
 function squareDigits(num){
     let str = '';
     let newNum = '';
@@ -196,8 +199,8 @@ function squareDigits(num){
     return +newNum;
 }
 ```
+[Filter the number](https://www.codewars.com/kata/55b051fac50a3292a9000025/train/javascript)
 ```javascript
-//Filter the number
 var FilterString = function(value) {
   let num='';
     for ( let i = 0; i < value.length; i++ ) {
@@ -208,8 +211,9 @@ var FilterString = function(value) {
     }
     return +num;
 }
-
-//Sum of the first nth term of Series
+```
+[Sum of the first nth term of Series](https://www.codewars.com/kata/555eded1ad94b00403000071/train/javascript)
+```javascript
 function SeriesSum(n)
 {
   if ( n === 0 || n === 1 ) {
@@ -222,18 +226,8 @@ function SeriesSum(n)
     return sum.toFixed(2);
 }
 ```
+[Numbers to Letters](https://www.codewars.com/kata/57ebaa8f7b45ef590c00000c/train/javascript)
 ```javascript
-//Numbers to Letters
-function switcher(x) {
-    let arr = " ?!abcdefghijklmnopqrstuvwxyz-".split('').reverse();
-    let newArr = x.map( Number);
-    let string = '';
-    newArr.forEach(el => {string += arr[el]});
-    return string;
- }
-```
-```javascript
-//Numbers to Letters
 function switcher(x){
     let arr = " ?!abcdefghijklmnopqrstuvwxyz-".split('').reverse();
     let newArr = x.map( Number);
@@ -241,20 +235,23 @@ function switcher(x){
     newArr.forEach(el => {string += arr[el]});
     return string;
 }
-//Regex validate PIN code
+```
+[Regex validate PIN code](https://www.codewars.com/kata/55f8a9c06c018a0d6e000132/train/javascript)
+```javascript
 function validatePIN (pin) {
     return pin.match(/^\d{4}$|^\d{6}$/) ? true : false;
 }
 ```
+[Powers of 3](https://www.codewars.com/kata/57be674b93687de78c0001d9/train/javascript)
 ```javascript
-//Powers of 3
 function largestPower(n){
     let k = 0;
     for (; Math.pow(3,k) < n; k++);
     return --k;
 }
-
-//Power of two
+```
+[Power of two](https://www.codewars.com/kata/534d0a229345375d520006a0/train/javascript)
+```javascript
 function isPowerOfTwo(n){
   if (Number.isInteger(Math.log2(n))) {
     return true;
@@ -266,13 +263,15 @@ function isPowerOfTwo(n){
     return false;
   }
 }
-
-//Factorial
+```
+[Factorial](https://www.codewars.com/kata/57a049e253ba33ac5e000212/train/javascript)
+```javascript
 function factorial(n){
   return n === 1 || n === 0 ? 1 :  n * factorial(n-1);
 }
-
-//Difference Of Squares
+```
+[Difference Of Squares](https://www.codewars.com/kata/558f9f51e85b46e9fa000025/train/javascript)
+```javascript
 function differenceOfSquares(n){
   let sumNum = 0;
     let sqrs = 0;
@@ -285,8 +284,8 @@ function differenceOfSquares(n){
    return sqrSum - sqrs;
 }
 ```
+[Tail Swap](https://www.codewars.com/kata/5868812b15f0057e05000001/train/javascript)
 ```javascript
-//Tail Swap
 function tailSwap(arr) {
     let newArr = [];
     let el1= '';
