@@ -5883,3 +5883,16 @@ var seqlist = function(first,c,l){
     return result;
 }
 ```
+[Numbers in strings](https://www.codewars.com/kata/59dd2c38f703c4ae5e000014/train/javascript)
+```javascript
+function solve(s){
+    let result = [];
+    let regexStr = s.match(/[a-z]+|[^a-z]+/gi);
+    for(let i = 0; i < regexStr.length; i++){
+        if(Number.isInteger(+regexStr[i])){
+            result.push(regexStr[i]);
+        }
+    }    
+    return +result.sort((a,b) => b - a)[0];
+};
+```
