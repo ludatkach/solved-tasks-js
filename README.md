@@ -5871,3 +5871,15 @@ function remainder(a, b){
   return a > b ?  a % b : b % a;
 }
 ```
+[Arithmetic List!](https://www.codewars.com/kata/541da001259d9ca85d000688/train/javascript)
+```javascript
+var seqlist = function(first,c,l){
+    let result = [];
+    result.push(first);
+    for(let i = 1; i < l; i++){
+        result.push(first+c);
+        first +=c;
+    }
+    return result;
+}
+```
