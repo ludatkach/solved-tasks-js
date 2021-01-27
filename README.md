@@ -5896,3 +5896,28 @@ function solve(s){
     return +result.sort((a,b) => b - a)[0];
 };
 ```
+[Interview Question (easy)](https://www.codewars.com/kata/5b358a1e228d316283001892/train/javascript)
+```javascript
+function getStrings(city){
+    let obj = {};
+    let result = '';
+    let cityLow = city.toLowerCase().split(' ').join('');
+    for(let i = 0; i < cityLow.length; i++){
+      if(obj[cityLow[i]]){
+        obj[cityLow[i]] +='*';        
+      } else {
+        obj[cityLow[i]] = '*';
+      }
+    }
+    let keys = Object.keys(obj);
+    let last = keys[keys.length-1];
+    for(let el in obj){
+        if(el === last) {
+            result += '' + el +':'+obj[el];
+        } else {
+            result += '' + el +':'+obj[el] +',';
+        }        
+    }
+    return result;
+}
+```
