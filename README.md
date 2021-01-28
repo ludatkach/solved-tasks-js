@@ -5931,3 +5931,8 @@ function noSpace(x){
   return str;
 }
 ```
+```javascript
+function noSpace(x){
+  return x.replace(/\s+/g, '');
+}
+```
