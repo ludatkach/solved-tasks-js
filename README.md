@@ -5936,3 +5936,20 @@ function noSpace(x){
   return x.replace(/\s+/g, '');
 }
 ```
+[SevenAte9](https://www.codewars.com/kata/559f44187fa851efad000087/train/javascript)
+```javascript
+function sevenAte9(str){
+    let result = '';
+    for(let i = 0; i <= str.length-1; i++){
+        if(str[i-1] === '7' && str[i] === '9' && str[i+1] === '7'){
+            result += str[i+1];
+            i = i+1;
+        } else if(i === str.length-1){
+            result += str[i];
+        } else{
+            result += str[i];
+        }
+    }
+    return result;
+}
+```
