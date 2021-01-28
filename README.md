@@ -5921,3 +5921,13 @@ function getStrings(city){
     return result;
 }
 ```
+[Remove String Spaces](https://www.codewars.com/kata/57eae20f5500ad98e50002c5/train/javascript)
+```javascript
+let str = '';
+function noSpace(x){
+  for (let i = 0; i < x.length; i++ ) {
+    str = x.replace(/\s+/g, '');
+  }
+  return str;
+}
+```
