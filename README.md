@@ -5953,3 +5953,19 @@ function sevenAte9(str){
     return result;
 }
 ```
+[Give me the k first digits. Odd digits.](https://www.codewars.com/kata/59e8afdd0863c7bcb300013a/train/javascript)
+```javascript
+function findOddDigits(n, k) {
+    let newStr = String(n).split('');
+    let result ='';
+    for(let i = 0; i < newStr.length; i++){        
+        if(+newStr[i] % 2 != 0 && result.length < k){
+            result += newStr[i];
+        }       
+    }
+    if(k > result.length){
+      return 0;
+    }
+    return +result;
+}
+```
