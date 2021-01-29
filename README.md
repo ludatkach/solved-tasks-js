@@ -5969,3 +5969,19 @@ function findOddDigits(n, k) {
     return +result;
 }
 ```
+[L2: Triple X](https://www.codewars.com/kata/568dc69683322417eb00002c/train/javascript)
+```javascript
+function tripleX(str){
+  for(let i = 0; i < str.length; i++){
+    if(str[i] === 'x') {
+      if(str[i+1] === 'x' && str[i+2] === 'x' ){
+        return true;
+      } else {
+        return false;
+      }
+    } 
+  }
+  return false;
+}
+
+```
