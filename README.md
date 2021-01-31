@@ -5983,5 +5983,18 @@ function tripleX(str){
   }
   return false;
 }
+```
+[All Star Code Challenge #22](https://www.codewars.com/kata/5865cff66b5699883f0001aa/train/javascript)
+```javascript
+function toTime(seconds) {
+    let min = Math.floor(seconds / 60);
+    let hours = Math.floor(min / 60);   
+    let res = Math.floor(min  - hours * 60); 
+    if(hours < 1){
+        return '' + hours + ' hour(s) and ' + min + ' minute(s)';
+    } else {
+        return '' + hours + ' hour(s) and ' + res + ' minute(s)';
+    }  
 
+}
 ```
