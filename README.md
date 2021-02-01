@@ -5998,3 +5998,17 @@ function toTime(seconds) {
 
 }
 ```
+[Letterbox Paint-Squad](https://www.codewars.com/kata/597d75744f4190857a00008d/train/javascript)
+```javascript
+var paintLetterboxes = function(start, end) {
+    let arr = [0,0,0,0,0,0,0,0,0,0];    
+    for(let i = start; i <= end; i++){
+        let startArr = i.toString().split('');
+        for(let j = 0; j < startArr.length; j++){
+            let k = +startArr[j];
+            arr[k]++;
+        }
+    }
+    return arr;
+}
+```
