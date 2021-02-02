@@ -6012,3 +6012,19 @@ var paintLetterboxes = function(start, end) {
     return arr;
 }
 ```
+[simple calculator](https://www.codewars.com/kata/5810085c533d69f4980001cf/train/javascript)
+```javascript
+function calculator(a,b,sign){
+  if(sign === '+' && typeof a === 'number' && typeof b === 'number' ){
+    return a + b;
+  } else if(sign === '-' && typeof a === 'number' && typeof b === 'number'){
+    return a - b;
+  } else if(sign === '/' && typeof a === 'number' && typeof b === 'number'){
+    return a / b;
+  } else if(sign === '*' && typeof a === 'number' && typeof b === 'number'){
+    return a * b;
+  } else {
+    return "unknown value";
+  }
+}
+```
