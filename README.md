@@ -6041,3 +6041,12 @@ function evil(n) {
     return (evil % 2 === 0) ? "It's Evil!" : "It's Odious!";
 }
 ```
+[NBA full 48 minutes average](https://www.codewars.com/kata/587c2d08bb65b5e8040004fd/train/javascript)
+```javascript
+function pointsPer48(ppg, mpg) {
+  if( ppg === 0 || mpg === 0){
+    return 0;
+  }
+  return +(48 * ppg / mpg).toFixed(1);
+}
+```
