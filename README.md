@@ -6028,3 +6028,16 @@ function calculator(a,b,sign){
   }
 }
 ```
+[Evil or Odious](https://www.codewars.com/kata/56fcfad9c7e1fa2472000034/train/javascript)
+```javascript
+function evil(n) {
+    let str = n.toString(2);
+    let evil = 0;
+    for(let i = 0; i < str.length; i++){
+        if(+str[i] === 1){
+            evil++;
+        }
+    }   
+    return (evil % 2 === 0) ? "It's Evil!" : "It's Odious!";
+}
+```
