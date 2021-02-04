@@ -6050,3 +6050,24 @@ function pointsPer48(ppg, mpg) {
   return +(48 * ppg / mpg).toFixed(1);
 }
 ```
+[Even or Odd - Which is Greater](https://www.codewars.com/kata/57f7b8271e3d9283300000b4/train/javascript)
+```javascript
+function evenOrOdd(str) {
+  let odd = 0;
+    let even = 0;
+    for(let i = 0; i < str.length; i++){
+        if(str[i] % 2 === 0){
+            even += +str[i];
+        } else{
+            odd += +str[i];
+        }
+    }
+    if(even > odd){
+        return 'Even is greater than Odd';
+    } else if( even < odd){
+        return 'Odd is greater than Even';
+    } else {
+        return 'Even and Odd are the same';
+    }
+}
+```
