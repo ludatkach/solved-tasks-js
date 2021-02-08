@@ -6071,3 +6071,24 @@ function evenOrOdd(str) {
     }
 }
 ```
+[Convert a string to an array](https://www.codewars.com/kata/57e76bc428d6fbc2d500036d/train/javascript)
+```javascript
+function stringToArray(string){
+  let arr =[];
+  let buff ='';
+  for ( let i = 0; i < string.length; i++ ) {
+    if (string[i] === ' '){
+    arr.push(buff);
+    buff = '';
+    continue;
+    } else {
+      buff += string[i];
+    }
+  }
+
+  if (buff.length){
+    arr.push(buff);
+  }
+  return arr;
+}
+```
