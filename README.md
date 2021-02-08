@@ -6092,3 +6092,11 @@ function stringToArray(string){
   return arr;
 }
 ```
+```javascript
+function stringToArray(string){
+
+  let res = [];
+  res = string.split(" ");
+  return res;
+}
+```
