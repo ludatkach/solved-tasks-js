@@ -6100,3 +6100,17 @@ function stringToArray(string){
   return res;
 }
 ```
+[Correct the mistakes of the character recognition software](https://www.codewars.com/kata/577bd026df78c19bca0002c0/train/javascript)
+```javascript
+function correct(string){
+    let strArr = string.split('');
+    let newStr = strArr.map(x=>{ switch(x) {
+        case '5': return 'S';
+        case '0': return 'O';
+        case '1': return 'I';
+        default: return x;
+    }}). join('');
+    return newStr;
+}
+
+```
