@@ -6131,3 +6131,15 @@ function logs(x , a, b){
   return (Math.log(a)/Math.log(x)) +( Math.log(b)/Math.log(x));
 }
 ```
+[Training JS #18: Methods of String object--concat() split() and its good friend join()](https://www.codewars.com/kata/57280481e8118511f7000ffa/train/javascript)
+```javascript
+function splitAndMerge(string, separator) {
+    let arr = string.split(' ');
+    let arr2 = [];
+    for(let i = 0; i < arr.length;i++){
+        let x = arr[i].split('').join(separator);
+        arr2.push(x);
+    }
+    return arr2.join(' ');
+}
+```
