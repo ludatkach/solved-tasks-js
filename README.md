@@ -6143,3 +6143,28 @@ function splitAndMerge(string, separator) {
     return arr2.join(' ');
 }
 ```
+[Simple Fun #136: Missing Values](https://www.codewars.com/kata/58a66c208b88b2de660000c3/train/javascript)
+```javascript
+function missingValues(arr) {
+  let obj = {};
+  let result = [];
+  for(let i = 0; i < arr.length; i++){
+    if(obj[arr[i]]){
+      obj[arr[i]]++;
+    } else {
+      obj[arr[i]] = 1;
+    }
+  }
+  for(let i in obj){
+    if(obj[i] === 1) {
+      result.push(i);
+      result.push(i);
+    }
+    if(obj[i] === 2) {
+      result.push(i);
+    }
+  }
+  return result.reduce((el, ac) => el * ac);
+  
+}
+```
