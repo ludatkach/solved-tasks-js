@@ -6168,3 +6168,24 @@ function missingValues(arr) {
   
 }
 ```
+[Peak array index](https://www.codewars.com/kata/5a61a846cadebf9738000076/train/javascript)
+```javascript
+function peak(arr){
+    let left = [];
+    let sumL = 0;
+    let sumR = 0;
+    for(let i = 1; i < arr.length; i++){
+        left.push(arr[i-1]);
+        sumL = left.reduce((el,ac) => el + ac);
+        for(let j = i+1; j < arr.length; j++){
+           sumR += arr[j];
+        }
+        if(sumL === sumR){
+            return i;
+        } else{
+            sumR = 0;
+        }
+    }
+    return -1;
+}
+```
