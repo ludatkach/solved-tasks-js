@@ -6189,3 +6189,9 @@ function peak(arr){
     return -1;
 }
 ```
+[Take an Arrow to the knee, Functionally](https://www.codewars.com/kata/5b7bd90ef643c4df7400015d/train/javascript)
+```javascript
+var ArrowFunc = function(arr) {
+  return arr.map( el=> String.fromCharCode(el)).join(''); //Complete this function
+}
+```
