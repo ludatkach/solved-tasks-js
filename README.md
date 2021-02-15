@@ -6195,3 +6195,34 @@ var ArrowFunc = function(arr) {
   return arr.map( el=> String.fromCharCode(el)).join(''); //Complete this function
 }
 ```
+[Coloured Triangles](https://www.codewars.com/kata/5a25ac6ac5e284cfbe000111/train/javascript)
+```javascript
+function triangle(row) {
+  let res = [];
+    while(row.length > 1) {
+        for(let i = 0; i < row.length-1; i++){    
+            if(row[i] === "G" && row[i+1] === "G"){ 
+                res.push("G");
+            }
+            if(row[i] === "R" && row[i+1] === "R"){ 
+                res.push("R");
+            }
+            if(row[i] === "B" && row[i+1] === "B"){ 
+                res.push("B");
+            }
+            if(row[i] === "B" && row[i+1] === "G" || row[i] === "G" && row[i+1] === "B") {
+            res.push("R");
+            }
+            if(row[i] === "R" && row[i+1] === "G" || row[i] === "G" && row[i+1] === "R") {
+            res.push("B");
+            }
+            if(row[i] === "B" && row[i+1] === "R" || row[i] === "R" && row[i+1] === "B") {
+            res.push("G");
+            }            
+        }
+        row = res.join('');
+        res = [];
+    }
+    return row;
+}
+```
