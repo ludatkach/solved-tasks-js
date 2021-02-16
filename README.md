@@ -6226,3 +6226,42 @@ function triangle(row) {
     return row;
 }
 ```
+[Compare Strings by Sum of Chars](https://www.codewars.com/kata/576bb3c4b1abc497ec000065/train/javascript)
+```javascript
+function compare(s1, s2) {
+    if(s1 === '' ||s1 === null || s1.match(/[^a-zA-Z]/g)){
+        s1 = '';        
+    }
+    if(s2 === '' || s2 === null || s2.match(/[^a-zA-Z]/g)){
+        s2 = '';        
+    }
+    s1 = s1.toUpperCase();
+    s2 = s2.toUpperCase();
+    let sum1 = 0;
+    let sum2 = 0;
+    if(s1.length >= s2.length){        
+        for(let i = 0; i < s1.length; i++){
+            if(!s2[i]){
+                sum1 += s1.charCodeAt(i);
+            } else {
+                sum1 += s1.charCodeAt(i);
+                sum2 += s2.charCodeAt(i);
+            }            
+        }        
+    } else{
+        for(let i = 0; i < s2.length; i++){
+            if(!s1[i]){
+                sum2 += s2.charCodeAt(i);
+            } else {
+                sum1 += s1.charCodeAt(i);
+                sum2 += s2.charCodeAt(i);
+            }
+        }        
+    }
+    if(sum1 === sum2){
+        return true;
+    } else{
+        return false;
+    }
+}
+```
