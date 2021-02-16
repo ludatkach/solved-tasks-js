@@ -6265,3 +6265,10 @@ function compare(s1, s2) {
     }
 }
 ```
+[Nth Smallest Element (Array Series #4)](https://www.codewars.com/kata/5a512f6a80eba857280000fc/train/javascript)
+```javascript
+function nthSmallest(arr, pos){
+  let arrS = arr.sort((a,b) => a - b);
+  return arrS[pos-1];
+}
+```
