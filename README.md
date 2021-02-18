@@ -6272,3 +6272,19 @@ function nthSmallest(arr, pos){
   return arrS[pos-1];
 }
 ```
+[Jumping Number (Special Numbers Series #4)](https://www.codewars.com/kata/5a54e796b3bfa8932c0000ed/train/javascript)
+```javascript
+function jumpingNumber(n){
+    let strN = n.toString(); 
+    let indx = 0;
+    for(let i = 0; i < strN.length-1; i++){
+        let x = +strN[i+1];
+      if(Math.abs(+strN[i] - +strN[i+1]) === 1){
+        continue;
+      } else {
+        indx++;
+      }
+    }
+    return indx ? "Not!!" : "Jumping!!";
+}
+```
