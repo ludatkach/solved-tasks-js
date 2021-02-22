@@ -6288,3 +6288,17 @@ function jumpingNumber(n){
     return indx ? "Not!!" : "Jumping!!";
 }
 ```
+[Regexp Basics - is it a letter?](https://www.codewars.com/kata/567de72e8b3621b3c300000b/train/javascript)
+```javascript
+String.prototype.isLetter = function() {
+  if(this.length> 1 || !this.length){
+    return false;
+  } else{
+    if((this.charCodeAt(0) >= 65 && this.charCodeAt(0) <= 90) || (this.charCodeAt(0) >= 97 && this.charCodeAt(0) <= 122)){
+      return true;
+    } else{
+      return false;
+    }
+  }
+}
+```
