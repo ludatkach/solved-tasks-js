@@ -6310,3 +6310,9 @@ function args_count(){
   
 }
 ```
+[Average Scores](https://www.codewars.com/kata/57b68bc7b69bfc8209000307/train/javascript)
+```javascript
+function average(scores) {
+   return Math.round(scores.reduce((acc, a)=> acc + a)/scores.length);
+}
+```
