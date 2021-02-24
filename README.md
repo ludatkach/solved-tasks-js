@@ -6316,3 +6316,19 @@ function average(scores) {
    return Math.round(scores.reduce((acc, a)=> acc + a)/scores.length);
 }
 ```
+[Partial Word Searching](https://www.codewars.com/kata/54b81566cd7f51408300022d/train/javascript)
+```javascript
+function wordSearch(query, seq){
+  let result = [];  
+  for(let i = 0; i < seq.length; i++){
+    el = seq[i].toLowerCase();
+    if(el.includes(query.toLowerCase())){
+      result.push(seq[i]);
+    }
+  }
+  if(!result.length){
+    result.push("Empty");
+  }
+  return  result;
+}
+```
