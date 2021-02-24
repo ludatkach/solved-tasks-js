@@ -6332,3 +6332,15 @@ function wordSearch(query, seq){
   return  result;
 }
 ```
+[Factorial Factory](https://www.codewars.com/kata/528e95af53dcdb40b5000171/train/javascript)
+```javascript
+function factorial (n) {
+  if(n < 0 ){
+    return null;
+  } else if(n === 0 || n === 1){
+    return 1;
+  } else {
+    return n * factorial(n-1);
+  }
+}
+```
