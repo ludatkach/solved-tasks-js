@@ -6344,3 +6344,12 @@ function factorial (n) {
   }
 }
 ```
+[Easy mathematical callback](https://www.codewars.com/kata/54b7c8d2cd7f51a839000ebf/train/javascript)
+```javascript
+function processArray(arr, callback) {
+    for(let i = 0; i < arr.length; i++){
+      arr[i] = callback(arr[i]);
+    }
+  return arr
+}
+```
