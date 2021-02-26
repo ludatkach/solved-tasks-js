@@ -6353,3 +6353,18 @@ function processArray(arr, callback) {
   return arr
 }
 ```
+[Automorphic Number (Special Numbers Series #6)](https://www.codewars.com/kata/5a58d889880385c2f40000aa/train/javascript)
+```javascript
+function automorphic(n){
+   let sqr = (n * n).toString().split('').reverse();
+    let num = n.toString().split('').reverse();
+    for(let i = 0; i < num.length; i++){
+        if( num[i] === sqr[i] ){
+            continue;
+        } else {
+            return "Not!!";
+        }
+    }
+    return "Automorphic"; 
+}
+```
