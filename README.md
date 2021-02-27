@@ -6368,3 +6368,14 @@ function automorphic(n){
     return "Automorphic"; 
 }
 ```
+[Disarium Number (Special Numbers Series #3)](https://www.codewars.com/kata/5a53a17bfd56cb9c14000003/train/javascript)
+```javascript
+function disariumNumber(n){
+    let sum = 0;
+    let num = n.toString().split('');
+    for(let i = 0; i < num.length; i++){
+      sum += Math.pow(+num[i], i+1); 
+    }
+    return sum === n ? "Disarium !!" : "Not !!";
+}
+```
