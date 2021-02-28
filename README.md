@@ -6379,3 +6379,13 @@ function disariumNumber(n){
     return sum === n ? "Disarium !!" : "Not !!";
 }
 ```
+[By 3, or not by 3? That is the question . . .](https://www.codewars.com/kata/59f7fc109f0e86d705000043/train/javascript)
+```javascript
+function divisibleByThree(str){
+  let sum = 0;
+  for(let i = 0; i < str.length; i++){
+    sum += +str[i];
+  }
+  return (sum % 3 === 0) ? true : false;
+}
+```
