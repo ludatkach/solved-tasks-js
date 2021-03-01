@@ -6403,3 +6403,27 @@ function houseNumbersSum(inputArray) {
   return sum;  
 }
 ```
+[Simple string characters](https://www.codewars.com/kata/5a29a0898f27f2d9c9000058/train/javascript)
+```javascript
+function solve(s){
+  let uppercase = 0;
+  let lowercase = 0;
+  let numbers = 0;
+  let specialChar = 0;
+  for(let i = 0; i < s.length; i++){
+    if(s[i].match(/[A-Z]/)){
+      uppercase++;
+    } 
+    if(s[i].match(/[a-z]/)){
+      lowercase++;        
+    } 
+    if(s[i].match(/[0-9]/)){
+      numbers++;
+    }     
+    if(s[i].match(/\W|_/)){
+       specialChar++;
+    }
+  }
+  return [uppercase, lowercase, numbers, specialChar];
+}
+```
