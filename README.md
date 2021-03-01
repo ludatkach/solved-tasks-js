@@ -6389,3 +6389,17 @@ function divisibleByThree(str){
   return (sum % 3 === 0) ? true : false;
 }
 ```
+[Simple Fun #37: House Numbers Sum](https://www.codewars.com/kata/58880c6e79a0a3e459000004/train/javascript)
+```javascript
+function houseNumbersSum(inputArray) {
+  let sum = 0;
+  for(let i = 0; i < inputArray.length; i++){
+    if(inputArray[i] === 0){
+     return sum;
+    } else{
+      sum += inputArray[i];
+    }
+  }
+  return sum;  
+}
+```
