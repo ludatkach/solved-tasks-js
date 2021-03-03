@@ -6427,3 +6427,25 @@ function solve(s){
   return [uppercase, lowercase, numbers, specialChar];
 }
 ```
+[Filter unused digits](https://www.codewars.com/kata/55de6173a8fbe814ee000061/train/javascript)
+```javascript
+function unusedDigits(){
+    let str = ''; 
+    let res = '';
+    for(let i = 0; i < arguments.length; i++){
+        if(arguments[i][0] === 0){
+            continue;
+        } else {
+            str += arguments[i];
+        }
+    }
+    for(let i = 0; i <= 9; i++){
+        if( str.match(i)){
+            continue;
+        } else {
+            res += i;
+        }
+    }
+    return res.split('').sort().join('');
+}
+```
