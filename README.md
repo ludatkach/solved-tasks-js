@@ -6449,3 +6449,21 @@ function unusedDigits(){
     return res.split('').sort().join('');
 }
 ```
+[https://www.codewars.com/kata/5574940eae1cf7d520000076/train/javascript](https://www.codewars.com/kata/5574940eae1cf7d520000076/train/javascript)
+```javascript
+function pattern(n){
+ var output="";
+   if( n <= 0){
+     return output;
+   }
+  for(let i = 1; i <= n; i+=2){
+    let el = String(i).repeat(i);        
+    if(i === n || i === (n-1)){
+      output += el;
+    } else {
+      output += el + "\n";
+    }
+  }
+ return output;
+}
+```
