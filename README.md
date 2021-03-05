@@ -6449,7 +6449,7 @@ function unusedDigits(){
     return res.split('').sort().join('');
 }
 ```
-[https://www.codewars.com/kata/5574940eae1cf7d520000076/train/javascript](https://www.codewars.com/kata/5574940eae1cf7d520000076/train/javascript)
+[Complete The Pattern #6 - Odd Ladder](https://www.codewars.com/kata/5574940eae1cf7d520000076/train/javascript)
 ```javascript
 function pattern(n){
  var output="";
@@ -6465,5 +6465,25 @@ function pattern(n){
     }
   }
  return output;
+}
+```
+[Format a string of names like 'Bart, Lisa & Maggie'.](https://www.codewars.com/kata/53368a47e38700bd8300030d/train/javascript)
+```javascript
+function list(names){
+    let arr = [];
+    if(!names.length){
+        return '';
+    }
+    for(let i = 0; i < names.length; i++){
+        let name = Object.values(names[i]).join('');
+      arr.push(name);
+    }
+    if(arr.length > 1) {
+        let last = arr.splice(arr.length-1);
+        return arr.join(', ') + ' & ' + last;
+    }
+    if(arr.length === 1){
+        return arr.join('');
+    }    
 }
 ```
