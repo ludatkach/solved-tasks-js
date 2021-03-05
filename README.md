@@ -6487,3 +6487,16 @@ function list(names){
     }    
 }
 ```
+[Determine if the poker hand is flush](https://www.codewars.com/kata/5acbc3b3481ebb23a400007d/train/javascript)
+```javascript
+function isFlush(cards) {
+    let count = 0;
+    let x = cards[0].charAt(cards[0].length-1);
+    for(let i = 0; i < cards.length; i++){      
+      if(cards[i].match(x)){
+        count++;
+      }
+    }
+    return count === 5 ? true : false;
+}
+```
