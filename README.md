@@ -6524,3 +6524,28 @@ function numbers(){
   return count === arguments.length 
 }
 ```
+[Grasshopper - Create the rooms](https://www.codewars.com/kata/56a29b237e9e997ff2000048/train/javascript)
+```javascript
+var rooms = {
+}
+
+room1 = {
+  'name': 'room1[name]',
+  'description': 'room1[description]',
+  'completed': 'room1[completed]'
+},
+room2 = {
+  'name': 'room1[name]',
+  'description': 'room1[description]',
+  'completed': 'room1[completed]'
+},
+room3 = {
+  'name': 'room1[name]',
+  'description': 'room1[description]',
+  'completed': 'room1[completed]'
+}
+
+rooms['room1'] = room1;
+rooms['room2'] = room2;
+rooms['room3'] = room3;
+```
