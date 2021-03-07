@@ -6512,3 +6512,15 @@ function modifiedSum(a, n) {
   return result - sum;
 }
 ```
+[For the sake of argument](https://www.codewars.com/kata/5258b272e6925db09900386a/train/javascript)
+```javascript
+function numbers(){
+  let count = 0;
+  for(let i = 0; i < arguments.length; i++){
+    if(typeof arguments[i] === 'number'){
+      count++;
+    } 
+  }
+  return count === arguments.length 
+}
+```
