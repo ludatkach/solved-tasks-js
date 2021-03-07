@@ -6500,3 +6500,15 @@ function isFlush(cards) {
     return count === 5 ? true : false;
 }
 ```
+[Nth power rules them all!](https://www.codewars.com/kata/58aed2cafab8faca1d000e20/train/javascript)
+```javascript
+function modifiedSum(a, n) {
+  let sum = a.reduce((el, sum)=> sum + el);
+  let pw = [];
+  for(let i = 0; i < a.length; i++){
+    pw.push(Math.pow(a[i], n));
+  }
+  let result = pw.reduce((el, sum) => sum + el);
+  return result - sum;
+}
+```
