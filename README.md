@@ -6549,3 +6549,19 @@ rooms['room1'] = room1;
 rooms['room2'] = room2;
 rooms['room3'] = room3;
 ```
+[Insert dashes](https://www.codewars.com/kata/55960bbb182094bc4800007b/train/javascript)
+```javascript
+function insertDash(num) {
+    let str = String(num);
+    let result = '';
+    result += str[0];
+    for(let i = 1; i < str.length; i++){
+      if(str[i-1] % 2 != 0 && str[i] % 2 != 0){
+        result += '-' + str[i];
+      } else{
+        result += str[i];
+      }
+    }
+    return result;
+}
+```
