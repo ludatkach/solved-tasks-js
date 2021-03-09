@@ -6565,3 +6565,38 @@ function insertDash(num) {
     return result;
 }
 ```
+[Roman Numerals Decoder](https://www.codewars.com/kata/51b6249c4612257ac0000005/train/javascript)
+```javascript
+function solution(roman){
+  let symbols = {
+        "I": 1,
+        "V": 5,
+        "X": 10,
+        "L": 50,
+        "C": 100,
+        "D": 500,
+        "M": 1000
+    };
+  let table = [];
+  for (let i = 0; i < roman.length; i++) {
+        table.push(symbols[roman[i]]);
+  }
+  let year = 0;
+  let curElement = 0;
+  while (table.length) {
+        curElement = table.shift();
+        if(table.length) {
+            let nexElement = table[0];
+            if(curElement >= nexElement) {
+                year += curElement;
+            } else {
+                table.shift();
+                year += Math.abs(curElement - nexElement);
+            }
+        } else {
+            year += curElement;
+        }
+  }
+  return year;
+}
+```
