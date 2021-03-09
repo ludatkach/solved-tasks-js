@@ -6600,3 +6600,31 @@ function solution(roman){
   return year;
 }
 ```
+[Roman Numerals Decoder](https://www.codewars.com/kata/51b6249c4612257ac0000005/train/javascript)
+```javascript
+function solution(roman){
+  let symbols = {
+        "I": 1,
+        "V": 5,
+        "X": 10,
+        "L": 50,
+        "C": 100,
+        "D": 500,
+        "M": 1000
+  };
+  let table = [];
+  for (let i = 0; i < roman.length; i++) {
+        table.push(symbols[roman[i]]);
+  }
+  let year = 0;
+  for (let i = 0; i < table.length; i++) {
+        if (table[i + 1] > table[i]) {
+            year += table[i + 1] - table[i];
+            i++;
+        } else {
+            year += table[i];
+        }
+  }
+  return year;
+}
+```
