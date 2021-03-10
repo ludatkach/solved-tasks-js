@@ -6628,3 +6628,31 @@ function solution(roman){
   return year;
 }
 ```
+[The maximum and minimum difference -- Simple version](https://www.codewars.com/kata/583c5469977933319f000403/train/javascript)
+```javascript
+function maxAndMin(arr1,arr2){
+    let result = [];
+    let min;
+    let max;
+    if(arr1.length <= arr2.length){
+        for(let i = 0; i < arr2.length; i++){
+            for(let j = 0; j < arr1.length; j++){
+                result.push(Math.abs(arr2[i]-arr1[j]));
+            }
+        }
+        min = result.sort((a,b) => a - b)[0];
+        max = result.sort((a,b) => a - b)[result.length-1];
+     } else{
+       for(let i = 0; i < arr1.length; i++){
+            for(let j = 0; j < arr2.length; j++){
+                result.push(Math.abs(arr1[i]-arr2[j]));
+            }
+        }
+       min = result.sort((a,b) => a - b)[0];
+       max = result.sort((a,b) => a - b)[result.length-1];
+     }
+    return [max, min];
+  
+  
+}
+```
