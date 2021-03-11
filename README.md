@@ -6656,3 +6656,19 @@ function maxAndMin(arr1,arr2){
   
 }
 ```
+[Shared Bit Counter](https://www.codewars.com/kata/58a5aeb893b79949eb0000f1/train/javascript)
+```javascript
+function sharedBits(a, b) {
+   let binA = "00000000000000000000000000000000" + a.toString(2);
+   binA = binA.substring(binA.length-28);
+   let binB = "00000000000000000000000000000000" + b.toString(2);
+   binB = binB.substring(binB.length-28);
+   let count = 0;
+   for(let i = 0; i < binA.length; i++){
+     if(+binA[i] === 1 && +binB[i] === 1) {
+       count++;
+     }
+   }
+   return count >= 2;
+}
+```
