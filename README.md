@@ -6672,3 +6672,16 @@ function sharedBits(a, b) {
    return count >= 2;
 }
 ```
+[Contamination #1 -String-](https://www.codewars.com/kata/596fba44963025c878000039/train/javascript)
+```javascript
+function contamination(text, char){
+  if(text === "" || char === ""){
+    return "";
+  }
+  let result = "";
+  for(let i = 0; i < text.length; i++){
+    result += char;
+  }
+  return result;
+}
+```
