@@ -6685,3 +6685,30 @@ function contamination(text, char){
   return result;
 }
 ```
+[Steps in Primes](https://www.codewars.com/kata/5613d06cee1e7da6d5000055/train/javascript)
+```javascript
+function step(g, m, n) {
+  console.log(g,m,n);
+    let result = [];
+    for (let i = m; i <= n; i++) {
+        let prime = true;
+        for (let j = 2; j * j <= i; j++) {
+            if (i % j === 0) {
+                prime = false;
+                break;
+            }
+        }
+        if (prime) {
+            result.push(i);
+        }
+
+    }
+    for (let i = 0; i < result.length; i++) {        
+        if ( result.includes(result[i] + g)){
+            let next = result[i] + g;
+            return [result[i], next];
+        }        
+    }
+    return null;
+}
+```
