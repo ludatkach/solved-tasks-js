@@ -6729,3 +6729,16 @@ scoobydoo.bark = function() {
   return "Woof";
 };
 ```
+[Special Number (Special Numbers Series #5)](https://www.codewars.com/kata/5a55f04be6be383a50000187/train/javascript)
+```javascript
+function specialNumber(n){
+  let num = n.toString();
+  let check = 0;
+  for(let i = 0; i < num.length; i++){
+    if(/[012345]+/.test(num[i])){
+      check++;
+    }
+  }
+  return check === num.length ? "Special!!" : "NOT!!";
+}
+```
