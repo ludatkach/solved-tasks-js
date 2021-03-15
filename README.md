@@ -6742,3 +6742,20 @@ function specialNumber(n){
   return check === num.length ? "Special!!" : "NOT!!";
 }
 ```
+[Candy problem](https://www.codewars.com/kata/55466644b5d240d1d70000ba/train/javascript)
+```javascript
+function candies(kids){
+  let sum = 0;
+  if(kids.length > 1){
+    let max = Math.max(...kids);
+    for(let i = 0; i < kids.length; i++) {
+      if(kids[i] < max){
+        sum += max - kids[i];
+      }
+    }
+    return sum;
+  } else {
+    return -1;
+  }
+}
+```
