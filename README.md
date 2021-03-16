@@ -6759,3 +6759,22 @@ function candies(kids){
   }
 }
 ```
+[CubeSummation](https://www.codewars.com/kata/550e9fd127c656709400024d/train/javascript)
+```javascript
+function cubeSum(n, m){
+  if( n === m){
+    return 0;
+  }
+  let result = [];
+  if(n > m) {
+    for(let i = m + 1; i <= n; i++){
+      result.push(Math.pow(i, 3));
+    }
+  } else{
+    for(let i = n + 1; i <= m; i++){
+      result.push(Math.pow(i, 3));
+    }
+  }
+  return result.reduce((a,b) => a + b);
+}
+```
