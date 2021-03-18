@@ -6778,3 +6778,15 @@ function cubeSum(n, m){
   return result.reduce((a,b) => a + b);
 }
 ```
+[Simple consecutive pairs](https://www.codewars.com/kata/5a3e1319b6486ac96f000049/train/javascript)
+```javascript
+function pairs(ar){
+  let count = 0;
+  for(let i = 0; i < ar.length-1; i+=2){
+    if( Math.abs(ar[i]-ar[i+1]) === 1) {
+      count++;
+    }
+  }
+  return count;
+};
+```
