@@ -6813,3 +6813,10 @@ function smallWordHelper(sentence){
     return result.join(' ');
 }
 ```
+[Grasshopper - Basic Function Fixer](https://www.codewars.com/kata/56200d610758762fb0000002/train/javascript)
+```javascript
+function addFive(num) {
+  var total = num + 5
+  return total;
+}
+```
