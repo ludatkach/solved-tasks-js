@@ -6826,3 +6826,18 @@ function usdcny(usd) {
   return (usd * 6.75).toFixed(2) + ' Chinese Yuan';
 }
 ```
+[Last](https://www.codewars.com/kata/541629460b198da04e000bb9/train/javascript)
+```javascript
+function last(list){
+  console.log(list);
+  if(arguments.length > 1){
+    return arguments[arguments.length-1];
+  }  
+  if(typeof list === 'object' || typeof list === 'string'){
+    return list[list.length-1];
+  }
+  
+  return list;
+  
+}
+```
