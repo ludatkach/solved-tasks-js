@@ -6841,3 +6841,25 @@ function last(list){
   
 }
 ```
+[Dominant array elements](https://www.codewars.com/kata/5a04133e32b8b998dc000089/train/javascript)
+```javascript
+function solve(arr){
+    let result = [];
+    let count = 0;
+    for(let i = 0; i < arr.length; i++){
+      count = 0;
+      for(let j = i+1; j < arr.length; j++){      
+        if(arr[i] > arr[j]){
+          count++;
+          continue;
+        } else{
+          break;
+        }
+      }
+      if(count === arr.length - 1 -i){
+        result.push(arr[i]);
+      }
+    }
+    return result;
+};
+```
