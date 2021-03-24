@@ -6863,3 +6863,22 @@ function solve(arr){
     return result;
 };
 ```
+[Valid Spacing](https://www.codewars.com/kata/5f77d62851f6bc0033616bd8/train/javascript)
+```javascript
+function validSpacing(s) {
+    if(!s.length || s.match(/^[a-zA-Z]$/)){
+        return true;
+    }
+    let newStr = s.trim();
+    if(s.length === newStr.length){
+        for(let i = 0; i < s.length-1; i++){
+            if(s[i] === ' ' && s[i+1] === ' '){
+                return false;
+            } 
+        }
+        return true;
+    } else{
+        return false;
+    }
+}
+```
