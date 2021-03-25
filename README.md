@@ -6882,3 +6882,21 @@ function validSpacing(s) {
     }
 }
 ```
+[Max-min arrays](https://www.codewars.com/kata/5a090c4e697598d0b9000004/train/javascript)
+```javascript
+function solve(arr){
+  let sorted = arr.sort((a,b) => b - a);
+  let result = [];
+  for(let i = 0; i < sorted.length/2; i++){
+    let l = i, r = sorted.length - 1- i;
+    if( r - l > 0){
+      result.push(sorted[l]);
+      result.push(sorted[r]);
+    } else{
+      result.push(sorted[l]);
+      break;
+    }      
+  } 
+  return result;
+};
+```
