@@ -6900,3 +6900,9 @@ function solve(arr){
   return result;
 };
 ```
+[Zalgo text reader](https://www.codewars.com/kata/588fe9eaadbbfb44b70001fc/train/javascript)
+```javascript
+function readZalgo(zalgotext) {
+ return  zalgotext.split(' ').map(element => element.split('').filter(value => /[\w\d\.\,\!\?]/.test(value)).join('')).join(' ');
+}
+```
