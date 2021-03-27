@@ -6906,3 +6906,11 @@ function readZalgo(zalgotext) {
  return  zalgotext.split(' ').map(element => element.split('').filter(value => /[\w\d\.\,\!\?]/.test(value)).join('')).join(' ');
 }
 ```
+[Unique string characters](https://www.codewars.com/kata/5a262cfb8f27f217f700000b/train/javascript)
+```javascript
+function solve(a,b){
+  let setUnion = [...a,...b];
+  let setDiff = setUnion.filter((num)=> !a.includes(num) || !b.includes(num))
+  return setDiff.join('');
+};
+```
