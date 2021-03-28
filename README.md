@@ -6914,3 +6914,32 @@ function solve(a,b){
   return setDiff.join('');
 };
 ```
+[Replace all items](https://www.codewars.com/kata/57ae18c6e298a7a6d5000c7a/train/javascript)
+```javascript
+function replaceAll(seq, find, replace) {
+  let result = [];
+  let str = '';
+  if(typeof seq === 'object'){
+    for(let i = 0; i < seq.length; i++){
+      if(seq[i] === find){
+        result.push(replace);
+      } else{
+        result.push(seq[i]);
+      }
+    }
+    return result;
+  } 
+  if(typeof seq === 'string'){
+    for(let i = 0; i < seq.length; i++){
+      if(seq[i] === find){
+        str += replace;
+      } else{
+        str += seq[i];
+      }
+    }
+    return str;
+  }
+  
+  
+}
+```
