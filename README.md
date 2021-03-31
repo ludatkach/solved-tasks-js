@@ -6953,3 +6953,13 @@ function billboard(name, price = 30){
   return result;
 }
 ```
+[Mirror, mirror, on the wall...](https://www.codewars.com/kata/5f55ecd770692e001484af7d/train/javascript)
+```javascript
+function mirror(data) {
+    let arr1 = data.slice();
+    let arr = arr1.sort((a,b) => a - b);
+    let arr2 = arr.slice();
+    let rever = arr2.reverse().slice(1);
+    return arr.concat(rever);
+}
+```
