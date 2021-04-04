@@ -7000,3 +7000,11 @@ String.prototype.myNewMethod = function() {
 };
 
 ```
+[Thinking & Testing : Uniq or not Uniq](https://www.codewars.com/kata/56d949281b5fdc7666000004/train/javascript)
+```javascript
+function testit(a,b){
+    let setA = new Set(a);
+    let setB = new Set(b);
+    return [...setA].concat([...setB]).sort((a,b) => a - b);
+}
+```
