@@ -7008,3 +7008,27 @@ function testit(a,b){
     return [...setA].concat([...setB]).sort((a,b) => a - b);
 }
 ```
+[FIXME: Get Full Name](https://www.codewars.com/kata/597c684822bc9388f600010f/train/javascript)
+```javascript
+class Dinglemouse{  
+
+  constructor( firstName, lastName ){
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  
+  getFullName(){    
+    if(typeof this.firstName === 'string' && this.firstName.length && 
+       typeof this.lastName === 'string' && this.lastName.length){
+      return this.firstName + " " + this.lastName;
+    } else if(typeof this.firstName === 'string' && this.firstName.length) {
+      return this.firstName;
+    } else if(typeof this.lastName === 'string' && this.lastName.length) {
+      return this.lastName;
+    } else{
+      return '';
+    }
+  }
+  
+}
+```
