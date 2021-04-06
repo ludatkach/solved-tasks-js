@@ -7039,3 +7039,23 @@ function reject(array, predicate) {
   return array.filter(el => !predicate(el));
 }
 ```
+[Simple array product](https://www.codewars.com/kata/5d0365accfd09600130a00c9/train/javascript)
+```javascript
+var maxEl;
+function solve_rec(prod, idx, arr) {
+    if (idx < arr.length) {
+        let rowData = arr[idx++];
+        rowData.forEach(element => {
+            solve_rec(prod * element, idx, arr);
+        });
+    } else {
+        maxEl = Math.max(maxEl, prod);
+    }
+}
+
+function solve(arr) {
+    maxEl = Number.NEGATIVE_INFINITY;
+    solve_rec(1, 0, arr);
+    return maxEl;
+}
+```
