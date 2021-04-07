@@ -7059,3 +7059,13 @@ function solve(arr) {
     return maxEl;
 }
 ```
+[pick a set of first elements](https://www.codewars.com/kata/572b77262bedd351e9000076/train/javascript)
+```javascript
+function first(arr, n) {
+  let l = 1;  
+  if(arguments.length > 1){
+    l = Math.min(arr.length, n);
+  }  
+  return arr.slice(0, l);  
+}
+```
