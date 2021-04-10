@@ -7076,3 +7076,17 @@ function combineNames (first, last){
 }
 
 ```
+[Heads and Legs](https://www.codewars.com/kata/574c5075d27783851800169e/train/javascript)
+```javascript
+function animals(heads, legs){
+    let cows = (legs - 2 * heads) / 2;
+    let chicks = heads - cows;
+    if( Number.isInteger(cows) && Number.isInteger(chicks) && cows >= 0 && chicks >= 0){
+      return [chicks, cows];
+    }
+    if (!Number.isInteger(cows) || !Number.isInteger(chicks) || heads <= 0 || legs <= 0 ){
+        return "No solutions";
+    }
+    return "No solutions";  
+}
+```
