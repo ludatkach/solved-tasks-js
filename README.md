@@ -7090,3 +7090,23 @@ function animals(heads, legs){
     return "No solutions";  
 }
 ```
+[Calculate String Rotation](https://www.codewars.com/kata/5596f6e9529e9ab6fb000014/train/javascript)
+```javascript
+function shiftedDiff(first,second){
+    let count = 0;
+    if(first === second){
+        return 0;
+    }
+    let secondArr = second.split('');
+    for(let i = 0; i < secondArr.length; i++){
+        let  letter = secondArr.shift();
+        secondArr.push(letter);
+        let str = secondArr.join('');
+        count++;
+        if(first === str){
+            return count;
+        } 
+    }
+    return -1;
+}
+```
