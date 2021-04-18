@@ -7110,3 +7110,16 @@ function shiftedDiff(first,second){
     return -1;
 }
 ```
+[Number to digit tiers](https://www.codewars.com/kata/586bca7fa44cfc833e00005c/train/javascript)
+```javascript
+function createArrayOfTiers(num) {
+    let str = num.toString();
+    let stringNum = '';
+    let result = [];
+    for(let i = 0; i < str.length; i++){
+        stringNum += str[i];
+        result.push(stringNum);
+    }
+    return result;
+}
+```
