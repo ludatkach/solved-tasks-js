@@ -7123,3 +7123,22 @@ function createArrayOfTiers(num) {
     return result;
 }
 ```
+[Backspaces in string](https://www.codewars.com/kata/5727bb0fe81185ae62000ae3/train/javascript)
+```javascript
+function cleanString(s) {
+  console.log(s);
+    let arr = s.split('');
+    for(let i = 0; i < arr.length; i++){
+       if( i === 0 && arr[i] === "#") {
+            arr.splice(i,1);
+            i = i -2;
+        }
+        if(arr[i] ===  '#' && i > 0){
+           arr.splice(i-1,2);
+           i = i - 2;
+        } 
+       
+    }
+    return arr.join('');
+};
+```
