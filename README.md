@@ -7142,3 +7142,19 @@ function cleanString(s) {
     return arr.join('');
 };
 ```
+[Multiplication table](https://www.codewars.com/kata/534d2f5b5371ecf8d2000a08/train/javascript)
+```javascript
+multiplicationTable = function(size) {
+  let result = [];
+  let row = [];
+  for(let i = 1; i <= size; i++){
+    for(let j = 1; j <= size; j++){
+      row.push(i*j); 
+      
+    }    
+    result.push(row);
+    row = [];
+  }
+  return result;
+}
+```
