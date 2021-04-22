@@ -7164,3 +7164,19 @@ function sixToast(num) {
   return Math.abs(num - 6);
 }
 ```
+[Divisible by previous digit?](https://www.codewars.com/kata/5a2809dbe1ce0e07f800004d/train/javascript)
+```javascript
+function divisibleByLast(n) {
+  let result = [];
+  let num = n.toString();
+  result.push(false);
+  for(let i = 1; i < num.length; i++){
+    if(Number.isInteger(num[i] / num[i-1]) ){
+      result.push(true);
+    } else {
+      result.push(false);
+    }
+  }
+  return result;
+}
+```
