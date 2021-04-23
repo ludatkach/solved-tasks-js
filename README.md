@@ -7180,3 +7180,11 @@ function divisibleByLast(n) {
   return result;
 }
 ```
+[Stones on the Table](https://www.codewars.com/kata/5f70e4cce10f9e0001c8995a/train/javascript)
+```javascript
+function solve(stones) {
+    let lengthBefore = stones.length;
+    let lengthAfter = stones.replace(/(.)\1+/gi, "$1").length;
+    return lengthBefore - lengthAfter;
+}
+```
