@@ -7206,3 +7206,26 @@ function calcType(a, b, res) {
 }
 
 ```
+[up AND down](https://www.codewars.com/kata/56cac350145912e68b0006f0/train/javascript)
+```javascript
+function arrange(strng) {
+    let arr = strng.split(' ');
+    let word = '';
+    for(let i = 0; i < arr.length-1; i++){
+      if( (i % 2 === 0 && arr[i].length > arr[i+1].length) || (i % 2 != 0 && arr[i].length < arr[i+1].length) ) {      
+        word = arr[i];
+        arr[i] = arr[i+1];
+        arr[i+1] = word;  
+        word = ''; 
+      }    
+    }
+    for(let i = 0; i < arr.length; i++){
+        if (i % 2 === 0 ){
+            arr[i] = arr[i].toLowerCase();
+        } else {
+            arr[i] = arr[i].toUpperCase();
+        }
+    }
+    return arr.join(' ');
+}
+```
