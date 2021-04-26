@@ -7244,3 +7244,18 @@ function transpose(matrix) {
     return result;
 }
 ```
+[heggeleggleggo](https://www.codewars.com/kata/55ea5304685da2fb40000018/train/javascript)
+```javascript
+function heggeleggleggo(word){
+  let result = '';
+  let conson = /[BCDFGHJKLMNPQRSTVWXZY]/i;
+  for(let i = 0; i < word.length; i++){
+    if(conson.test(word[i])){
+      result += word[i] + 'egg';
+    } else{
+      result += word[i];
+    }
+  }
+  return result;
+}
+```
