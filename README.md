@@ -7229,3 +7229,18 @@ function arrange(strng) {
     return arr.join(' ');
 }
 ```
+[Matrix Transpose](https://www.codewars.com/kata/52fba2a9adcd10b34300094c/train/javascript)
+```javascript
+function transpose(matrix) {
+    let result = [];
+    let lengthR = matrix[0].length;
+    for (let i = 0; i < lengthR; i++) {
+        let tmp = [];
+        for (let j = 0; j < matrix.length; j++) {
+            tmp.push(matrix[j][i]);
+        }
+        result.push(tmp);
+    }
+    return result;
+}
+```
