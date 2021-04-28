@@ -7272,3 +7272,27 @@ function cookingTime(eggs) {
   }
 }
 ```
+[Simple Jeringonza](https://www.codewars.com/kata/5aba0a08379d20026e0000be/train/javascript)
+```javascript
+function jeringonza() {
+    let result = [];
+    let word = '';
+    let array = arguments[0].split(' ');
+    let upperCase = /[AEIOU]/;
+    let lowerCase = /[aeiou]/;
+    for(let i = 0; i < array.length; i++){
+        for(let j = 0; j < array[i].length; j++){
+            if(upperCase.test(array[i][j])){
+                word += (array[i][j] + 'P' + array[i][j]).toUpperCase();
+            } else if(lowerCase.test(array[i][j])){
+                word += (array[i][j] + 'P' + array[i][j]).toLowerCase();
+            } else{
+                word += array[i][j];
+            }            
+        }
+        result.push(word);
+        word = '';
+    }
+    return result.join(' ');
+}
+```
