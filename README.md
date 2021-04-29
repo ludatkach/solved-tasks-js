@@ -7296,3 +7296,19 @@ function jeringonza() {
     return result.join(' ');
 }
 ```
+[Pair of gloves](https://www.codewars.com/kata/58235a167a8cb37e1a0000db/train/javascript)
+```javascript
+function numberOfPairs(gloves)
+{
+  console.log(gloves);
+    let obj = {};
+    let result = 0;
+    gloves.forEach(el => el in obj ? obj[el]++ : obj[el] = 1);
+    for(let key in obj){
+        if( Math.floor(obj[key] / 2  >= 1)){
+            result += Math.floor(obj[key] / 2 );
+        }
+    }   
+    return result;
+}
+```
