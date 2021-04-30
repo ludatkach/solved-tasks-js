@@ -7312,3 +7312,22 @@ function numberOfPairs(gloves)
     return result;
 }
 ```
+[String Breakers](https://www.codewars.com/kata/59d398bb86a6fdf100000031/train/javascript)
+```javascript
+function stringBreakers(n, string){
+   let all = string.split(' ').join('');
+    let count = 0;
+    let result = '';
+    for(let i = 0; i <all.length; i++){
+        if(count < n){
+            result += all[i];
+            count++;
+        } else {
+            result += '\n';
+            count = 0;
+            i--;
+        }          
+    }
+    return result;
+}
+```
