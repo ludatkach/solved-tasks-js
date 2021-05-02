@@ -7331,3 +7331,24 @@ function stringBreakers(n, string){
     return result;
 }
 ```
+[Ce*s*r*d Strings](https://www.codewars.com/kata/5ff6060ed14f4100106d8e6f/train/javascript)
+```javascript
+function uncensor(infected, discovered) {
+  let str = infected.split(' ');
+  let arrDisc = discovered.split('');
+  let result = [];
+  let temp = [];
+  for(let i = 0; i< str.length; i++){
+      for(let j = 0; j < str[i].length; j++){
+          if(str[i][j] === '*'){              
+              temp.push(arrDisc.shift());
+          } else{
+            temp.push(str[i][j]);
+          }
+      }
+      result.push(temp.join(''));
+      temp = [];
+  }
+  return result.join(' ');
+}
+```
