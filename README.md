@@ -7374,3 +7374,24 @@ function equalize(array){
 }
 
 ```
+[Number Manipulation I (Easy)](https://www.codewars.com/kata/5890579a34a7d44f3b00009e/train/javascript)
+```javascript
+function manipulate(num) { 
+    let strNum = num + '';
+    let result = '';
+    let addZ;
+    if( strNum.length % 2 === 0){
+        addZ = strNum.length/2;
+       for(let i = 0; i < strNum.length/2; i++){
+           result += strNum[i];
+       }
+       return +(result + '0'.repeat(addZ));
+    } else{
+        addZ = (strNum.length-1) / 2 + 1;
+        for(let i = 0; i < (strNum.length-1)/2; i++){
+            result += strNum[i];
+        }
+        return +(result + '0'.repeat(addZ));
+    }
+} 
+```
