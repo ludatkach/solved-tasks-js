@@ -7352,3 +7352,25 @@ function uncensor(infected, discovered) {
   return result.join(' ');
 }
 ```
+[Equalize the array!](https://www.codewars.com/kata/580a1a4af195dbc9ed00006c/train/javascript)
+```javascript
+function equalize(array){
+    let str = '';
+    let result = [];
+    for(let i = 0; i < array.length; i++){
+      if(array[0] > array[i]){
+         str += "-";
+         str += Math.abs(array[0] - array[i]);         
+         result.push(str);
+         str = '';
+      } else{
+        str += "+";
+        str += Math.abs(array[0] - array[i]);
+        result.push(str);
+        str = '';
+      }      
+    }
+    return result;
+}
+
+```
