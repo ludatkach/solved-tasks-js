@@ -7395,3 +7395,20 @@ function manipulate(num) {
     }
 } 
 ```
+[String matchup](https://www.codewars.com/kata/59ca8e8e1a68b7de740001f4/train/javascript)
+```javascript
+function solve(a,b){
+  let result = [];
+  let count = 0;
+  for(let i = 0; i < b.length; i++){
+    for(let j = 0; j < a.length; j++){
+      if(a[j] === b[i]){
+        count++;
+      }
+    }
+    result.push(count);
+    count = 0;
+  }
+  return result;
+}
+```
