@@ -7412,3 +7412,23 @@ function solve(a,b){
   return result;
 }
 ```
+[Coding 3min : Parallel circuit](https://www.codewars.com/kata/571654c3347e6533fa00186b/train/javascript)
+```javascript
+function resistance(arr){
+  let result = [];
+  let sum = 0;
+  for(let i = 0; i < arr.length; i++){
+    for(let j = 0; j < arr[i].length; j++){
+      sum += arr[i][j];
+    }
+    result.push(sum);
+    sum = 0;
+  }
+  let out = 0;
+  for(let i = 0; i < result.length; i++){
+    out += 1 / result[i];
+  }
+  return +(1 / out).toFixed(2);
+}
+
+```
