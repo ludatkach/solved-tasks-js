@@ -7432,3 +7432,17 @@ function resistance(arr){
 }
 
 ```
+[Character with longest consecutive repetition](https://www.codewars.com/kata/586d6cefbcc21eed7a001155/train/javascript)
+```javascript
+function longestRepetition(s) {
+    let found = s.match(/(.)\1*/g);
+    if(found === null) {
+      return ["", 0];
+    }
+    let max = found.reduce(function (prev, current) {
+        return (prev.length >= current.length) ? prev : current
+    });
+
+    return max.length ? [max[0], max.length] : ["", 0];
+}
+```
