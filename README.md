@@ -7446,3 +7446,25 @@ function longestRepetition(s) {
     return max.length ? [max[0], max.length] : ["", 0];
 }
 ```
+[Char Code Calculation](https://www.codewars.com/kata/57f75cc397d62fc93d000059/train/javascript)
+```javascript
+function calc(x){
+    let total1 = '';
+    let sum1 = 0;
+    for(let i = 0; i < x.length; i++){
+        total1 += x.charCodeAt(i);
+    }
+    sum1 = total1.split('').reduce((a,b) => +a + +b);    
+    let total2 = '';
+    let sum2 = 0;
+    for(let i = 0; i < total1.length; i++){
+        if(total1[i] === '7'){
+            total2 += '1';
+        } else{
+            total2 += total1[i];
+        }
+    }
+    sum2 = total2.split('').reduce((a,b) => +a + +b);
+    return Math.abs(sum1 - sum2);
+}
+```
