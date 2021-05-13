@@ -7484,3 +7484,26 @@ function dup(s) {
     return result;
 };
 ```
+[Coding Meetup #1 - Higher-Order Functions Series - Count the number of JavaScript developers coming from Europe](https://www.codewars.com/kata/582746fa14b3892727000c4f/train/javascript)
+```javascript
+function countDevelopers(list) {
+    let count = 0;
+    let result = 0;
+    for(let i = 0; i < list.length; i++){
+        let obj = list[i];
+        for(let key in obj){
+           if( obj[key] ==='Europe' || obj[key] === 'JavaScript') {
+               count++;            
+           }            
+        }
+        if(count % 2 === 0){
+            result += count/2;
+        } else {
+            result += count - 1;
+        }
+        count = 0;
+    }
+    
+    return result;
+}
+```
