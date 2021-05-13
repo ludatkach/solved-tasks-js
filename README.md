@@ -7468,3 +7468,19 @@ function calc(x){
     return Math.abs(sum1 - sum2);
 }
 ```
+[String array duplicates](https://www.codewars.com/kata/59f08f89a5e129c543000069/train/javascript)
+```javascript
+function dup(s) {
+    let result = [];
+    let word = '';
+    for(let i = 0; i < s.length; i++){
+        let found = s[i].match(/(.)\1*/g);
+        for(let j = 0; j < found.length; j++){
+            word += found[j][0];
+        }        
+        result.push(word);
+        word = '';        
+    }
+    return result;
+};
+```
