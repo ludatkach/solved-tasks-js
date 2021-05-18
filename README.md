@@ -7507,3 +7507,59 @@ function countDevelopers(list) {
     return result;
 }
 ```
+[]()
+```javascript
+function looseChange(cents){
+  console.log(cents);
+     let temp = 0;
+    let quarters = 0;
+    let pennies = 0; 
+    let nickels = 0;
+    let dimes = 0;
+    if(cents <= 0){
+        return {'Nickels': 0, 'Pennies': 0, 'Dimes': 0, 'Quarters': 0};
+    }
+    if(!Number.isInteger(cents)){
+        cents = Math.floor(cents);
+    }
+   if( cents/25 >= 1 ){
+       quarters = Math.floor(cents/25);
+       temp = cents - quarters * 25;
+       if(temp/10 >= 1){
+           dimes = Math.floor(temp/10);
+           temp = temp - dimes * 10;
+           if(temp/5 >= 1){
+               nickels = Math.floor(temp/5);
+               pennies = temp - nickels * 5;               
+           } else{
+               nickels = 0;
+               pennies = temp;
+           }
+       } else {
+            if(temp/5 >= 1){
+                nickels = Math.floor(temp/5);
+                pennies = temp - nickels * 5;               
+            } else{
+                pennies = temp;
+            }
+       }
+
+    } else if(cents/10 >= 1){
+        dimes = Math.floor(cents/10);
+        temp = cents - dimes * 10;
+        if(temp/5 >= 1){
+            nickels = Math.floor(temp/5);
+            pennies = temp - nickels * 5; 
+        } else{
+            pennies = temp;
+        }
+    } else  if(cents/5 >= 1) {
+        nickels = Math.floor(cents/5);
+        pennies = cents - nickels * 5;               
+    } else{
+        pennies = cents;
+    }
+   return {'Nickels': nickels, 'Pennies': pennies, 'Dimes': dimes, 'Quarters': quarters};
+
+}
+```
