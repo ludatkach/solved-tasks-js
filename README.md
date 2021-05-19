@@ -7507,7 +7507,7 @@ function countDevelopers(list) {
     return result;
 }
 ```
-[]()
+[Loose Change](https://www.codewars.com/kata/5571f712ddf00b54420000ee/train/javascript)
 ```javascript
 function looseChange(cents){
   console.log(cents);
@@ -7561,5 +7561,29 @@ function looseChange(cents){
     }
    return {'Nickels': nickels, 'Pennies': pennies, 'Dimes': dimes, 'Quarters': quarters};
 
+}
+```
+[Game Hit the target](https://www.codewars.com/kata/5ffc226ce1666a002bf023d2/train/javascript)
+```javascript
+const solution = mtrx => {
+ let k, m;
+ for(let i = 0; i < mtrx.length; i++){
+     for(let j = 0; j < mtrx[i].length; j++){
+         if( mtrx[i][j] === '>' ){
+             k = j;
+         }
+         if(mtrx[i][j] === 'x'){
+             m = j;
+         }
+
+     }
+     if( k < m){
+         return true;
+     } else{
+        k = undefined;
+        m = undefined;
+     }
+ }
+ return false;
 }
 ```
