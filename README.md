@@ -7607,3 +7607,14 @@ function isAValidMessage(message){
     return false;
 }
 ```
+[Summy](https://www.codewars.com/kata/599c20626bd8795ce900001d/train/javascript)
+```javascript
+function summy(stringOfInts){
+  let sum = 0;
+  let arr = stringOfInts.split(' ');
+  for(let i = 0; i < arr.length; i++){
+      sum += +arr[i];
+  }
+  return sum;
+}
+```
