@@ -7587,3 +7587,23 @@ const solution = mtrx => {
  return false;
 }
 ```
+[Message Validator](https://www.codewars.com/kata/5fc7d2d2682ff3000e1a3fbc/train/javascript)
+```javascript
+function isAValidMessage(message){
+    if(!message.length){
+        return true;
+    }
+    let count = 0;
+    let blocks = message.match(/\d*\D*/g);
+    for(let i = 0; i < blocks.length; i++){
+        let elem = blocks[i].match(/(\d*)(\D*)/);
+        if(+elem[1] === elem[2].length){
+            count++;
+        }
+    }
+    if(count === blocks.length) {
+        return true;
+    }   
+    return false;
+}
+```
