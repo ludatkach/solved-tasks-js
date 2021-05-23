@@ -7618,3 +7618,16 @@ function summy(stringOfInts){
   return sum;
 }
 ```
+[Get decimal part of the given number](https://www.codewars.com/kata/586e4c61aa0428f04e000069/train/javascript)
+```javascript
+function getDecimal(n){
+    let num = n + '';
+    let result = '0';
+    for(let i = 0; i < num.length; i++){
+        if(num[i] === '.'){
+            result += num.slice(i);
+        }
+    }
+    return +result;
+}
+```
