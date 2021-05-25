@@ -7631,3 +7631,33 @@ function getDecimal(n){
     return +result;
 }
 ```
+[Math engine](https://www.codewars.com/kata/587854330594a6fb7e000057/train/javascript)
+```javascript
+function mathEngine(arr) {
+   if(!arr ){
+        return 0;
+    }
+    if(!arr.length){
+        return 1;
+    }
+    let sumNeg = 0;
+    let product = 1;
+    let countPos = 0;
+    let countNeg = 0;
+    for(let i = 0; i < arr.length; i++){
+        if( arr[i] >= 0){
+            product *= arr[i];
+            countPos++;
+        } else{
+            sumNeg += arr[i];
+            countNeg++;
+        }        
+    }
+    if(countPos === 0){
+        sumNeg++;
+        return sumNeg;
+    } else{
+        return sumNeg + product;
+    }
+}
+```
