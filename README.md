@@ -7661,3 +7661,18 @@ function mathEngine(arr) {
     }
 }
 ```
+[Holiday III - Fire on the boat](https://www.codewars.com/kata/57e8fba2f11c647abc000944/train/javascript)
+```javascript
+function fireFight(s){
+    let result = [];
+    let arr = s.split(' ');
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] === 'Fire'){
+            result.push('~~');
+        } else{
+            result.push(arr[i]);
+        }
+    }
+    return result.join(' ');
+}
+```
