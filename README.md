@@ -7680,3 +7680,15 @@ function fireFight(s){
 ```javascript
 const solve = (x, y) => x / y
 ```
+[Grid index](https://www.codewars.com/kata/5f5802bf4c2cc4001a6f859e/train/javascript)
+```javascript
+function gridIndex(grid, indices) {
+    let result = [];
+    let arr = [].concat(...grid);
+    for(let i = 0; i < indices.length; i++){
+        result.push(arr[indices[i]-1]);
+    }
+    return result.join('');
+  
+}
+```
