@@ -7692,3 +7692,28 @@ function gridIndex(grid, indices) {
   
 }
 ```
+[Life Path Number](https://www.codewars.com/kata/5a1a76c8a7ad6aa26a0007a0/train/javascript)
+```javascript
+function lifePathNumber(dateOfBirth) {
+    let lifenum = 0;
+    let temp = 0;
+    let smth;
+    let numArr = dateOfBirth.split('-');
+    for(let i = 0; i < numArr.length; i++){
+      for(let j = 0; j < numArr[i].length; j++){
+        temp += +numArr[i][j];
+      }
+      while(temp > 9){ 
+        smth = ('' + temp).split('');     
+        temp = smth.reduce((a,b) => +a + +b);
+      }
+      lifenum += temp;
+      temp = 0;
+    }
+    while(lifenum > 9){   
+        smth = ('' + lifenum).split('');     
+        lifenum = smth.reduce((a,b) => +a + +b);
+      }
+    return lifenum;
+}
+```
