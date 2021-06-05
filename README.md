@@ -7739,3 +7739,13 @@ var b = "Lab";
 
 var name = a + b;
 ```
+[Fix the Bugs (Syntax) ](https://www.codewars.com/kata/56aed32a154d33a1f3000018/train/javascript)
+```javascript
+function myFirstKata(a, b) {
+  if (typeof a != "number" || typeof b != "number"){
+    return false;
+  } else if( a != 0 && b != 0 ){
+    return (a % b) + (b % a);
+  }
+}
+```
