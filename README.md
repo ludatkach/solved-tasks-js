@@ -7765,3 +7765,29 @@ function elevatorDistance(array) {
     return sum;
 }
 ```
+[Decrypt this school cipher](https://www.codewars.com/kata/5cd48cffaae6e30018943175/train/javascript)
+```javascript
+const decrypt = (str) => {
+    let result = '';
+    let quoteOpen = false;
+    let buffer = '';
+    for(let i = 0; i < str.length; i++){
+        if(quoteOpen){
+            if(str[i] === '\''){
+                result += String.fromCharCode(parseInt(buffer));
+                quoteOpen = false;
+                buffer = '';
+            } else{
+                buffer += str[i];
+            }            
+        } else{
+            if(str[i] === '\''){
+                quoteOpen = true;
+            } else {
+                result += str[i];
+            }
+        }        
+    }
+    return result.split('').reverse().join('');
+}
+```
