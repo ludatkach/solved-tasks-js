@@ -7791,3 +7791,15 @@ const decrypt = (str) => {
     return result.split('').reverse().join('');
 }
 ```
+[Rearrange Number to Get its Maximum](https://www.codewars.com/kata/563700da1ac8be8f1e0000dc/train/javascript)
+```javascript
+var maxRedigit = function(num) {
+    let number;
+    if(num === 0 || num === -1 || num.toString().length != 3 ){
+      return null;
+    } else{
+        number = num.toString().split('').sort((a,b) => +b - +a);    
+    }
+    return +number.join('');
+};
+```
