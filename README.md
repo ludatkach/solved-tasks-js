@@ -7803,3 +7803,27 @@ var maxRedigit = function(num) {
     return +number.join('');
 };
 ```
+[Hells Kitchen](https://www.codewars.com/kata/57d1f36705c186d018000813/train/javascript)
+```javascript
+function gordon(a){
+    let vowel = /[euioEUIO]/g;
+    let arr = a.split(' ');
+    let result = [];
+    let word = '';
+    for(let i = 0; i < arr.length; i++){
+        for(let j = 0; j < arr[i].length; j++){
+            if(arr[i][j] === 'a' || arr[i][j] === 'A'){
+                word += '@';
+            } else if(arr[i][j].match(vowel)){
+                word += '*';
+            } else{
+                word += arr[i][j].toUpperCase();
+            }            
+        }  
+        word += '!!!!';
+        result.push(word);
+        word = '';      
+    }
+    return result.join(' ');
+}
+```
