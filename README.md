@@ -7843,3 +7843,12 @@ function switcheroo(x){
   return result;
 }
 ```
+[Spoonerize Me](https://www.codewars.com/kata/56b8903933dbe5831e000c76/train/javascript)
+```javascript
+function spoonerize(words) {
+    let arr = words.split(' ');
+    let first = arr[0].slice(0,1);
+    let second = arr[1].slice(0,1);
+    return second + (arr[0].slice(1)) + ' ' + first + (arr[1].slice(1));
+}
+```
