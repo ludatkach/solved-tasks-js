@@ -7852,3 +7852,18 @@ function spoonerize(words) {
     return second + (arr[0].slice(1)) + ' ' + first + (arr[1].slice(1));
 }
 ```
+[Divide and Conquer](https://www.codewars.com/kata/57eaec5608fed543d6000021/train/javascript)
+```javascript
+function divCon(x){
+    let sumStr = 0;
+    let sum = 0;
+    for(let i = 0; i < x.length; i++){
+        if(typeof x[i] === 'string'){
+            sumStr += +x[i];
+        } else{
+            sum += x[i];
+        }
+    }
+    return sum - sumStr;
+}
+```
