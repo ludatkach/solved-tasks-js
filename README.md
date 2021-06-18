@@ -7881,3 +7881,20 @@ function trouble(x, t){
     return x;
 }
 ```
+[Sort by Last Char](https://www.codewars.com/kata/57eba158e8ca2c8aba0002a0/train/javascript)
+```javascript
+function last(x){
+    let arr = x.split(' ');
+    let arrMapped = arr.map((val, index) => { return { val: val, index: index } });
+    let mapSorted = arrMapped.sort((a, b) => {
+        let lastA = a.val.slice(-1);
+        let lastB = b.val.slice(-1);
+        if (lastA === lastB) {
+            return a.index - b.index;
+        }
+        let diff = lastA.charCodeAt(0) - lastB.charCodeAt(0);
+        return diff;
+    });
+    return mapSorted.map(val => val.val);
+}
+```
