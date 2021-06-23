@@ -7914,3 +7914,17 @@ function getASCII(c){
   return c.charCodeAt(0);
 }
 ```
+[Potenciation](https://www.codewars.com/kata/59fc72fe235f93838b002235/train/javascript)
+```javascript
+function power(x,y){
+  let result = 1;
+  if(x === 0 && y === 0){
+    return 1;
+  } else{
+    for(let i = 1; i <= y; i++){
+      result *= x;
+    }
+  }
+  return result;
+}
+```
