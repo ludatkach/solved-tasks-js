@@ -7928,3 +7928,15 @@ function power(x,y){
   return result;
 }
 ```
+[Simple Fun #13: Magical Well](https://www.codewars.com/kata/588463cae61257e44600006d/train/javascript)
+```javascript
+function magicalWell(a, b, n) {
+  let money = 0;
+  for(let i = 0; i < n; i++){
+    money += a * b;
+    a++;
+    b++;
+  }
+  return money;
+}
+```
