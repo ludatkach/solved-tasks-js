@@ -7958,3 +7958,18 @@ function uefaEuro2016(teams, scores){
   }
 }
 ```
+[Get the integers between two numbers](https://www.codewars.com/kata/598057c8d95a04f33f00004e/train/javascript)
+```javascript
+function range(startNum, endNum){  
+   let arr = [];
+   if(startNum === endNum){
+     return [];
+   } else{     
+     let num = startNum + 1;
+     for(let i = num; i < endNum; i++ ){
+       arr.push(i);
+     }
+   }
+  return arr;
+} 
+```
