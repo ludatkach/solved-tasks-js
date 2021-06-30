@@ -7973,3 +7973,14 @@ function range(startNum, endNum){
   return arr;
 } 
 ```
+[max diff - easy](https://www.codewars.com/kata/588a3c3ef0fbc9c8e1000095/train/javascript)
+```javascript
+function maxDiff(list) {
+  if(list.length < 2 || !list.length){
+    return 0;
+  } else{
+    list.sort((a,b) => a - b);
+    return list[list.length-1] - list[0];
+  }
+};
+```
