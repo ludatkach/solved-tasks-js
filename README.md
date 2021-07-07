@@ -8006,3 +8006,20 @@ function yourFutureCareer() {
     }
 }
 ```
+[Responsible Drinking](https://www.codewars.com/kata/5aee86c5783bb432cd000018/train/javascript)
+```javascript
+function hydrate(s) {
+  let sum = 0;
+    let numArr = s.split(' ');
+    for(let  i = 0; i < numArr.length; i++){
+      if(!isNaN(parseInt(numArr[i]))) {
+        sum += +numArr[i];
+      } 
+    }
+    if(sum < 2 ) {
+      return "" + sum + " glass of water";
+    } else {
+      return "" + sum + " glasses of water";
+    }     
+}
+```
