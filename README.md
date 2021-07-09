@@ -8044,3 +8044,11 @@ function countWords(str) {
     return arr.length - arrSpecial.length;
 }
 ```
+[Word Count](https://www.codewars.com/kata/570cc83df616a85944001315/train/javascript)
+```javascript
+function countWords(str) {
+    console.log(str);
+    let a = str.match(/[^\s]+/g) || [];
+    return a.length;
+}
+```
