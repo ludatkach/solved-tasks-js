@@ -8023,3 +8023,24 @@ function hydrate(s) {
     }     
 }
 ```
+[Word Count](https://www.codewars.com/kata/570cc83df616a85944001315/train/javascript)
+```javascript
+function countWords(str) {
+    if (typeof str !== "string") {
+        return 0
+    }
+  
+    let reg = /\W+/g;
+    str = str.replace(/^\W+/g, "").replace(/\W+$/g, "").trim();
+  
+    if (!str.length) {
+        return 0
+    }
+  
+    let arr = str.split(reg);
+    let arrSpecial = str.match(/\'/g) || [];
+    arrSpecial += str.match(/\-/g) || [];
+    
+    return arr.length - arrSpecial.length;
+}
+```
