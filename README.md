@@ -8052,3 +8052,23 @@ function countWords(str) {
     return a.length;
 }
 ```
+[Fizz / Buzz](https://www.codewars.com/kata/51dda84f91f5b5608b0004cc/train/javascript)
+```javascript
+function solution(number){
+    let count3 = 0;
+    let count5 = 0;
+    let count35 = 0;
+    for(let i = 0; i < number; i++){
+      if(i % 3 === 0 && i % 5 === 0 && i != 0) {
+        count35++;
+      }
+      if(i % 3 === 0  && i != 0){
+        count3++;
+      }
+      if(i % 5 === 0 && i != 0){
+        count5++;
+      }      
+    } 
+  return count35 ?  [count3 - count35, count5 - count35, count35] : [count3, count5, count35];
+}
+```
