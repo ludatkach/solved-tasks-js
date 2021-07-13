@@ -8072,3 +8072,13 @@ function solution(number){
   return count35 ?  [count3 - count35, count5 - count35, count35] : [count3, count5, count35];
 }
 ```
+[Convert an array of strings to array of numbers](https://www.codewars.com/kata/5783d8f3202c0e486c001d23/train/javascript)
+```javascript
+function toNumberArray(stringarray){
+  let result = [];
+  for(let i = 0; i < stringarray.length; i++){
+    result.push(+stringarray[i]);
+  }
+  return result;
+}
+```
