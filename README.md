@@ -8082,3 +8082,19 @@ function toNumberArray(stringarray){
   return result;
 }
 ```
+[Hex Hash Sum](https://www.codewars.com/kata/5ab363ff6a176b29880000dd/train/javascript)
+```javascript
+function hexHash(code){
+    let res = '';
+    let sum = 0;
+    for(let i = 0; i < code.length; i++){
+        res += code.charCodeAt(i).toString(16);
+    }
+    for(let i = 0; i < res.length; i++){
+        if(Number.isInteger(+res[i])){
+            sum += +res[i];
+        }
+    }
+    return sum;
+}
+```
