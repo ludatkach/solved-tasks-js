@@ -8098,3 +8098,13 @@ function hexHash(code){
     return sum;
 }
 ```
+[Doubleton number](https://www.codewars.com/kata/604287495a72ae00131685c7/train/javascript)
+```javascript
+function doubleton(num){
+    for (let numb = num + 1; ; numb++) {
+        let number = String(numb).split('');
+        let set = new Set(number);
+        if (set.size == 2) return numb;
+    }
+}  
+```
