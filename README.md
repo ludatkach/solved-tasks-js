@@ -8108,3 +8108,10 @@ function doubleton(num){
     }
 }  
 ```
+[The most asked question on CodeWars](https://www.codewars.com/kata/5935ecef7705f9614500002d/train/javascript)
+```javascript
+function detect(comment) {
+  console.log(comment);
+  return /^Can someone explain/.test(comment);
+}
+```
