@@ -8115,3 +8115,10 @@ function detect(comment) {
   return /^Can someone explain/.test(comment);
 }
 ```
+[Unexpected parsing](https://www.codewars.com/kata/54fdaa4a50f167b5c000005f/train/javascript)
+```javascript
+function getStatus(isBusy) {
+  var msg = (isBusy ? "busy" : "available");
+  return {"status": msg};
+}
+```
