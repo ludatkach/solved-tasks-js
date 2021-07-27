@@ -8143,3 +8143,54 @@ Warrior.prototype.toString = function(){
     return "Hi! my name's "+this.name();
 }
 ```
+[Fun with ES6 Classes #3 - Cuboids, Cubes and Getters](https://www.codewars.com/kata/56fbdda707cff41b68000de2/train/javascript)
+```javascript
+class Cuboid {
+  constructor(length, width, height){
+    this._length = length;
+    this._width = width;
+    this._height = height;
+  }
+  get length(){
+    return this._length;
+  }
+  set length(length){
+    this._length = length;
+  }
+  
+  get width(){
+    return this._width;
+  }
+  set width(width){
+    this._width = width;
+  }
+  
+  get height(){
+    return this._height;
+  }
+  set height(height){
+    this._height = height;
+  }
+
+  get surfaceArea() {
+    return (this._length * this._width + this._width * this._height + this._length * this._height) * 2;
+  }
+  
+  get volume() {
+    return this._length * this._width * this._height;
+  }
+  
+}
+class Cube extends Cuboid {
+  constructor(length){
+    super(length, length, length);
+  }
+  
+  get volume(){
+    return this._length * this._length * this._length;
+  }
+  get surfaceArea(){
+    return (this._length * this._length) * 6;
+  }
+}
+```
